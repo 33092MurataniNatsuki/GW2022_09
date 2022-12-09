@@ -22,6 +22,7 @@ namespace HotpepperGourmetSystem {
 
             Uri uri = new Uri("/Area.xaml", UriKind.Relative);
             frame.Source = uri;
+            //
         }
 
     }
