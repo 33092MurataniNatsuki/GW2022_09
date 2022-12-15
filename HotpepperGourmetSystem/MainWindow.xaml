@@ -9,9 +9,9 @@
 
     <Grid>
         <Label Name="lbLogin" Content="Login" HorizontalAlignment="Center" HorizontalContentAlignment="Center"  VerticalAlignment="Top" VerticalContentAlignment="Center" Height="72" Width="382" Cursor="SizeAll" FontSize="32" FontFamily="Yu Gothic Light" FontWeight="Bold"/>
-        <TextBox x:Name="tbUserName" HorizontalAlignment="Left" Height="29" Margin="60,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="293" FontSize="18" FontFamily="Yu Gothic Light" FontWeight="Bold"/>
-        <TextBox x:Name="tbPassWord" HorizontalAlignment="Left" Height="29" Margin="60,144,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="293" FontSize="18" FontFamily="Yu Gothic Light" FontWeight="Bold"/>
-        <Button Content="Enter" HorizontalAlignment="Left" Margin="0,199,0,0" VerticalAlignment="Top" Width="382" Height="39" Background="Gainsboro" Click="Button_Click"/>
+        <TextBox x:Name="tbUserName" HorizontalAlignment="Left" Height="29" Margin="60,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="293" FontSize="15" FontFamily="Yu Gothic Light" FontWeight="Bold" CaretBrush="Firebrick" SelectionBrush="Firebrick"/>
+        <TextBox x:Name="tbPassWord" HorizontalAlignment="Left" Height="29" Margin="60,144,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="293" FontSize="15" FontFamily="Yu Gothic Light" FontWeight="Bold" SelectionBrush="Firebrick" CaretBrush="Firebrick"/>
+        <Button Content="Enter" HorizontalAlignment="Left" Margin="0,199,0,0" VerticalAlignment="Top" Width="382" Height="39" Background="Gainsboro" Click="Button_Click" BorderBrush="{x:Null}"/>
         <Image HorizontalAlignment="Left" Height="29" Margin="27,144,0,0" VerticalAlignment="Top" Width="28" Source="Images/Key2.png"/>
         <Image HorizontalAlignment="Left" Height="29" Margin="27,100,0,0" VerticalAlignment="Top" Width="28" Source="Images/man.png"/>
 

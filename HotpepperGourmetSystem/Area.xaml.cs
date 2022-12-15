@@ -21,10 +21,5 @@ namespace HotpepperGourmetSystem {
         public Area() {
             InitializeComponent();
         }
-
-        private void Button_Click(object sender, RoutedEventArgs e) {
-            var page2 = new Genre();
-            NavigationService.Navigate(page2);
-        }
     }
 }

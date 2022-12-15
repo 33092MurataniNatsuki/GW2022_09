@@ -9,6 +9,6 @@
       Title="Genre">
 
     <Grid>
-        <Label FontSize="50">Page2</Label>
+        <Label FontSize="50">Genre</Label>
     </Grid>
 </Page>

@@ -15,10 +15,10 @@ using System.Windows.Shapes;
 
 namespace HotpepperGourmetSystem {
     /// <summary>
-    /// Particular.xaml の相互作用ロジック
+    /// Picky.xaml の相互作用ロジック
     /// </summary>
-    public partial class Particular : Page {
-        public Particular() {
+    public partial class Picky : Page {
+        public Picky() {
             InitializeComponent();
         }
     }

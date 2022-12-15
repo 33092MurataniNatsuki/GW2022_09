@@ -9,6 +9,6 @@
       Title="History">
 
     <Grid>
-        
+        <Label FontSize="50">History</Label>
     </Grid>
 </Page>

@@ -31,9 +31,16 @@ namespace HotpepperGourmetSystem {
         }
 
         private void Button_Click(object sender, RoutedEventArgs e) {
-            Home home = new Home();
-            home.Show();
-            Close();
+            tbUserName.Text = "aaaa";
+            tbPassWord.Text = "aaaa";
+
+            if (tbUserName.Text == "aaaa" && tbPassWord.Text == "aaaa") {
+                Window1 window1 = new Window1();
+                window1.Show();
+                Close();
+            }
+
+            
         }
     }
 }
