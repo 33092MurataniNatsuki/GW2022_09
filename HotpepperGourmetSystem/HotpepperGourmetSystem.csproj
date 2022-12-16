@@ -155,7 +155,14 @@
     </Resource>
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Images\日本地図1.png" />
+    <Resource Include="Images\背景Area.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Images\Hotpepper.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Area背景.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Content Include="Images\man.png">
