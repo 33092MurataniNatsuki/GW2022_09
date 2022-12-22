@@ -20,35 +20,60 @@
             <!--<Image HorizontalAlignment="Left" Height="701" Margin="0,0,0,-75" VerticalAlignment="Top" Width="995" Source="Images/Area背景.png" Grid.RowSpan="7"/>-->
             <Image HorizontalAlignment="Left" Height="701" Margin="0,0,0,-75" VerticalAlignment="Top" Width="995" Source="Images/背景Area.png" Grid.RowSpan="7"/>
             <Image HorizontalAlignment="Left" Height="50" Margin="31,32,0,0" VerticalAlignment="Top" Width="132" Source="Images/Hotpepper.jpg"/>
-            <Image HorizontalAlignment="Left" Height="498" Margin="245,66,0,0" VerticalAlignment="Top" Width="476" Source="Images/日本地図1.png" Grid.RowSpan="7"/>
-            <TextBlock HorizontalAlignment="Left" Margin="44,10,0,0" Grid.Row="1" TextWrapping="Wrap" Text="── 地域 ──" VerticalAlignment="Top" Height="22" Width="108" FontSize="16" Foreground="White"/>
+            <Image HorizontalAlignment="Left" Height="424" Margin="282,92,0,0" VerticalAlignment="Top" Width="409" Source="Images/日本地図1.png" Grid.RowSpan="7"/>
+            <TextBlock HorizontalAlignment="Left" Margin="46,21.2,0,0" Grid.Row="1" TextWrapping="Wrap" Text="── 地域 ──" VerticalAlignment="Top" Height="22" Width="108" FontSize="16" Foreground="Black" FontWeight="Bold"/>
             <Button x:Name="goHome" Content="HOME" HorizontalAlignment="Left" Margin="31,10,0,0" Grid.Row="2" VerticalAlignment="Top" Width="138" Background="#FF252525" BorderBrush="{x:Null}" Click="goHome_Click"/>
             <Button x:Name="goGenre" Content="ジャンル" HorizontalAlignment="Left" Margin="31,10,0,0" Grid.Row="3" VerticalAlignment="Top" Width="138" Background="#FF252525" BorderBrush="{x:Null}" Click="goGenre_Click"/>
             <Button x:Name="goPicky" Content="こだわり" HorizontalAlignment="Left" Margin="31,10,0,0" Grid.Row="4" VerticalAlignment="Top" Width="138" Background="#FF252525" BorderBrush="{x:Null}" Click="goPicky_Click"/>
             <Button x:Name="goHistory" Content="★" HorizontalAlignment="Left" Margin="31,10,0,0" Grid.Row="5" VerticalAlignment="Top" Width="138" Background="#FF252525" BorderBrush="{x:Null}" Click="goHistory_Click"/>
-            <Button Content="北海道" HorizontalAlignment="Left" Margin="624,84,0,0" VerticalAlignment="Top" Width="80" Background="#FFD3A2D0" Height="28" Foreground="#DDFFFFFF" BorderBrush="{x:Null}"/>
-            <Button Content="青森" HorizontalAlignment="Left" Margin="619,13,0,0" VerticalAlignment="Top" Width="66" Background="#FF82B0DE" Height="28" Grid.Row="1" BorderBrush="{x:Null}"/>
-            <Button Content="岩手" HorizontalAlignment="Left" Margin="690,13,0,0" Grid.Row="1" VerticalAlignment="Top" Width="66" Height="28" Background="#FF82B0DE" BorderBrush="{x:Null}"/>
-            <Button Content="秋田" HorizontalAlignment="Left" Margin="619,48,0,0" Grid.Row="1" VerticalAlignment="Top" Width="66" Height="28" Grid.RowSpan="2" Background="#FF82B0DE" BorderBrush="{x:Null}"/>
-            <Button Content="宮城" HorizontalAlignment="Left" Margin="690,48,0,0" Grid.Row="1" VerticalAlignment="Top" Width="66" Height="28" Grid.RowSpan="2" BorderBrush="{x:Null}" Background="#FF82B0DE"/>
-            <Button Content="山形" HorizontalAlignment="Left" Margin="619,13,0,0" Grid.Row="2" VerticalAlignment="Top" Width="66" Height="30" Background="#FF82B0DE" BorderBrush="{x:Null}" Grid.RowSpan="2"/>
-            <Button Content="福島" HorizontalAlignment="Left" Margin="690,13,0,0" Grid.Row="2" VerticalAlignment="Top" Width="66" Height="30" Background="#FF82B0DE" BorderBrush="{x:Null}" Grid.RowSpan="2"/>
-            <Button Content="東京" HorizontalAlignment="Left" Margin="588,13,0,0" Grid.Row="3" VerticalAlignment="Top" Width="66" Height="29" Background="#FFA8DBEA" BorderBrush="{x:Null}"/>
-            <Button Content="神奈川" HorizontalAlignment="Left" Margin="659,13,0,0" VerticalAlignment="Top" Width="80" Height="29" Grid.Row="3" Background="#FFA8DBEA" BorderBrush="{x:Null}"/>
-            <Button Content="埼玉" HorizontalAlignment="Left" Margin="588,5,0,0" Grid.Row="4" VerticalAlignment="Top" Width="66" Height="29" Background="#FFA8DBEA" BorderBrush="{x:Null}"/>
-            <Button Content="千葉" HorizontalAlignment="Left" Margin="659,5,0,0" Grid.Row="4" VerticalAlignment="Top" Width="66" Height="29" Background="#FFA8DBEA" BorderBrush="{x:Null}"/>
-            <Button Content="茨城" HorizontalAlignment="Left" Margin="549,39,0,0" Grid.Row="4" VerticalAlignment="Top" Width="66" Height="29" Grid.RowSpan="2" BorderBrush="{x:Null}" Background="#FFA8DBEA"/>
-            <Button Content="栃木" HorizontalAlignment="Left" Margin="620,39,0,0" Grid.Row="4" VerticalAlignment="Top" Width="66" Grid.RowSpan="2" Height="29" BorderBrush="{x:Null}" Background="#FFA8DBEA"/>
-            <Button Content="群馬" HorizontalAlignment="Left" Margin="691,39,0,0" Grid.Row="4" Grid.RowSpan="2" VerticalAlignment="Top" Width="66" Height="29" Background="#FFA8DBEA" BorderBrush="{x:Null}"/>
-            <Button Content="沖縄" HorizontalAlignment="Left" Margin="630,57,0,0" Grid.Row="6" VerticalAlignment="Top" Width="66" Height="28" Background="#FFEC817C" BorderBrush="{x:Null}"/>
-            <Button Content="新潟" HorizontalAlignment="Left" Margin="371,156,0,0" VerticalAlignment="Top" Width="66" Height="28" BorderBrush="{x:Null}" Background="#FF8BD1AE"/>
-            <Button Content="長野" HorizontalAlignment="Left" Margin="442,156,0,0" VerticalAlignment="Top" Width="66" Height="28" Background="#FF8BD1AE" BorderBrush="{x:Null}"/>
-            <Button Content="山梨" HorizontalAlignment="Left" Margin="371,189,0,0" VerticalAlignment="Top" Width="66" Height="28" Grid.RowSpan="2" Background="#FF8BD1AE" BorderBrush="{x:Null}"/>
-            <Button Content="富山" HorizontalAlignment="Left" Margin="442,189,0,0" VerticalAlignment="Top" Width="66" Grid.RowSpan="2" Height="28" Background="#FF8BD1AE" BorderBrush="{x:Null}"/>
-            <Button Content="石川" HorizontalAlignment="Left" Margin="371,21,0,0" VerticalAlignment="Top" Width="66" Height="28" Grid.Row="1" Background="#FF8BD1AE" BorderBrush="{x:Null}"/>
-            <Button Content="福井" HorizontalAlignment="Left" Margin="442,21,0,0" Grid.Row="1" VerticalAlignment="Top" Width="66" Height="28" Background="#FF8BD1AE" BorderBrush="{x:Null}"/>
-            <Button Content="愛知" HorizontalAlignment="Left" Margin="468,40,0,0" Grid.Row="5" VerticalAlignment="Top" Width="66" Background="#FF8BD1AE" BorderBrush="{x:Null}" Height="28" Grid.RowSpan="2"/>
-            <Button Content="岐阜" HorizontalAlignment="Left" Margin="539,40,0,0" Grid.Row="5" VerticalAlignment="Top" Width="66" Height="28" Grid.RowSpan="2" BorderBrush="{x:Null}" Background="#FF8BD1AE"/>
+            <Button Content="北海道" HorizontalAlignment="Left" Margin="637,98,0,0" VerticalAlignment="Top" Width="80" Height="28" Foreground="#DD000000" BorderBrush="#FFB381B2" Background="{x:Null}"/>
+            <Button Content="青森" HorizontalAlignment="Left" Margin="584,25.2,0,14.8" Width="66" Background="{x:Null}" Height="Auto" Grid.Row="1" BorderBrush="#FF6291CD" Foreground="#DD000000" />
+            <Button Content="岩手" HorizontalAlignment="Left" Margin="584,17.8,0,0" Grid.Row="3" VerticalAlignment="Top" Width="66" Height="28" Background="{x:Null}" BorderBrush="#FF6291CD" Grid.RowSpan="2" Foreground="#DD000000"/>
+            <Button Content="秋田" HorizontalAlignment="Left" Margin="584,58.2,0,24.2" Grid.Row="1" Width="66" Height="Auto" Background="{x:Null}" BorderBrush="#FF6291CD" Grid.RowSpan="2" Foreground="#DD000000"/>
+            <Button Content="宮城" HorizontalAlignment="Left" Margin="584,8.4,0,0" Grid.Row="4" VerticalAlignment="Top" Width="66" Height="28" BorderBrush="#FF6291CD" Background="{x:Null}" Foreground="#DD000000"/>
+            <Button Content="山形" HorizontalAlignment="Left" Margin="584,24.2,0,0" Grid.Row="2" VerticalAlignment="Top" Width="66" Height="30" Background="{x:Null}" BorderBrush="#FF6291CD" Grid.RowSpan="2" Foreground="#DD000000"/>
+            <Button Content="福島" HorizontalAlignment="Left" Margin="584,41.4,0,0" Grid.Row="4" VerticalAlignment="Top" Width="66" Height="30" Background="{x:Null}" BorderBrush="#FF6291CD" Grid.RowSpan="2" Foreground="Black"/>
+            <Button Content="東京" HorizontalAlignment="Left" Margin="672,9.2,0,0" VerticalAlignment="Top" Width="66" Height="29" BorderBrush="#FF47B3D1" RenderTransformOrigin="2.7,-3.89" Grid.Row="1" Foreground="#DD000000" Background="{x:Null}"/>
+            <Button Content="神奈川" HorizontalAlignment="Left" Margin="672,44.2,0,0" VerticalAlignment="Top" Width="80" Height="29" Background="{x:Null}" BorderBrush="#FF47B3D1" Grid.Row="1" Grid.RowSpan="2" Foreground="#DD000000" FontFamily="Yu Gothic UI Semibold"/>
+            <Button Content="埼玉" HorizontalAlignment="Left" Margin="672,10.2,0,0" VerticalAlignment="Top" Width="66" Height="29" Background="{x:Null}" BorderBrush="#FF47B3D1" Grid.Row="2" Foreground="#DD000000"/>
+            <Button Content="千葉" HorizontalAlignment="Left" Margin="672,3.8,0,0" Grid.Row="3" VerticalAlignment="Top" Width="66" Height="29" Background="{x:Null}" BorderBrush="#FF47B3D1" Foreground="#DD000000"/>
+            <Button Content="茨城" HorizontalAlignment="Left" Margin="672,36.8,0,0" Grid.Row="3" VerticalAlignment="Top" Width="66" Height="29" BorderBrush="#FF47B3D1" Background="{x:Null}" RenderTransformOrigin="4.991,-3.255" Grid.RowSpan="2" Foreground="#DD000000"/>
+            <Button Content="栃木" HorizontalAlignment="Left" Margin="672,28.4,0,0" Grid.Row="4" VerticalAlignment="Top" Width="66" Height="29" BorderBrush="#FF47B3D1" Background="{x:Null}" Grid.RowSpan="2" Foreground="#DD000000"/>
+            <Button Content="群馬" HorizontalAlignment="Left" Margin="672,20.8,0,0" Grid.Row="5" VerticalAlignment="Top" Width="66" Height="29" Background="{x:Null}" BorderBrush="#FF47B3D1" Grid.RowSpan="2" Foreground="#DD000000"/>
+            <Button Content="沖縄" HorizontalAlignment="Left" Margin="625,34.2,0,0" Grid.Row="6" VerticalAlignment="Top" Width="66" Height="28" Background="{x:Null}" BorderBrush="#FFEC817C" Foreground="#DD000000"/>
+            <Button Content="新潟" HorizontalAlignment="Left" Margin="442,131,0,0" VerticalAlignment="Top" Width="66" Height="28" BorderBrush="#FF8BD1AE" Background="{x:Null}" Foreground="#DD000000"/>
+            <Button Content="長野" HorizontalAlignment="Left" Margin="442,164,0,0" VerticalAlignment="Top" Width="66" Height="28" Background="{x:Null}" BorderBrush="#FF8BD1AE" Foreground="#DD000000"/>
+            <Button Content="山梨" HorizontalAlignment="Left" Margin="442,98,0,0" VerticalAlignment="Top" Width="66" Height="28" Background="{x:Null}" BorderBrush="#FF8BD1AE" Foreground="#DD000000"/>
+            <Button Content="富山" HorizontalAlignment="Left" Margin="442,197,0,0" VerticalAlignment="Top" Width="66" Height="28" Background="{x:Null}" BorderBrush="#FF8BD1AE" Grid.RowSpan="2" Foreground="#DD020000"/>
+            <Button Content="石川" HorizontalAlignment="Left" Margin="442,62.2,0,20.2" Width="66" Height="Auto" Grid.Row="1" Background="{x:Null}" BorderBrush="#FF8BD1AE" Grid.RowSpan="2" Foreground="#DD000000"/>
+            <Button Content="福井" HorizontalAlignment="Left" Margin="442,30.2,0,0" Grid.Row="1" VerticalAlignment="Top" Width="66" Height="28" Background="{x:Null}" BorderBrush="#FF8BD1AE" Foreground="#DD000000"/>
+            <Button Content="愛知" HorizontalAlignment="Left" Margin="468,1.2,0,0" Grid.Row="6" VerticalAlignment="Top" Width="66" Background="{x:Null}" BorderBrush="#FF8BD1AE" Height="28" Foreground="#DD000000"/>
+            <Button Content="岐阜" HorizontalAlignment="Left" Margin="468,100.2,0,0" Grid.Row="6" VerticalAlignment="Top" Width="66" Height="28" BorderBrush="#FF8BD1AE" Background="{x:Null}" Foreground="#DD000000"/>
+            <Button Content="三重" HorizontalAlignment="Left" Margin="468,34.2,0,0" Grid.Row="6" VerticalAlignment="Top" Width="66" Height="28" Background="{x:Null}" BorderBrush="#FF8BD1AE" Foreground="#DD000000"/>
+            <Button Content="静岡" HorizontalAlignment="Left" Margin="468,67.2,0,0" Grid.Row="6" VerticalAlignment="Top" Width="66" Height="28" Background="{x:Null}" BorderBrush="#FF8BD1AE" Foreground="#DD000000"/>
+            <Button Content="大阪" HorizontalAlignment="Left" Margin="335,98,0,0" VerticalAlignment="Top" Width="66" Height="28" BorderBrush="#FFEEE27B" Background="{x:Null}" Foreground="#DD000000"/>
+            <Button Content="兵庫" HorizontalAlignment="Left" Margin="335,131,0,0" VerticalAlignment="Top" Width="66" Height="28" Background="{x:Null}" BorderBrush="#FFEEE27B" Foreground="#DD000000"/>
+            <Button Content="京都" HorizontalAlignment="Left" Margin="335,164,0,0" VerticalAlignment="Top" Width="66" Height="28" BorderBrush="#FFEEE27B" Background="{x:Null}" Foreground="#DD000000"/>
+            <Button Content="滋賀" HorizontalAlignment="Left" Margin="335,197,0,0" VerticalAlignment="Top" Width="66" Height="28" Background="{x:Null}" BorderBrush="#FFEEE27B" Grid.RowSpan="2" Foreground="#DD000000"/>
+            <Button Content="奈良" HorizontalAlignment="Left" Margin="335,29.2,0,0" Grid.Row="1" VerticalAlignment="Top" Width="66" Height="28" BorderBrush="#FFEEE27B" Background="{x:Null}" Foreground="#DD000000"/>
+            <Button Content="和歌山" HorizontalAlignment="Left" Margin="335,62.2,0,0" Grid.Row="1" VerticalAlignment="Top" Width="80" Height="30" Background="{x:Null}" BorderBrush="#FFEEE27B" Grid.RowSpan="2" Foreground="#DD000000"/>
+            <Button Content="愛媛" HorizontalAlignment="Left" Margin="370,21.2,0,0" Grid.Row="6" VerticalAlignment="Top" Width="66" Height="28" Background="{x:Null}" BorderBrush="#FFFAC46F" Foreground="#DD000000"/>
+            <Button Content="香川" HorizontalAlignment="Left" Margin="370,54.2,0,0" Grid.Row="6" VerticalAlignment="Top" Width="66" Height="28" BorderBrush="#FFFAC46F" Background="{x:Null}" Foreground="#DD000000"/>
+            <Button Content="徳島" HorizontalAlignment="Left" Margin="370,87.2,0,0" Grid.Row="6" VerticalAlignment="Top" Width="66" Height="28" Background="{x:Null}" BorderBrush="#FFFAC46F" Foreground="#DD000000"/>
+            <Button Content="高知" HorizontalAlignment="Left" Margin="370,120.2,0,0" Grid.Row="6" VerticalAlignment="Top" Width="66" Height="29" BorderBrush="#FFFAC46F" Background="{x:Null}" Foreground="#DD000000"/>
+            <Button Content="福岡" HorizontalAlignment="Left" Margin="233,11.8,0,0" Grid.Row="3" VerticalAlignment="Top" Width="66" Height="27" Background="{x:Null}" BorderBrush="#FFEC817C" Foreground="#DD000000"/>
+            <Button Content="佐賀" HorizontalAlignment="Left" Margin="233,3.4,0,0" Grid.Row="4" VerticalAlignment="Top" Width="66" Background="{x:Null}" BorderBrush="#FFEC817C" Height="28" Foreground="#DD000000"/>
+            <Button Content="長崎" HorizontalAlignment="Left" Margin="233,36.4,0,0" Grid.Row="4" VerticalAlignment="Top" Width="66" Background="{x:Null}" BorderBrush="#FFEC817C" Height="28" Grid.RowSpan="2" Foreground="#DD000000"/>
+            <Button Content="熊本" HorizontalAlignment="Left" Margin="233,27.8,0,0" Grid.Row="5" VerticalAlignment="Top" Width="66" Background="{x:Null}" BorderBrush="#FFEC817C" Height="28" Grid.RowSpan="2" Foreground="#DD000000"/>
+            <Button Content="大分" HorizontalAlignment="Left" Margin="233,19.2,0,0" Grid.Row="6" VerticalAlignment="Top" Width="66" BorderBrush="#FFEC817C" Background="{x:Null}" Height="28" Foreground="#DD000000"/>
+            <Button Content="宮崎" HorizontalAlignment="Left" Margin="233,52.2,0,0" Grid.Row="6" VerticalAlignment="Top" Width="66" Background="{x:Null}" BorderBrush="#FFEC817C" Height="28" Foreground="#DD000000"/>
+            <Button Content="鹿児島" HorizontalAlignment="Left" Margin="233,85.2,0,0" Grid.Row="6" VerticalAlignment="Top" Width="80" BorderBrush="#FFEC817C" Background="{x:Null}" Height="29" Foreground="#DD000000"/>
+            <Button Content="広島" HorizontalAlignment="Left" Margin="233,98,0,0" VerticalAlignment="Top" Width="66" Height="28" Background="{x:Null}" BorderBrush="#FFEAA9C7" Foreground="#DD000000"/>
+            <Button Content="岡山" HorizontalAlignment="Left" Margin="233,131,0,0" VerticalAlignment="Top" Width="66" Height="28" Background="{x:Null}" BorderBrush="#FFEAA9C7" Foreground="#DD000000"/>
+            <Button Content="島根" HorizontalAlignment="Left" Margin="233,164,0,0" VerticalAlignment="Top" Width="66" Height="28" Background="{x:Null}" BorderBrush="#FFEAA9C7" Foreground="#DD000000"/>
+            <Button Content="鳥取" HorizontalAlignment="Left" Margin="233,197,0,0" VerticalAlignment="Top" Width="66" Height="28" Grid.RowSpan="2" Background="{x:Null}" BorderBrush="#FFEAA9C7" Foreground="#DD000000"/>
+            <Button Content="山口" HorizontalAlignment="Left" Margin="233,29.2,0,0" Grid.Row="1" VerticalAlignment="Top" Width="66" Height="28" Background="{x:Null}" BorderBrush="#FFEAA9C7" Foreground="#DD000000"/>
+            <TextBlock HorizontalAlignment="Left" Margin="246,50,0,0" TextWrapping="Wrap" Text="県から探す" VerticalAlignment="Top" FontSize="24" FontWeight="Bold"/>
         </Grid>
     </StackPanel>
 </Page>
