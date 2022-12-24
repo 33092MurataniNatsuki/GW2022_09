@@ -22,12 +22,13 @@
                 <ColumnDefinition Width="133*"/>
                 <ColumnDefinition Width="667*"/>
             </Grid.ColumnDefinitions>
+            <!--<Image HorizontalAlignment="Left" Height="624" Margin="166,0,-161,-235.2" VerticalAlignment="Top" Width="995" Source="Images/白黒画像.png" Grid.RowSpan="8" Grid.ColumnSpan="2"/>-->
             <Label x:Name="lb1" Content="Label" Margin="1234,12,-491,3" Grid.Column="1"/>
             <Image HorizontalAlignment="Left" Height="46" Margin="21,42,0,0" VerticalAlignment="Top" Width="124" Source="Images/Hotpepper.jpg"/>
-            <Button x:Name="goArea" Margin="21,10" Click="Button_Click" Grid.Row="3" Content="地域" Background="Transparent" BorderBrush="Transparent" Foreground="#DD8B8B8B"/>
-            <Button x:Name="goGenre" Margin="21,10" Click="goGenre_Click_1" Grid.Row="4" Content="ジャンル" Background="Transparent"  BorderBrush="Transparent" Foreground="#DD8B8B8B"/>
-            <Button x:Name="goPicky" Margin="21,10" Click="goPicky_Click" Grid.Row="5" Content="こだわり" Background="Transparent" BorderBrush="Transparent" Foreground="#DD8B8B8B"/>
-            <Button x:Name="goHistory" Margin="21,10" Click="goHistory_Click" Grid.Row="6" Content="お気に入り" Background="Transparent" BorderBrush="Transparent" Foreground="#DD8B8B8B"/>
+            <Button x:Name="goArea" Margin="10,10.4,10.4,3.2" Click="Button_Click" Grid.Row="3" Content="地域" Background="Transparent" BorderBrush="#FFA3A3A3" Foreground="#DD8B8B8B"/>
+            <Button x:Name="goGenre" Margin="10,9.8,10.4,3.8" Click="goGenre_Click_1" Grid.Row="4" Content="ジャンル" Background="Transparent"  BorderBrush="#FFA3A3A3" Foreground="#DD8B8B8B"/>
+            <Button x:Name="goPicky" Margin="10,10.2,10.4,3.4" Click="goPicky_Click" Grid.Row="5" Content="こだわり" Background="Transparent" BorderBrush="#FFA3A3A3" Foreground="#DD8B8B8B"/>
+            <Button x:Name="goHistory" Margin="10,9.6,10.4,4" Click="goHistory_Click" Grid.Row="6" Content="お気に入り" Background="Transparent" BorderBrush="#FFA3A3A3" Foreground="#DD8B8B8B"/>
             <TextBlock HorizontalAlignment="Left" Margin="24,10,0,0" Grid.Row="2" TextWrapping="Wrap" Text="── HOME ──" VerticalAlignment="Top" Height="22" Width="121" FontSize="16"/>
             <Label Content="Label" HorizontalAlignment="Left" Margin="0,10,0,-190" VerticalAlignment="Top" Height="571" Grid.RowSpan="8" Width="3" Background="#FFC5C5C5" Grid.Column="1"/>
             <Button
