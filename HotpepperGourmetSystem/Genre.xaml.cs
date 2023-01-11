@@ -21,5 +21,29 @@ namespace HotpepperGourmetSystem {
         public Genre() {
             InitializeComponent();
         }
+
+        private void goHome_Click(object sender, RoutedEventArgs e)
+        {
+            var home = new Home();
+            NavigationService.Navigate(home);
+        }
+
+        private void goArea_Click(object sender, RoutedEventArgs e)
+        {
+            var area = new Area();
+            NavigationService.Navigate(area);
+        }
+
+        private void goPicky_Click(object sender, RoutedEventArgs e)
+        {
+            var picky = new Picky();
+            NavigationService.Navigate(picky);
+        }
+
+        private void goHistory_Click(object sender, RoutedEventArgs e)
+        {
+            var history = new History();
+            NavigationService.Navigate(history);
+        }
     }
 }

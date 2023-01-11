@@ -31,12 +31,12 @@
             <Button x:Name="goHistory" Margin="10,9.6,10.4,4" Click="goHistory_Click" Grid.Row="6" Content="お気に入り" Background="Transparent" BorderBrush="#FFA3A3A3" Foreground="#DD8B8B8B"/>
             <TextBlock HorizontalAlignment="Left" Margin="24,10,0,0" Grid.Row="2" TextWrapping="Wrap" Text="── HOME ──" VerticalAlignment="Top" Height="22" Width="121" FontSize="16"/>
             <Label Content="Label" HorizontalAlignment="Left" Margin="0,10,0,-190" VerticalAlignment="Top" Height="571" Grid.RowSpan="8" Width="3" Background="#FFC5C5C5" Grid.Column="1"/>
-            <Button
+            <!--<Button
                  Margin="340,0,0,17"
                  HorizontalAlignment="Left"
                  VerticalAlignment="Bottom"
                  Style="{StaticResource MaterialDesignFloatingActionLightButton}"
-                 ToolTip="MaterialDesignFloatingActionLightButton" Grid.Column="1" Height="157" Grid.RowSpan="4" Width="157" Grid.Row="3" Background="Firebrick" BorderBrush="Firebrick"/>
+                 ToolTip="MaterialDesignFloatingActionLightButton" Grid.Column="1" Height="157" Grid.RowSpan="4" Width="157" Grid.Row="3" Background="Firebrick" BorderBrush="Firebrick"/>-->
 
         </Grid>
     </StackPanel>
