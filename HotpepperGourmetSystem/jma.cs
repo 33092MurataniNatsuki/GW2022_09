@@ -170,4 +170,6 @@ namespace HotpepperGourmetSystem {
         public string name { get; set; }
     }
 
+
+
 }

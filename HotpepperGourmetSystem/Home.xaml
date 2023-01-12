@@ -23,7 +23,7 @@
                 <ColumnDefinition Width="667*"/>
             </Grid.ColumnDefinitions>
             <!--<Image HorizontalAlignment="Left" Height="624" Margin="166,0,-161,-235.2" VerticalAlignment="Top" Width="995" Source="Images/白黒画像.png" Grid.RowSpan="8" Grid.ColumnSpan="2"/>-->
-            <Label x:Name="lb1" Content="Label" Margin="1234,12,-491,3" Grid.Column="1"/>
+            <Label x:Name="lb1" Content="Label" Margin="498,11,246,-126" Grid.Column="1" Grid.Row="7"/>
             <Image HorizontalAlignment="Left" Height="46" Margin="21,42,0,0" VerticalAlignment="Top" Width="124" Source="Images/Hotpepper.jpg"/>
             <Button x:Name="goArea" Margin="10,10.4,10.4,3.2" Click="Button_Click" Grid.Row="3" Content="地域" Background="Transparent" BorderBrush="#FFA3A3A3" Foreground="#DD8B8B8B"/>
             <Button x:Name="goGenre" Margin="10,9.8,10.4,3.8" Click="goGenre_Click_1" Grid.Row="4" Content="ジャンル" Background="Transparent"  BorderBrush="#FFA3A3A3" Foreground="#DD8B8B8B"/>

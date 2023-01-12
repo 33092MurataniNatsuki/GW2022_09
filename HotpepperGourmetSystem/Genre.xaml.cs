@@ -26,6 +26,7 @@ namespace HotpepperGourmetSystem {
         {
             var home = new Home();
             NavigationService.Navigate(home);
+
         }
 
         private void goArea_Click(object sender, RoutedEventArgs e)
