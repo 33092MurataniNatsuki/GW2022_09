@@ -20,52 +20,52 @@
         <Button x:Name="goPicky" Content="こだわり" HorizontalAlignment="Left" Margin="31,355,0,0" VerticalAlignment="Top" Width="138" Background="#FF252525" BorderBrush="{x:Null}" Click="goPicky_Click"/>
         <Button x:Name="goHistory" Content="★" HorizontalAlignment="Left" Margin="31,401,0,0" VerticalAlignment="Top" Width="138" Background="#FF252525" BorderBrush="{x:Null}" Click="goHistory_Click"/>
         <Button x:Name="btHokkaido" Content="北海道" HorizontalAlignment="Left" Margin="637,98,0,0" VerticalAlignment="Top" Width="80" Height="28" Foreground="#DD000000" BorderBrush="#FFB381B2" Background="{x:Null}" Click="btHokkaido_Click"/>
-        <Button x:Name="btAomori" Content="青森" HorizontalAlignment="Left" Margin="584,226,0,396" Width="66" Background="{x:Null}" Height="Auto" BorderBrush="#FF6291CD" Foreground="#DD000000" />
-        <Button x:Name="btIwate" Content="岩手" HorizontalAlignment="Left" Margin="584,327,0,0" VerticalAlignment="Top" Width="66" Height="28" Background="{x:Null}" BorderBrush="#FF6291CD" Foreground="#DD000000"/>
-        <Button x:Name="btAkita" Content="秋田" HorizontalAlignment="Left" Margin="584,259,0,363" Width="66" Height="Auto" Background="{x:Null}" BorderBrush="#FF6291CD" Foreground="#DD000000"/>
-        <Button x:Name="btMiyagi" Content="宮城" HorizontalAlignment="Left" Margin="584,360,0,0" VerticalAlignment="Top" Width="66" Height="28" BorderBrush="#FF6291CD" Background="{x:Null}" Foreground="#DD000000"/>
-        <Button x:Name="btYamagata" Content="山形" HorizontalAlignment="Left" Margin="584,292,0,0" VerticalAlignment="Top" Width="66" Height="30" Background="{x:Null}" BorderBrush="#FF6291CD" Foreground="#DD000000"/>
-        <Button x:Name="btHukushima" Content="福島" HorizontalAlignment="Left" Margin="584,393,0,0" VerticalAlignment="Top" Width="66" Height="30" Background="{x:Null}" BorderBrush="#FF6291CD" Foreground="Black"/>
+        <Button x:Name="btAomori" Content="青森" HorizontalAlignment="Left" Margin="584,226,0,396" Width="66" Background="{x:Null}" Height="Auto" BorderBrush="#FF6291CD" Foreground="#DD000000" Click="btAomori_Click" />
+        <Button x:Name="btIwate" Content="岩手" HorizontalAlignment="Left" Margin="584,327,0,0" VerticalAlignment="Top" Width="66" Height="28" Background="{x:Null}" BorderBrush="#FF6291CD" Foreground="#DD000000" Click="btIwate_Click"/>
+        <Button x:Name="btAkita" Content="秋田" HorizontalAlignment="Left" Margin="584,259,0,363" Width="66" Height="Auto" Background="{x:Null}" BorderBrush="#FF6291CD" Foreground="#DD000000" Click="btAkita_Click"/>
+        <Button x:Name="btMiyagi" Content="宮城" HorizontalAlignment="Left" Margin="584,360,0,0" VerticalAlignment="Top" Width="66" Height="28" BorderBrush="#FF6291CD" Background="{x:Null}" Foreground="#DD000000" Click="btMiyagi_Click"/>
+        <Button x:Name="btYamagata" Content="山形" HorizontalAlignment="Left" Margin="584,292,0,0" VerticalAlignment="Top" Width="66" Height="30" Background="{x:Null}" BorderBrush="#FF6291CD" Foreground="#DD000000" Click="btYamagata_Click"/>
+        <Button x:Name="btHukushima" Content="福島" HorizontalAlignment="Left" Margin="584,393,0,0" VerticalAlignment="Top" Width="66" Height="30" Background="{x:Null}" BorderBrush="#FF6291CD" Foreground="Black" Click="btHukushima_Click"/>
         <Button x:Name="btTokyo" Content="東京" HorizontalAlignment="Left" Margin="672,211,0,0" VerticalAlignment="Top" Width="66" Height="29" BorderBrush="#FF47B3D1" RenderTransformOrigin="2.7,-3.89" Foreground="#DD000000" Background="{x:Null}" Click="btTokyo_Click"/>
-        <Button x:Name="btKanagawa" Content="神奈川" HorizontalAlignment="Left" Margin="672,245,0,0" VerticalAlignment="Top" Width="80" Height="29" Background="{x:Null}" BorderBrush="#FF47B3D1" Foreground="#DD000000" FontFamily="Yu Gothic UI Semibold"/>
-        <Button x:Name="btSaitama" Content="埼玉" HorizontalAlignment="Left" Margin="672,279,0,0" VerticalAlignment="Top" Width="66" Height="29" Background="{x:Null}" BorderBrush="#FF47B3D1" Foreground="#DD000000"/>
-        <Button x:Name="btTiba" Content="千葉" HorizontalAlignment="Left" Margin="672,313,0,0" VerticalAlignment="Top" Width="66" Height="29" Background="{x:Null}" BorderBrush="#FF47B3D1" Foreground="#DD000000"/>
-        <Button x:Name="btIbaraki" Content="茨城" HorizontalAlignment="Left" Margin="672,347,0,0" VerticalAlignment="Top" Width="66" Height="29" BorderBrush="#FF47B3D1" Background="{x:Null}" RenderTransformOrigin="4.991,-3.255" Foreground="#DD000000"/>
-        <Button x:Name="btTotigi" Content="栃木" HorizontalAlignment="Left" Margin="672,381,0,0" VerticalAlignment="Top" Width="66" Height="29" BorderBrush="#FF47B3D1" Background="{x:Null}" Foreground="#DD000000"/>
-        <Button x:Name="btGunma" Content="群馬" HorizontalAlignment="Left" Margin="672,415,0,0" VerticalAlignment="Top" Width="66" Height="29" Background="{x:Null}" BorderBrush="#FF47B3D1" Foreground="#DD000000"/>
-        <Button x:Name="btOkinawa" Content="沖縄" HorizontalAlignment="Left" Margin="625,473,0,0" VerticalAlignment="Top" Width="66" Height="28" Background="{x:Null}" BorderBrush="#FFEC817C" Foreground="#DD000000"/>
-        <Button x:Name="btNigata" Content="新潟" HorizontalAlignment="Left" Margin="442,131,0,0" VerticalAlignment="Top" Width="66" Height="28" BorderBrush="#FF8BD1AE" Background="{x:Null}" Foreground="#DD000000"/>
-        <Button x:Name="btNagano" Content="長野" HorizontalAlignment="Left" Margin="442,164,0,0" VerticalAlignment="Top" Width="66" Height="28" Background="{x:Null}" BorderBrush="#FF8BD1AE" Foreground="#DD000000"/>
-        <Button x:Name="btYamanashi" Content="山梨" HorizontalAlignment="Left" Margin="442,98,0,0" VerticalAlignment="Top" Width="66" Height="28" Background="{x:Null}" BorderBrush="#FF8BD1AE" Foreground="#DD000000"/>
-        <Button x:Name="btToyama" Content="富山" HorizontalAlignment="Left" Margin="442,197,0,0" VerticalAlignment="Top" Width="66" Height="28" Background="{x:Null}" BorderBrush="#FF8BD1AE" Grid.RowSpan="2" Foreground="#DD020000"/>
-        <Button x:Name="btIshikawa" Content="石川" HorizontalAlignment="Left" Margin="442,264,0,358" Width="66" Height="Auto" Background="{x:Null}" BorderBrush="#FF8BD1AE" Foreground="#DD000000"/>
-        <Button x:Name="btHukui" Content="福井" HorizontalAlignment="Left" Margin="442,230,0,0" VerticalAlignment="Top" Width="66" Height="28" Background="{x:Null}" BorderBrush="#FF8BD1AE" Foreground="#DD000000"/>
-        <Button x:Name="btAiti" Content="愛知" HorizontalAlignment="Left" Margin="468,435,0,0" VerticalAlignment="Top" Width="66" Background="{x:Null}" BorderBrush="#FF8BD1AE" Height="28" Foreground="#DD000000"/>
-        <Button x:Name="btGihu" Content="岐阜" HorizontalAlignment="Left" Margin="468,534,0,0" VerticalAlignment="Top" Width="66" Height="28" BorderBrush="#FF8BD1AE" Background="{x:Null}" Foreground="#DD000000"/>
-        <Button x:Name="btMie" Content="三重" HorizontalAlignment="Left" Margin="468,468,0,0" VerticalAlignment="Top" Width="66" Height="28" Background="{x:Null}" BorderBrush="#FF8BD1AE" Foreground="#DD000000"/>
-        <Button x:Name="btShizuoka" Content="静岡" HorizontalAlignment="Left" Margin="468,501,0,0" VerticalAlignment="Top" Width="66" Height="28" Background="{x:Null}" BorderBrush="#FF8BD1AE" Foreground="#DD000000"/>
-        <Button x:Name="btOsaka" Content="大阪" HorizontalAlignment="Left" Margin="335,98,0,0" VerticalAlignment="Top" Width="66" Height="28" BorderBrush="#FFEEE27B" Background="{x:Null}" Foreground="#DD000000"/>
-        <Button x:Name="btHyogo" Content="兵庫" HorizontalAlignment="Left" Margin="335,131,0,0" VerticalAlignment="Top" Width="66" Height="28" Background="{x:Null}" BorderBrush="#FFEEE27B" Foreground="#DD000000"/>
-        <Button x:Name="btKyoto" Content="京都" HorizontalAlignment="Left" Margin="335,164,0,0" VerticalAlignment="Top" Width="66" Height="28" BorderBrush="#FFEEE27B" Background="{x:Null}" Foreground="#DD000000"/>
-        <Button x:Name="btShiga" Content="滋賀" HorizontalAlignment="Left" Margin="335,197,0,0" VerticalAlignment="Top" Width="66" Height="28" Background="{x:Null}" BorderBrush="#FFEEE27B" Grid.RowSpan="2" Foreground="#DD000000"/>
-        <Button x:Name="btNara" Content="奈良" HorizontalAlignment="Left" Margin="335,230,0,0" VerticalAlignment="Top" Width="66" Height="28" BorderBrush="#FFEEE27B" Background="{x:Null}" Foreground="#DD000000"/>
-        <Button x:Name="btWakayama" Content="和歌山" HorizontalAlignment="Left" Margin="335,264,0,0" VerticalAlignment="Top" Width="80" Height="30" Background="{x:Null}" BorderBrush="#FFEEE27B" Foreground="#DD000000"/>
-        <Button x:Name="btEhime" Content="愛媛" HorizontalAlignment="Left" Margin="370,459,0,0" VerticalAlignment="Top" Width="66" Height="28" Background="{x:Null}" BorderBrush="#FFFAC46F" Foreground="#DD000000"/>
-        <Button x:Name="btKagawa" Content="香川" HorizontalAlignment="Left" Margin="370,492,0,0" VerticalAlignment="Top" Width="66" Height="28" BorderBrush="#FFFAC46F" Background="{x:Null}" Foreground="#DD000000"/>
-        <Button x:Name="btTokushima" Content="徳島" HorizontalAlignment="Left" Margin="370,525,0,0" VerticalAlignment="Top" Width="66" Height="28" Background="{x:Null}" BorderBrush="#FFFAC46F" Foreground="#DD000000"/>
-        <Button x:Name="btKouti" Content="高知" HorizontalAlignment="Left" Margin="370,558,0,0" VerticalAlignment="Top" Width="66" Height="29" BorderBrush="#FFFAC46F" Background="{x:Null}" Foreground="#DD000000"/>
-        <Button x:Name="btHukuoka" Content="福岡" HorizontalAlignment="Left" Margin="233,325,0,0" VerticalAlignment="Top" Width="66" Height="27" Background="{x:Null}" BorderBrush="#FFEC817C" Foreground="#DD000000"/>
-        <Button x:Name="btSaga" Content="佐賀" HorizontalAlignment="Left" Margin="233,357,0,0" VerticalAlignment="Top" Width="66" Background="{x:Null}" BorderBrush="#FFEC817C" Height="28" Foreground="#DD000000"/>
-        <Button x:Name="btNagasaki" Content="長崎" HorizontalAlignment="Left" Margin="233,389,0,0" VerticalAlignment="Top" Width="66" Background="{x:Null}" BorderBrush="#FFEC817C" Height="28" Foreground="#DD000000"/>
-        <Button x:Name="btKumamoto" Content="熊本" HorizontalAlignment="Left" Margin="233,422,0,0" VerticalAlignment="Top" Width="66" Background="{x:Null}" BorderBrush="#FFEC817C" Height="28" Foreground="#DD000000"/>
-        <Button x:Name="btOita" Content="大分" HorizontalAlignment="Left" Margin="233,455,0,0" VerticalAlignment="Top" Width="66" BorderBrush="#FFEC817C" Background="{x:Null}" Height="28" Foreground="#DD000000"/>
-        <Button x:Name="btMiyazaki" Content="宮崎" HorizontalAlignment="Left" Margin="233,488,0,0" VerticalAlignment="Top" Width="66" Background="{x:Null}" BorderBrush="#FFEC817C" Height="28" Foreground="#DD000000"/>
-        <Button x:Name="btKagoshima" Content="鹿児島" HorizontalAlignment="Left" Margin="233,521,0,0" VerticalAlignment="Top" Width="80" BorderBrush="#FFEC817C" Background="{x:Null}" Height="29" Foreground="#DD000000"/>
-        <Button x:Name="btHiroshima" Content="広島" HorizontalAlignment="Left" Margin="233,98,0,0" VerticalAlignment="Top" Width="66" Height="28" Background="{x:Null}" BorderBrush="#FFEAA9C7" Foreground="#DD000000"/>
-        <Button x:Name="btOkayama" Content="岡山" HorizontalAlignment="Left" Margin="233,131,0,0" VerticalAlignment="Top" Width="66" Height="28" Background="{x:Null}" BorderBrush="#FFEAA9C7" Foreground="#DD000000"/>
-        <Button x:Name="btShimane" Content="島根" HorizontalAlignment="Left" Margin="233,164,0,0" VerticalAlignment="Top" Width="66" Height="28" Background="{x:Null}" BorderBrush="#FFEAA9C7" Foreground="#DD000000"/>
-        <Button x:Name="btTottori" Content="鳥取" HorizontalAlignment="Left" Margin="233,197,0,0" VerticalAlignment="Top" Width="66" Height="28" Grid.RowSpan="2" Background="{x:Null}" BorderBrush="#FFEAA9C7" Foreground="#DD000000"/>
-        <Button x:Name="btYamaguti" Content="山口" HorizontalAlignment="Left" Margin="233,230,0,0" VerticalAlignment="Top" Width="66" Height="28" Background="{x:Null}" BorderBrush="#FFEAA9C7" Foreground="#DD000000"/>
+        <Button x:Name="btKanagawa" Content="神奈川" HorizontalAlignment="Left" Margin="672,245,0,0" VerticalAlignment="Top" Width="80" Height="29" Background="{x:Null}" BorderBrush="#FF47B3D1" Foreground="#DD000000" FontFamily="Yu Gothic UI Semibold" Click="btKanagawa_Click"/>
+        <Button x:Name="btSaitama" Content="埼玉" HorizontalAlignment="Left" Margin="672,279,0,0" VerticalAlignment="Top" Width="66" Height="29" Background="{x:Null}" BorderBrush="#FF47B3D1" Foreground="#DD000000" Click="btSaitama_Click"/>
+        <Button x:Name="btTiba" Content="千葉" HorizontalAlignment="Left" Margin="672,313,0,0" VerticalAlignment="Top" Width="66" Height="29" Background="{x:Null}" BorderBrush="#FF47B3D1" Foreground="#DD000000" Click="btTiba_Click"/>
+        <Button x:Name="btIbaraki" Content="茨城" HorizontalAlignment="Left" Margin="672,347,0,0" VerticalAlignment="Top" Width="66" Height="29" BorderBrush="#FF47B3D1" Background="{x:Null}" RenderTransformOrigin="4.991,-3.255" Foreground="#DD000000" Click="btIbaraki_Click"/>
+        <Button x:Name="btTotigi" Content="栃木" HorizontalAlignment="Left" Margin="672,381,0,0" VerticalAlignment="Top" Width="66" Height="29" BorderBrush="#FF47B3D1" Background="{x:Null}" Foreground="#DD000000" Click="btTotigi_Click"/>
+        <Button x:Name="btGunma" Content="群馬" HorizontalAlignment="Left" Margin="672,415,0,0" VerticalAlignment="Top" Width="66" Height="29" Background="{x:Null}" BorderBrush="#FF47B3D1" Foreground="#DD000000" Click="btGunma_Click"/>
+        <Button x:Name="btOkinawa" Content="沖縄" HorizontalAlignment="Left" Margin="625,473,0,0" VerticalAlignment="Top" Width="66" Height="28" Background="{x:Null}" BorderBrush="#FFEC817C" Foreground="#DD000000" Click="btOkinawa_Click"/>
+        <Button x:Name="btNigata" Content="新潟" HorizontalAlignment="Left" Margin="442,131,0,0" VerticalAlignment="Top" Width="66" Height="28" BorderBrush="#FF8BD1AE" Background="{x:Null}" Foreground="#DD000000" Click="btNigata_Click"/>
+        <Button x:Name="btNagano" Content="長野" HorizontalAlignment="Left" Margin="442,164,0,0" VerticalAlignment="Top" Width="66" Height="28" Background="{x:Null}" BorderBrush="#FF8BD1AE" Foreground="#DD000000" Click="btNagano_Click"/>
+        <Button x:Name="btYamanashi" Content="山梨" HorizontalAlignment="Left" Margin="442,98,0,0" VerticalAlignment="Top" Width="66" Height="28" Background="{x:Null}" BorderBrush="#FF8BD1AE" Foreground="#DD000000" Click="btYamanashi_Click"/>
+        <Button x:Name="btToyama" Content="富山" HorizontalAlignment="Left" Margin="442,197,0,0" VerticalAlignment="Top" Width="66" Height="28" Background="{x:Null}" BorderBrush="#FF8BD1AE" Grid.RowSpan="2" Foreground="#DD020000" Click="btToyama_Click"/>
+        <Button x:Name="btIshikawa" Content="石川" HorizontalAlignment="Left" Margin="442,264,0,358" Width="66" Height="Auto" Background="{x:Null}" BorderBrush="#FF8BD1AE" Foreground="#DD000000" Click="btIshikawa_Click"/>
+        <Button x:Name="btHukui" Content="福井" HorizontalAlignment="Left" Margin="442,230,0,0" VerticalAlignment="Top" Width="66" Height="28" Background="{x:Null}" BorderBrush="#FF8BD1AE" Foreground="#DD000000" Click="btHukui_Click"/>
+        <Button x:Name="btAiti" Content="愛知" HorizontalAlignment="Left" Margin="468,435,0,0" VerticalAlignment="Top" Width="66" Background="{x:Null}" BorderBrush="#FF8BD1AE" Height="28" Foreground="#DD000000" Click="btAiti_Click"/>
+        <Button x:Name="btGihu" Content="岐阜" HorizontalAlignment="Left" Margin="468,534,0,0" VerticalAlignment="Top" Width="66" Height="28" BorderBrush="#FF8BD1AE" Background="{x:Null}" Foreground="#DD000000" Click="btGihu_Click"/>
+        <Button x:Name="btMie" Content="三重" HorizontalAlignment="Left" Margin="468,468,0,0" VerticalAlignment="Top" Width="66" Height="28" Background="{x:Null}" BorderBrush="#FF8BD1AE" Foreground="#DD000000" Click="btMie_Click"/>
+        <Button x:Name="btShizuoka" Content="静岡" HorizontalAlignment="Left" Margin="468,501,0,0" VerticalAlignment="Top" Width="66" Height="28" Background="{x:Null}" BorderBrush="#FF8BD1AE" Foreground="#DD000000" Click="btShizuoka_Click"/>
+        <Button x:Name="btOsaka" Content="大阪" HorizontalAlignment="Left" Margin="335,98,0,0" VerticalAlignment="Top" Width="66" Height="28" BorderBrush="#FFEEE27B" Background="{x:Null}" Foreground="#DD000000" Click="btOsaka_Click"/>
+        <Button x:Name="btHyogo" Content="兵庫" HorizontalAlignment="Left" Margin="335,131,0,0" VerticalAlignment="Top" Width="66" Height="28" Background="{x:Null}" BorderBrush="#FFEEE27B" Foreground="#DD000000" Click="btHyogo_Click"/>
+        <Button x:Name="btKyoto" Content="京都" HorizontalAlignment="Left" Margin="335,164,0,0" VerticalAlignment="Top" Width="66" Height="28" BorderBrush="#FFEEE27B" Background="{x:Null}" Foreground="#DD000000" Click="btKyoto_Click"/>
+        <Button x:Name="btShiga" Content="滋賀" HorizontalAlignment="Left" Margin="335,197,0,0" VerticalAlignment="Top" Width="66" Height="28" Background="{x:Null}" BorderBrush="#FFEEE27B" Grid.RowSpan="2" Foreground="#DD000000" Click="btShiga_Click"/>
+        <Button x:Name="btNara" Content="奈良" HorizontalAlignment="Left" Margin="335,230,0,0" VerticalAlignment="Top" Width="66" Height="28" BorderBrush="#FFEEE27B" Background="{x:Null}" Foreground="#DD000000" Click="btNara_Click"/>
+        <Button x:Name="btWakayama" Content="和歌山" HorizontalAlignment="Left" Margin="335,264,0,0" VerticalAlignment="Top" Width="80" Height="30" Background="{x:Null}" BorderBrush="#FFEEE27B" Foreground="#DD000000" Click="btWakayama_Click"/>
+        <Button x:Name="btEhime" Content="愛媛" HorizontalAlignment="Left" Margin="370,459,0,0" VerticalAlignment="Top" Width="66" Height="28" Background="{x:Null}" BorderBrush="#FFFAC46F" Foreground="#DD000000" Click="btEhime_Click"/>
+        <Button x:Name="btKagawa" Content="香川" HorizontalAlignment="Left" Margin="370,492,0,0" VerticalAlignment="Top" Width="66" Height="28" BorderBrush="#FFFAC46F" Background="{x:Null}" Foreground="#DD000000" Click="btKagawa_Click"/>
+        <Button x:Name="btTokushima" Content="徳島" HorizontalAlignment="Left" Margin="370,525,0,0" VerticalAlignment="Top" Width="66" Height="28" Background="{x:Null}" BorderBrush="#FFFAC46F" Foreground="#DD000000" Click="btTokushima_Click"/>
+        <Button x:Name="btKouti" Content="高知" HorizontalAlignment="Left" Margin="370,558,0,0" VerticalAlignment="Top" Width="66" Height="29" BorderBrush="#FFFAC46F" Background="{x:Null}" Foreground="#DD000000" Click="btKouti_Click"/>
+        <Button x:Name="btHukuoka" Content="福岡" HorizontalAlignment="Left" Margin="233,325,0,0" VerticalAlignment="Top" Width="66" Height="27" Background="{x:Null}" BorderBrush="#FFEC817C" Foreground="#DD000000" Click="btHukuoka_Click"/>
+        <Button x:Name="btSaga" Content="佐賀" HorizontalAlignment="Left" Margin="233,357,0,0" VerticalAlignment="Top" Width="66" Background="{x:Null}" BorderBrush="#FFEC817C" Height="28" Foreground="#DD000000" Click="btSaga_Click"/>
+        <Button x:Name="btNagasaki" Content="長崎" HorizontalAlignment="Left" Margin="233,389,0,0" VerticalAlignment="Top" Width="66" Background="{x:Null}" BorderBrush="#FFEC817C" Height="28" Foreground="#DD000000" Click="btNagasaki_Click"/>
+        <Button x:Name="btKumamoto" Content="熊本" HorizontalAlignment="Left" Margin="233,422,0,0" VerticalAlignment="Top" Width="66" Background="{x:Null}" BorderBrush="#FFEC817C" Height="28" Foreground="#DD000000" Click="btKumamoto_Click"/>
+        <Button x:Name="btOita" Content="大分" HorizontalAlignment="Left" Margin="233,455,0,0" VerticalAlignment="Top" Width="66" BorderBrush="#FFEC817C" Background="{x:Null}" Height="28" Foreground="#DD000000" Click="btOita_Click"/>
+        <Button x:Name="btMiyazaki" Content="宮崎" HorizontalAlignment="Left" Margin="233,488,0,0" VerticalAlignment="Top" Width="66" Background="{x:Null}" BorderBrush="#FFEC817C" Height="28" Foreground="#DD000000" Click="btMiyazaki_Click"/>
+        <Button x:Name="btKagoshima" Content="鹿児島" HorizontalAlignment="Left" Margin="233,521,0,0" VerticalAlignment="Top" Width="80" BorderBrush="#FFEC817C" Background="{x:Null}" Height="29" Foreground="#DD000000" Click="btKagoshima_Click"/>
+        <Button x:Name="btHiroshima" Content="広島" HorizontalAlignment="Left" Margin="233,98,0,0" VerticalAlignment="Top" Width="66" Height="28" Background="{x:Null}" BorderBrush="#FFEAA9C7" Foreground="#DD000000" Click="btHiroshima_Click"/>
+        <Button x:Name="btOkayama" Content="岡山" HorizontalAlignment="Left" Margin="233,131,0,0" VerticalAlignment="Top" Width="66" Height="28" Background="{x:Null}" BorderBrush="#FFEAA9C7" Foreground="#DD000000" Click="btOkayama_Click"/>
+        <Button x:Name="btShimane" Content="島根" HorizontalAlignment="Left" Margin="233,164,0,0" VerticalAlignment="Top" Width="66" Height="28" Background="{x:Null}" BorderBrush="#FFEAA9C7" Foreground="#DD000000" Click="btShimane_Click"/>
+        <Button x:Name="btTottori" Content="鳥取" HorizontalAlignment="Left" Margin="233,197,0,0" VerticalAlignment="Top" Width="66" Height="28" Grid.RowSpan="2" Background="{x:Null}" BorderBrush="#FFEAA9C7" Foreground="#DD000000" Click="btTottori_Click"/>
+        <Button x:Name="btYamaguti" Content="山口" HorizontalAlignment="Left" Margin="233,230,0,0" VerticalAlignment="Top" Width="66" Height="28" Background="{x:Null}" BorderBrush="#FFEAA9C7" Foreground="#DD000000" Click="btYamaguti_Click"/>
         <TextBlock HorizontalAlignment="Left" Margin="246,50,0,0" TextWrapping="Wrap" Text="県から探す" VerticalAlignment="Top" FontSize="24" FontWeight="Bold"/>
         <ScrollViewer Margin="777,74,16,360">
             <StackPanel Height="659">
@@ -105,6 +105,18 @@
                 <RadioButton x:Name="rb34" Content="" Background="Firebrick" BorderBrush="Firebrick"/>
                 <RadioButton x:Name="rb35" Content="" Background="Firebrick" BorderBrush="Firebrick"/>
                 <RadioButton x:Name="rb36" Content="" Background="Firebrick" BorderBrush="Firebrick"/>
+                <RadioButton x:Name="rb37" Content="" Background="Firebrick" BorderBrush="Firebrick"/>
+                <RadioButton x:Name="rb38" Content="" Background="Firebrick" BorderBrush="Firebrick"/>
+                <RadioButton x:Name="rb39" Content="" Background="Firebrick" BorderBrush="Firebrick"/>
+                <RadioButton x:Name="rb40" Content="" Background="Firebrick" BorderBrush="Firebrick"/>
+                <RadioButton x:Name="rb41" Content="" Background="Firebrick" BorderBrush="Firebrick"/>
+                <RadioButton x:Name="rb42" Content="" Background="Firebrick" BorderBrush="Firebrick"/>
+                <RadioButton x:Name="rb43" Content="" Background="Firebrick" BorderBrush="Firebrick"/>
+                <RadioButton x:Name="rb44" Content="" Background="Firebrick" BorderBrush="Firebrick"/>
+                <RadioButton x:Name="rb45" Content="" Background="Firebrick" BorderBrush="Firebrick"/>
+                <RadioButton x:Name="rb46" Content="" Background="Firebrick" BorderBrush="Firebrick"/>
+                <RadioButton x:Name="rb47" Content="" Background="Firebrick" BorderBrush="Firebrick"/>
+                <RadioButton x:Name="rb48" Content="" Background="Firebrick" BorderBrush="Firebrick"/>
             </StackPanel>
         </ScrollViewer>
     </Grid>
