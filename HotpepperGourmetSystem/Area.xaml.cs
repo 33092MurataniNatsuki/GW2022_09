@@ -32,8 +32,11 @@ namespace HotpepperGourmetSystem {
 
             string id = "J001239297";
 
-            var dString = wc.DownloadString("http://webservice.recruit.co.jp/hotpepper/gourmet/v1/?key=0e8af5f2f79eb4f4&id=" + id + "&format=json");
-            var json = JsonConvert.DeserializeObject<Rootobject>(dString);
+            //var dString = wc.DownloadString("http://webservice.recruit.co.jp/hotpepper/gourmet/v1/?key=0e8af5f2f79eb4f4&id=" + id + "&format=json");
+            //var json = JsonConvert.DeserializeObject<Rootobject>(dString);
+
+            var dString = wc.DownloadString("http://webservice.recruit.co.jp/hotpepper/middle_area/v1/?key=0e8af5f2f79eb4f4&middle_area&format=json");
+            var json = JsonConvert.DeserializeObject<Middle_Area>(dString);
 
             //lb1.Content = json.results.shop[0].access;
         }
@@ -68,6 +71,18 @@ namespace HotpepperGourmetSystem {
 
         private void btTokyo_Click(object sender, RoutedEventArgs e)
         {
+            //var list = new List<string>();
+            //var tokyoArea = new string[] { "011000","012000","013000","014100","015000","016000","017000","020000",
+            //                              "030000","040000","050000","060000","070000","080000","090000","100000",
+            //                              "110000","120000","130000","140000","190000","200000","210000","220000",
+            //};
+            //list.AddRange(tokyoArea);
+
+            //foreach (var item in collection)
+            //{
+
+            //}
+
             rb1.Content = "銀座・有楽町・新橋・築地・月島";
             rb2.Content = "水道橋・飯田橋・神楽坂";
             rb3.Content = "お台場";
@@ -91,6 +106,20 @@ namespace HotpepperGourmetSystem {
             rb21.Content = "新大久保・大久保";
             rb22.Content = "巣鴨・大塚・駒込";
             rb23.Content = "中野・高円寺・阿佐ヶ谷・方南町";
+            rb24.Content = "下北沢・代々木上原";
+            rb25.Content = "高田馬場";
+            rb26.Content = "池尻大橋・三軒茶屋・駒沢大学";
+            rb27.Content = "桜新町・用賀・二子玉川";
+            rb28.Content = "祐天寺・学芸大学・都立大学";
+            rb29.Content = "幡ヶ谷・笹塚・明大前・下高井戸";
+            rb30.Content = "調布・府中・千歳烏山・仙川";
+            rb31.Content = "経堂・千歳船橋";
+            rb32.Content = "祖師ヶ谷大蔵・成城学園前";
+            rb33.Content = "大井町･中延･旗の台･戸越･馬込";
+            rb34.Content = "不動前・武蔵小山";
+            rb35.Content = "雪が谷大塚・池上";
+            rb36.Content = "武蔵小金井";
         }
+
     }
 }

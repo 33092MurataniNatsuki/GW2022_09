@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HotpepperGourmetSystem"
         mc:Ignorable="d"
-        Title="Window1" Height="660" Width="1000">
+        Title="Window1" Height="690" Width="1000">
     <Grid>
         <Frame Name="frame" NavigationUIVisibility="Hidden" Loaded="frame_Loaded"/>
     </Grid>

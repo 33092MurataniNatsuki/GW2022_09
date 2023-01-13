@@ -155,7 +155,8 @@
     </Resource>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\背景Area1.png" />
+    <Resource Include="Images\背景Area10.png" />
+    <Resource Include="Images\背景Area11.png" />
     <Resource Include="Images\ジャンル.png" />
     <Resource Include="Images\ジャンル料理小.png" />
     <Resource Include="Images\ジャンル料理.png">
@@ -165,6 +166,7 @@
     <Resource Include="Images\Hotpepper.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Images\Area背景2.png" />
     <Content Include="Images\man.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
