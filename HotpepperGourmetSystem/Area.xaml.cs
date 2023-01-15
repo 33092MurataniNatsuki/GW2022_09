@@ -84,6 +84,8 @@ namespace HotpepperGourmetSystem {
             rb15.Content = "恵比寿・中目黒・代官山・広尾";
             rb16.Content = "赤坂・六本木・麻布十番・西麻布";
             rb17.Content = "自由が丘・田園調布";
+
+            decide.Content = "北海道";
         }
 
         private void btTokyo_Click(object sender, RoutedEventArgs e)
@@ -149,6 +151,8 @@ namespace HotpepperGourmetSystem {
             rb46.Content = "都営三田線（新板橋～西高島平）";
             rb47.Content = "聖蹟桜ヶ丘・高幡不動・分倍河原";
             rb48.Content = "東京都その他";
+
+            decide.Content = "東京都";
         }
 
         private void btKanagawa_Click(object sender, RoutedEventArgs e)
@@ -207,6 +211,8 @@ namespace HotpepperGourmetSystem {
             rb46.IsEnabled = false;
             rb47.IsEnabled = false;
             rb48.IsEnabled = false;
+
+            decide.Content = "神奈川県";
         }
 
         private void btTiba_Click(object sender, RoutedEventArgs e)
@@ -261,6 +267,8 @@ namespace HotpepperGourmetSystem {
             rb46.IsEnabled = false;
             rb47.IsEnabled = false;
             rb48.IsEnabled = false;
+
+            decide.Content = "千葉県";
         }
 
         private void btSaitama_Click(object sender, RoutedEventArgs e)
@@ -314,6 +322,8 @@ namespace HotpepperGourmetSystem {
             rb46.IsEnabled = false;
             rb47.IsEnabled = false;
             rb48.IsEnabled = false;
+
+            decide.Content = "埼玉県";
         }
 
         private void btAiti_Click(object sender, RoutedEventArgs e)
@@ -367,6 +377,8 @@ namespace HotpepperGourmetSystem {
             rb46.IsEnabled = false;
             rb47.IsEnabled = false;
             rb48.IsEnabled = false;
+
+            decide.Content = "愛知県";
         }
 
         private void btShizuoka_Click(object sender, RoutedEventArgs e)
@@ -420,6 +432,8 @@ namespace HotpepperGourmetSystem {
             rb46.IsEnabled = false;
             rb47.IsEnabled = false;
             rb48.IsEnabled = false;
+
+            decide.Content = "静岡県";
         }
 
         private void btTottori_Click(object sender, RoutedEventArgs e)
@@ -427,10 +441,7 @@ namespace HotpepperGourmetSystem {
             rb1.Content = "鳥取市";
             rb2.Content = "米子市";
 
-            rb3.Content = "大津";
-            rb4.Content = "長浜市・彦根市";
-            rb5.Content = "近江八幡市・東近江市";
-
+            decide.Content = "鳥取県";
         }
 
         private void btShimane_Click(object sender, RoutedEventArgs e)
@@ -438,7 +449,7 @@ namespace HotpepperGourmetSystem {
             rb1.Content = "松江";
             rb2.Content = "出雲市";
 
-            rb3.Content = "大津";
+            decide.Content = "島根県";
         }
 
         private void btShiga_Click(object sender, RoutedEventArgs e)
@@ -449,7 +460,7 @@ namespace HotpepperGourmetSystem {
             rb4.Content = "長浜市・彦根市";
             rb5.Content = "近江八幡市・東近江市";
 
-            rb6.Content = "天王寺";
+            decide.Content = "滋賀県";
         }
 
         private void btMie_Click(object sender, RoutedEventArgs e)
@@ -461,6 +472,8 @@ namespace HotpepperGourmetSystem {
             rb5.Content = "津";
             rb6.Content = "鈴鹿";
             rb7.Content = "鳥羽・志摩";
+
+            decide.Content = "三重県";
         }
 
         private void btNara_Click(object sender, RoutedEventArgs e)
@@ -469,8 +482,7 @@ namespace HotpepperGourmetSystem {
             rb2.Content = "天理市・橿原市";
             rb3.Content = "大和郡山市・生駒市";
 
-            rb4.Content = "長浜市・彦根市";
-            rb5.Content = "近江八幡市・東近江市";
+            decide.Content = "奈良県";
         }
 
         private void btOsaka_Click(object sender, RoutedEventArgs e)
@@ -496,22 +508,7 @@ namespace HotpepperGourmetSystem {
             rb19.Content = "大阪府その他";
             rb20.Content = "箕面・池田";
 
-            rb21.Content = "新大久保・大久保";
-            rb22.Content = "巣鴨・大塚・駒込";
-            rb23.Content = "中野・高円寺・阿佐ヶ谷・方南町";
-            rb24.Content = "下北沢・代々木上原";
-            rb25.Content = "高田馬場";
-            rb26.Content = "池尻大橋・三軒茶屋・駒沢大学";
-            rb27.Content = "桜新町・用賀・二子玉川";
-            rb28.Content = "祐天寺・学芸大学・都立大学";
-            rb29.Content = "幡ヶ谷・笹塚・明大前・下高井戸";
-            rb30.Content = "調布・府中・千歳烏山・仙川";
-            rb31.Content = "経堂・千歳船橋";
-            rb32.Content = "祖師ヶ谷大蔵・成城学園前";
-            rb33.Content = "大井町･中延･旗の台･戸越･馬込";
-            rb34.Content = "不動前・武蔵小山";
-            rb35.Content = "雪が谷大塚・池上";
-            rb36.Content = "武蔵小金井";
+            decide.Content = "大阪府";
         }
 
         private void btKyoto_Click(object sender, RoutedEventArgs e)
@@ -524,6 +521,8 @@ namespace HotpepperGourmetSystem {
             rb6.Content = "四条大宮・西院・右京区・西京区";
             rb7.Content = "烏丸五条・京都駅周辺";
             rb8.Content = "宮津・京丹後・京都府その他";
+
+            decide.Content = "京都府";
         }
 
         private void btHyogo_Click(object sender, RoutedEventArgs e)
@@ -541,10 +540,7 @@ namespace HotpepperGourmetSystem {
             rb11.Content = "尼崎";
             rb12.Content = "兵庫県その他";
 
-            rb13.Content = "泉大津･岸和田･泉佐野･りんくう";
-            rb14.Content = "松原市･藤井寺市･富田林･南河内";
-            rb15.Content = "江坂・西中島・新大阪・十三";
-            rb16.Content = "東大阪市・八尾市・平野・大東市";
+            decide.Content = "兵庫県";
         }
 
         private void btWakayama_Click(object sender, RoutedEventArgs e)
@@ -553,7 +549,7 @@ namespace HotpepperGourmetSystem {
             rb2.Content = "和歌山市";
             rb3.Content = "田辺市";
 
-            rb4.Content = "須磨・垂水・西区・兵庫・長田";
+            decide.Content = "和歌山県";
         }
 
         private void btIwate_Click(object sender, RoutedEventArgs e)
@@ -562,12 +558,7 @@ namespace HotpepperGourmetSystem {
             rb2.Content = "盛岡";
             rb3.Content = "花巻・北上・奥州・一関";
 
-            rb4.Content = "札幌（札幌駅・大通）";
-            rb5.Content = "麻生・北24条（北区・東区）";
-            rb6.Content = "南郷・新札幌　白石・厚別・清田";
-            rb7.Content = "琴似・円山公園　中央・西・手稲";
-            rb8.Content = "平岸・澄川（豊平区・南区）";
-            rb9.Content = "旭川";
+            decide.Content = "岩手県";
         }
 
         private void btMiyagi_Click(object sender, RoutedEventArgs e)
@@ -580,8 +571,7 @@ namespace HotpepperGourmetSystem {
             rb6.Content = "長町";
             rb7.Content = "大崎市";
 
-            rb8.Content = "平岸・澄川（豊平区・南区）";
-            rb9.Content = "旭川";
+            decide.Content = "宮城県";
         }
 
         private void btHukushima_Click(object sender, RoutedEventArgs e)
@@ -592,10 +582,7 @@ namespace HotpepperGourmetSystem {
             rb4.Content = "福島市";
             rb5.Content = "いわき・福島県その他";
 
-            rb6.Content = "長町";
-            rb7.Content = "琴似・円山公園　中央・西・手稲";
-            rb8.Content = "平岸・澄川（豊平区・南区）";
-            rb9.Content = "旭川";
+            decide.Content = "福島県";
         }
 
         private void btTotigi_Click(object sender, RoutedEventArgs e)
@@ -607,7 +594,7 @@ namespace HotpepperGourmetSystem {
             rb5.Content = "小山市・栃木市";
             rb6.Content = "足利市・佐野市";
 
-            rb7.Content = "烏丸五条・京都駅周辺";
+            decide.Content = "栃木県";
         }
 
         private void btHiroshima_Click(object sender, RoutedEventArgs e)
@@ -619,7 +606,7 @@ namespace HotpepperGourmetSystem {
             rb5.Content = "呉";
             rb6.Content = "広島県その他";
 
-            rb7.Content = "烏丸五条・京都駅周辺";
+            decide.Content = "広島県";
         }
 
         private void btOkayama_Click(object sender, RoutedEventArgs e)
@@ -629,10 +616,7 @@ namespace HotpepperGourmetSystem {
             rb3.Content = "倉敷(倉敷市郊外･児島･水島など)";
             rb4.Content = "備前・岡山県その他";
 
-            rb5.Content = "吉塚・香椎・その他東エリア";
-            rb6.Content = "大名・今泉・警固";
-            rb7.Content = "薬院･平尾･高砂";
-            rb8.Content = "大橋･その他南地区";
+            decide.Content = "岡山県";
         }
 
         private void btYamaguti_Click(object sender, RoutedEventArgs e)
@@ -645,8 +629,7 @@ namespace HotpepperGourmetSystem {
             rb6.Content = "岩国";
             rb7.Content = "防府";
 
-            rb8.Content = "平岸・澄川（豊平区・南区）";
-            rb9.Content = "旭川";
+            decide.Content = "山口県";
 
         }
 
@@ -655,6 +638,8 @@ namespace HotpepperGourmetSystem {
             rb1.Content = "高松市中心部";
             rb2.Content = "高松市郊外";
             rb3.Content = "坂出・香川県その他";
+
+            decide.Content = "香川県";
         }
 
         private void btTokushima_Click(object sender, RoutedEventArgs e)
@@ -663,7 +648,7 @@ namespace HotpepperGourmetSystem {
             rb2.Content = "高松市郊外";
             rb3.Content = "徳島県その他";
 
-            rb4.Content = "備前・岡山県その他";
+            decide.Content = "徳島県";
         }
 
         private void btEhime_Click(object sender, RoutedEventArgs e)
@@ -673,15 +658,12 @@ namespace HotpepperGourmetSystem {
             rb3.Content = "宇和島･東予･南予･愛媛県その他";
             rb4.Content = "新居浜・西条";
 
-            rb5.Content = "吉塚・香椎・その他東エリア";
-            rb6.Content = "大名・今泉・警固";
-            rb7.Content = "薬院･平尾･高砂";
-
+            decide.Content = "愛媛県";
         }
 
         private void btKouti_Click(object sender, RoutedEventArgs e)
         {
-
+            decide.Content = "高知県";
         }
 
         private void btHukuoka_Click(object sender, RoutedEventArgs e)
@@ -700,9 +682,7 @@ namespace HotpepperGourmetSystem {
             rb12.Content = "久留米";
             rb13.Content = "福岡県その他";
 
-            rb14.Content = "松原市･藤井寺市･富田林･南河内";
-            rb15.Content = "江坂・西中島・新大阪・十三";
-            rb16.Content = "東大阪市・八尾市・平野・大東市";
+            decide.Content = "福岡県";
         }
 
         private void btNagasaki_Click(object sender, RoutedEventArgs e)
@@ -719,11 +699,7 @@ namespace HotpepperGourmetSystem {
             rb10.Content = "北九州（八幡・黒崎・折尾）";
             rb11.Content = "大村市・諫早市";
 
-            rb12.Content = "久留米";
-            rb13.Content = "福岡県その他";
-            rb14.Content = "松原市･藤井寺市･富田林･南河内";
-            rb15.Content = "江坂・西中島・新大阪・十三";
-            rb16.Content = "東大阪市・八尾市・平野・大東市";
+            decide.Content = "長崎県";
         }
 
         private void btOita_Click(object sender, RoutedEventArgs e)
@@ -734,7 +710,7 @@ namespace HotpepperGourmetSystem {
             rb4.Content = "別府";
             rb5.Content = "中津市";
 
-            rb6.Content = "大名・今泉・警固";
+            decide.Content = "大分県";
         }
 
         private void btKumamoto_Click(object sender, RoutedEventArgs e)
@@ -745,7 +721,7 @@ namespace HotpepperGourmetSystem {
             rb4.Content = "阿蘇";
             rb5.Content = "天草・熊本県その他";
 
-            rb6.Content = "大名・今泉・警固";
+            decide.Content = "熊本県";
         }
 
         private void btMiyazaki_Click(object sender, RoutedEventArgs e)
@@ -756,7 +732,7 @@ namespace HotpepperGourmetSystem {
             rb4.Content = "日南市";
             rb5.Content = "延岡市・日向市";
 
-            rb6.Content = "大名・今泉・警固";
+            decide.Content = "宮崎県";
         }
 
         private void btKagoshima_Click(object sender, RoutedEventArgs e)
@@ -769,10 +745,7 @@ namespace HotpepperGourmetSystem {
             rb6.Content = "奄美・屋久島";
             rb7.Content = "霧島市";
 
-            rb8.Content = "大橋･その他南地区";
-            rb9.Content = "北九州（小倉・門司）";
-            rb10.Content = "北九州（八幡・黒崎・折尾）";
-            rb11.Content = "飯塚・筑紫野";
+            decide.Content = "鹿児島県";
         }
 
         private void btYamanashi_Click(object sender, RoutedEventArgs e)
@@ -782,6 +755,8 @@ namespace HotpepperGourmetSystem {
             rb3.Content = "北杜市";
             rb4.Content = "山梨県その他";
             rb5.Content = "甲府";
+
+            decide.Content = "山梨県";
         }
 
         private void btNagano_Click(object sender, RoutedEventArgs e)
@@ -793,6 +768,8 @@ namespace HotpepperGourmetSystem {
             rb5.Content = "松本市";
             rb6.Content = "軽井沢";
             rb7.Content = "上田・佐久";
+
+            decide.Content = "長野県";
         }
 
         private void btGihu_Click(object sender, RoutedEventArgs e)
@@ -806,9 +783,7 @@ namespace HotpepperGourmetSystem {
             rb7.Content = "多治見・土岐";
             rb8.Content = "下呂・岐阜県その他";
 
-            rb9.Content = "佐渡・新潟県その他";
-            rb10.Content = "亀田・新津エリア";
-            rb11.Content = "長岡";
+            decide.Content = "岐阜県";
         }
 
         private void btHukui_Click(object sender, RoutedEventArgs e)
@@ -818,7 +793,7 @@ namespace HotpepperGourmetSystem {
             rb3.Content = "敦賀";
             rb4.Content = "坂井市";
 
-            rb5.Content = "日野・芥見・各務原";
+            decide.Content = "福井県";
         }
 
         private void btNigata_Click(object sender, RoutedEventArgs e)
@@ -835,11 +810,7 @@ namespace HotpepperGourmetSystem {
             rb10.Content = "亀田・新津エリア";
             rb11.Content = "燕三条";
 
-            rb12.Content = "茨木";
-            rb13.Content = "泉大津･岸和田･泉佐野･りんくう";
-            rb14.Content = "松原市･藤井寺市･富田林･南河内";
-            rb15.Content = "江坂・西中島・新大阪・十三";
-            rb16.Content = "東大阪市・八尾市・平野・大東市";
+            decide.Content = "新潟県";
         }
 
         private void btToyama_Click(object sender, RoutedEventArgs e)
@@ -848,17 +819,10 @@ namespace HotpepperGourmetSystem {
             rb2.Content = "富山市";
             rb3.Content = "高岡";
 
-            rb4.Content = "新潟東区・北区エリア";
-            rb5.Content = "新潟西エリア";
-            rb6.Content = "出来島･女池･桜木･鳥屋野潟周辺";
-            rb7.Content = "上越";
-            rb8.Content = "新発田";
-            rb9.Content = "佐渡・新潟県その他";
-            rb10.Content = "亀田・新津エリア";
-            rb11.Content = "長岡";
+            decide.Content = "富山県";
         }
 
-        private void btIbaraki_Click(object sender, RoutedEventArgs e)
+        private void btIbaragi_Click(object sender, RoutedEventArgs e)
         {
             rb1.Content = "結城市";
             rb2.Content = "水戸";
@@ -868,10 +832,7 @@ namespace HotpepperGourmetSystem {
             rb6.Content = "鹿嶋・鉾田・茨城県南部他";
             rb7.Content = "土浦";
 
-            rb8.Content = "新発田";
-            rb9.Content = "佐渡・新潟県その他";
-            rb10.Content = "亀田・新津エリア";
-            rb11.Content = "長岡";
+            decide.Content = "茨城県";
 
         }
 
@@ -881,11 +842,7 @@ namespace HotpepperGourmetSystem {
             rb2.Content = "金沢(金沢駅･近江町･ひがし茶屋)";
             rb3.Content = "金沢市他・野々市・白山・内灘";
 
-            rb4.Content = "新潟東区・北区エリア";
-            rb5.Content = "新潟西エリア";
-            rb6.Content = "出来島･女池･桜木･鳥屋野潟周辺";
-            rb7.Content = "上越";
-            rb8.Content = "新発田";
+            decide.Content = "石川県";
         }
 
         private void btGunma_Click(object sender, RoutedEventArgs e)
@@ -898,6 +855,8 @@ namespace HotpepperGourmetSystem {
             rb6.Content = "高崎";
             rb7.Content = "伊勢崎・玉村";
             rb8.Content = "太田市";
+
+            decide.Content = "群馬県";
         }
 
         private void btAomori_Click(object sender, RoutedEventArgs e)
@@ -909,8 +868,7 @@ namespace HotpepperGourmetSystem {
             rb5.Content = "十和田・三沢・おいらせ町";
             rb6.Content = "むつ市・青森東部";
 
-            rb7.Content = "上越";
-            rb8.Content = "新発田";
+            decide.Content = "青森県";
         }
 
         private void btAkita_Click(object sender, RoutedEventArgs e)
@@ -919,8 +877,7 @@ namespace HotpepperGourmetSystem {
             rb2.Content = "仙北市・秋田県北部";
             rb3.Content = "横手・秋田県南部";
 
-            rb4.Content = "五所川原・青森西部";
-            rb5.Content = "十和田・三沢・おいらせ町";
+            decide.Content = "秋田県";
         }
 
         private void btYamagata_Click(object sender, RoutedEventArgs e)
@@ -930,7 +887,7 @@ namespace HotpepperGourmetSystem {
             rb3.Content = "酒田・鶴岡";
             rb4.Content = "山形県その他";
 
-            rb5.Content = "十和田・三沢・おいらせ町";
+            decide.Content = "山形県";
         }
 
         private void btSaga_Click(object sender, RoutedEventArgs e)
@@ -939,7 +896,7 @@ namespace HotpepperGourmetSystem {
             rb2.Content = "佐賀県その他";
             rb3.Content = "唐津";
 
-            rb4.Content = "山形県その他";
+            decide.Content = "佐賀県";
         }
 
         private void btOkinawa_Click(object sender, RoutedEventArgs e)
@@ -951,8 +908,7 @@ namespace HotpepperGourmetSystem {
             rb5.Content = "読谷･北谷･宜野湾･浦添･嘉手納";
             rb6.Content = "沖縄市・うるま・西原・北中城";
 
-            rb7.Content = "上越";
-            rb8.Content = "新発田";
+            decide.Content = "沖縄県";
 
 
         }

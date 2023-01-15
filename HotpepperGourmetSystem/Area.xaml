@@ -30,7 +30,7 @@
         <Button x:Name="btKanagawa" Content="神奈川" HorizontalAlignment="Left" Margin="672,245,0,0" VerticalAlignment="Top" Width="80" Height="29" Background="{x:Null}" BorderBrush="#FF47B3D1" Foreground="#DD000000" FontFamily="Yu Gothic UI Semibold" Click="btKanagawa_Click"/>
         <Button x:Name="btSaitama" Content="埼玉" HorizontalAlignment="Left" Margin="672,279,0,0" VerticalAlignment="Top" Width="66" Height="29" Background="{x:Null}" BorderBrush="#FF47B3D1" Foreground="#DD000000" Click="btSaitama_Click"/>
         <Button x:Name="btTiba" Content="千葉" HorizontalAlignment="Left" Margin="672,313,0,0" VerticalAlignment="Top" Width="66" Height="29" Background="{x:Null}" BorderBrush="#FF47B3D1" Foreground="#DD000000" Click="btTiba_Click"/>
-        <Button x:Name="btIbaraki" Content="茨城" HorizontalAlignment="Left" Margin="672,347,0,0" VerticalAlignment="Top" Width="66" Height="29" BorderBrush="#FF47B3D1" Background="{x:Null}" RenderTransformOrigin="4.991,-3.255" Foreground="#DD000000" Click="btIbaraki_Click"/>
+        <Button x:Name="btIbaragi" Content="茨城" HorizontalAlignment="Left" Margin="672,347,0,0" VerticalAlignment="Top" Width="66" Height="29" BorderBrush="#FF47B3D1" Background="{x:Null}" RenderTransformOrigin="4.991,-3.255" Foreground="#DD000000" Click="btIbaragi_Click"/>
         <Button x:Name="btTotigi" Content="栃木" HorizontalAlignment="Left" Margin="672,381,0,0" VerticalAlignment="Top" Width="66" Height="29" BorderBrush="#FF47B3D1" Background="{x:Null}" Foreground="#DD000000" Click="btTotigi_Click"/>
         <Button x:Name="btGunma" Content="群馬" HorizontalAlignment="Left" Margin="672,415,0,0" VerticalAlignment="Top" Width="66" Height="29" Background="{x:Null}" BorderBrush="#FF47B3D1" Foreground="#DD000000" Click="btGunma_Click"/>
         <Button x:Name="btOkinawa" Content="沖縄" HorizontalAlignment="Left" Margin="625,473,0,0" VerticalAlignment="Top" Width="66" Height="28" Background="{x:Null}" BorderBrush="#FFEC817C" Foreground="#DD000000" Click="btOkinawa_Click"/>
@@ -119,6 +119,7 @@
                 <RadioButton x:Name="rb48" Content="" Background="Firebrick" BorderBrush="Firebrick"/>
             </StackPanel>
         </ScrollViewer>
+        <Label x:Name="decide" Content="Label" HorizontalAlignment="Left" Margin="822,364,0,0" VerticalAlignment="Top" Height="47" Width="97"/>
     </Grid>
 
 
