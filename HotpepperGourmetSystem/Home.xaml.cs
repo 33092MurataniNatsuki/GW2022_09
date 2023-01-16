@@ -47,15 +47,5 @@ namespace HotpepperGourmetSystem {
             var genre = new Genre();
             NavigationService.Navigate(genre);
         }
-
-        private void goPicky_Click(object sender, RoutedEventArgs e) {
-            var picky = new Picky();
-            NavigationService.Navigate(picky);
-        }
-
-        private void goHistory_Click(object sender, RoutedEventArgs e) {
-            var history = new History();
-            NavigationService.Navigate(history);
-        }
     }
 }

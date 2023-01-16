@@ -72,14 +72,8 @@
     <Compile Include="Genre.xaml.cs">
       <DependentUpon>Genre.xaml</DependentUpon>
     </Compile>
-    <Compile Include="History.xaml.cs">
-      <DependentUpon>History.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Home.xaml.cs">
       <DependentUpon>Home.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Picky.xaml.cs">
-      <DependentUpon>Picky.xaml</DependentUpon>
     </Compile>
     <Compile Include="Window1.xaml.cs">
       <DependentUpon>Window1.xaml</DependentUpon>
@@ -89,10 +83,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Genre.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="History.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -113,10 +103,6 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Picky.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Window1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -155,6 +141,9 @@
     </Resource>
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Images\お金.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Images\背景Area10.png" />
     <Resource Include="Images\背景Area11.png" />
     <Resource Include="Images\ジャンル.png" />
