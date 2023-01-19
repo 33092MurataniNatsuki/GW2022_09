@@ -103,18 +103,6 @@
                 <RadioButton x:Name="rb34" Content="" Background="Firebrick" BorderBrush="Firebrick"/>
                 <RadioButton x:Name="rb35" Content="" Background="Firebrick" BorderBrush="Firebrick"/>
                 <RadioButton x:Name="rb36" Content="" Background="Firebrick" BorderBrush="Firebrick"/>
-                <RadioButton x:Name="rb37" Content="" Background="Firebrick" BorderBrush="Firebrick"/>
-                <RadioButton x:Name="rb38" Content="" Background="Firebrick" BorderBrush="Firebrick"/>
-                <RadioButton x:Name="rb39" Content="" Background="Firebrick" BorderBrush="Firebrick"/>
-                <RadioButton x:Name="rb40" Content="" Background="Firebrick" BorderBrush="Firebrick"/>
-                <RadioButton x:Name="rb41" Content="" Background="Firebrick" BorderBrush="Firebrick"/>
-                <RadioButton x:Name="rb42" Content="" Background="Firebrick" BorderBrush="Firebrick"/>
-                <RadioButton x:Name="rb43" Content="" Background="Firebrick" BorderBrush="Firebrick"/>
-                <RadioButton x:Name="rb44" Content="" Background="Firebrick" BorderBrush="Firebrick"/>
-                <RadioButton x:Name="rb45" Content="" Background="Firebrick" BorderBrush="Firebrick"/>
-                <RadioButton x:Name="rb46" Content="" Background="Firebrick" BorderBrush="Firebrick"/>
-                <RadioButton x:Name="rb47" Content="" Background="Firebrick" BorderBrush="Firebrick"/>
-                <RadioButton x:Name="rb48" Content="" Background="Firebrick" BorderBrush="Firebrick"/>
             </StackPanel>
         </ScrollViewer>
         <Label x:Name="decide" Content="Label" HorizontalAlignment="Left" Margin="822,364,0,0" VerticalAlignment="Top" Height="47" Width="97"/>

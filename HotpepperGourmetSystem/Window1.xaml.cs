@@ -32,8 +32,6 @@ namespace HotpepperGourmetSystem {
             new Uri("Home.xaml",UriKind.Relative),
             new Uri("Area.xaml",UriKind.Relative),
             new Uri("Genre.xaml",UriKind.Relative),
-            new Uri("Picky.xaml",UriKind.Relative),
-            new Uri("History.xaml",UriKind.Relative),
         };
 
         private void frame_Loaded(object sender, RoutedEventArgs e) {

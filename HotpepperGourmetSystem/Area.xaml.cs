@@ -1396,55 +1396,30 @@ namespace HotpepperGourmetSystem {
 
             allClear();
 
-            rb1.Content = "結城市";
-            rb2.Content = "水戸";
-            rb3.Content = "つくば";
-            rb4.Content = "日立・ひたちなか";
-            rb5.Content = "笠間・常陸太田・茨城県北部他";
-            rb6.Content = "鹿嶋・鉾田・茨城県南部他";
-            rb7.Content = "土浦";
+            var list1 = new List<RadioButton>();
+            var area1 = new RadioButton[] { rb1, rb2, rb3, rb4, rb5, rb6, rb7, };
+            list1.AddRange(area1);
 
-            rb8.IsEnabled = false;
-            rb9.IsEnabled = false;
-            rb10.IsEnabled = false;
-            rb11.IsEnabled = false;
-            rb12.IsEnabled = false;
-            rb13.IsEnabled = false;
-            rb14.IsEnabled = false;
-            rb15.IsEnabled = false;
-            rb16.IsEnabled = false;
-            rb17.IsEnabled = false;
-            rb18.IsEnabled = false;
-            rb19.IsEnabled = false;
-            rb20.IsEnabled = false;
-            rb21.IsEnabled = false;
-            rb22.IsEnabled = false;
-            rb23.IsEnabled = false;
-            rb24.IsEnabled = false;
-            rb25.IsEnabled = false;
-            rb26.IsEnabled = false;
-            rb27.IsEnabled = false;
-            rb28.IsEnabled = false;
-            rb29.IsEnabled = false;
-            rb30.IsEnabled = false;
-            rb31.IsEnabled = false;
-            rb32.IsEnabled = false;
-            rb33.IsEnabled = false;
-            rb34.IsEnabled = false;
-            rb35.IsEnabled = false;
-            rb36.IsEnabled = false;
-            rb37.IsEnabled = false;
-            rb38.IsEnabled = false;
-            rb39.IsEnabled = false;
-            rb40.IsEnabled = false;
-            rb41.IsEnabled = false;
-            rb42.IsEnabled = false;
-            rb43.IsEnabled = false;
-            rb44.IsEnabled = false;
-            rb45.IsEnabled = false;
-            rb46.IsEnabled = false;
-            rb47.IsEnabled = false;
-            rb48.IsEnabled = false;
+            var list2 = new List<string>();
+            var areaName = new string[] { "結城市", "水戸", "つくば", "日立・ひたちなか", "土浦", "笠間・常陸太田・茨城県北部他", "鹿嶋・鉾田・茨城県南部他", };
+
+            list2.AddRange(areaName);
+
+            for (int i = 0; i < area1.Length; i++)
+            {
+                area1[i].Content = areaName[i];
+            }
+
+            var list3 = new List<RadioButton>();
+            var area2 = new RadioButton[] {  rb8, rb9, rb10, rb11, rb12, rb13, rb14, rb15, rb16, rb17, rb18, rb19, rb20,
+                                             rb21,rb22,rb23,rb24,rb25,rb26,rb27,rb28,rb29,rb30,rb31,rb32,rb33,rb34,rb35,rb36,
+                                         };
+            list3.AddRange(area2);
+
+            for (int i = 0; i < area2.Length; i++)
+            {
+                area2[i].IsEnabled = false;
+            }
 
             decide.Content = "茨城県";
 
@@ -1456,55 +1431,30 @@ namespace HotpepperGourmetSystem {
 
             allClear();
 
-            rb1.Content = "金沢(片町･香林坊･にし茶屋周辺)";
-            rb2.Content = "金沢(金沢駅･近江町･ひがし茶屋)";
-            rb3.Content = "金沢市他・野々市・白山・内灘";
+            var list1 = new List<RadioButton>();
+            var area1 = new RadioButton[] { rb1, rb2, rb3, };
+            list1.AddRange(area1);
 
-            rb4.IsEnabled = false;
-            rb5.IsEnabled = false;
-            rb6.IsEnabled = false;
-            rb7.IsEnabled = false;
-            rb8.IsEnabled = false;
-            rb9.IsEnabled = false;
-            rb10.IsEnabled = false;
-            rb11.IsEnabled = false;
-            rb12.IsEnabled = false;
-            rb13.IsEnabled = false;
-            rb14.IsEnabled = false;
-            rb15.IsEnabled = false;
-            rb16.IsEnabled = false;
-            rb17.IsEnabled = false;
-            rb18.IsEnabled = false;
-            rb19.IsEnabled = false;
-            rb20.IsEnabled = false;
-            rb21.IsEnabled = false;
-            rb22.IsEnabled = false;
-            rb23.IsEnabled = false;
-            rb24.IsEnabled = false;
-            rb25.IsEnabled = false;
-            rb26.IsEnabled = false;
-            rb27.IsEnabled = false;
-            rb28.IsEnabled = false;
-            rb29.IsEnabled = false;
-            rb30.IsEnabled = false;
-            rb31.IsEnabled = false;
-            rb32.IsEnabled = false;
-            rb33.IsEnabled = false;
-            rb34.IsEnabled = false;
-            rb35.IsEnabled = false;
-            rb36.IsEnabled = false;
-            rb37.IsEnabled = false;
-            rb38.IsEnabled = false;
-            rb39.IsEnabled = false;
-            rb40.IsEnabled = false;
-            rb41.IsEnabled = false;
-            rb42.IsEnabled = false;
-            rb43.IsEnabled = false;
-            rb44.IsEnabled = false;
-            rb45.IsEnabled = false;
-            rb46.IsEnabled = false;
-            rb47.IsEnabled = false;
-            rb48.IsEnabled = false;
+            var list2 = new List<string>();
+            var areaName = new string[] { "金沢(片町･香林坊･にし茶屋周辺)", "金沢(金沢駅･近江町･ひがし茶屋)", "金沢市他・野々市・白山・内灘", };
+
+            list2.AddRange(areaName);
+
+            for (int i = 0; i < area1.Length; i++)
+            {
+                area1[i].Content = areaName[i];
+            }
+
+            var list3 = new List<RadioButton>();
+            var area2 = new RadioButton[] {  rb4, rb5, rb6, rb7, rb8, rb9, rb10, rb11, rb12, rb13, rb14, rb15, rb16, rb17, rb18, rb19, rb20,
+                                             rb21,rb22,rb23,rb24,rb25,rb26,rb27,rb28,rb29,rb30,rb31,rb32,rb33,rb34,rb35,rb36,
+                                         };
+            list3.AddRange(area2);
+
+            for (int i = 0; i < area2.Length; i++)
+            {
+                area2[i].IsEnabled = false;
+            }
 
             decide.Content = "石川県";
         }
@@ -1515,55 +1465,31 @@ namespace HotpepperGourmetSystem {
 
             allClear();
 
-            rb1.Content = "桐生市・みどり市";
-            rb2.Content = "館林・大泉町・邑楽町";
-            rb3.Content = "前橋";
-            rb4.Content = "草津・嬬恋";
-            rb5.Content = "伊香保・群馬県その他";
-            rb6.Content = "高崎";
-            rb7.Content = "伊勢崎・玉村";
-            rb8.Content = "太田市";
+            var list1 = new List<RadioButton>();
+            var area1 = new RadioButton[] { rb1, rb2, rb3, rb4, rb5, rb6, rb7, rb8, };
+            list1.AddRange(area1);
 
-            rb9.IsEnabled = false;
-            rb10.IsEnabled = false;
-            rb11.IsEnabled = false;
-            rb12.IsEnabled = false;
-            rb13.IsEnabled = false;
-            rb14.IsEnabled = false;
-            rb15.IsEnabled = false;
-            rb16.IsEnabled = false;
-            rb17.IsEnabled = false;
-            rb18.IsEnabled = false;
-            rb19.IsEnabled = false;
-            rb20.IsEnabled = false;
-            rb21.IsEnabled = false;
-            rb22.IsEnabled = false;
-            rb23.IsEnabled = false;
-            rb24.IsEnabled = false;
-            rb25.IsEnabled = false;
-            rb26.IsEnabled = false;
-            rb27.IsEnabled = false;
-            rb28.IsEnabled = false;
-            rb29.IsEnabled = false;
-            rb30.IsEnabled = false;
-            rb31.IsEnabled = false;
-            rb32.IsEnabled = false;
-            rb33.IsEnabled = false;
-            rb34.IsEnabled = false;
-            rb35.IsEnabled = false;
-            rb36.IsEnabled = false;
-            rb37.IsEnabled = false;
-            rb38.IsEnabled = false;
-            rb39.IsEnabled = false;
-            rb40.IsEnabled = false;
-            rb41.IsEnabled = false;
-            rb42.IsEnabled = false;
-            rb43.IsEnabled = false;
-            rb44.IsEnabled = false;
-            rb45.IsEnabled = false;
-            rb46.IsEnabled = false;
-            rb47.IsEnabled = false;
-            rb48.IsEnabled = false;
+            var list2 = new List<string>();
+            var areaName = new string[] { "桐生市・みどり市", "館林・大泉町・邑楽町", "前橋", "草津・嬬恋",
+                                        "高崎", "伊勢崎・玉村", "太田市", "伊香保・群馬県その他", };
+
+            list2.AddRange(areaName);
+
+            for (int i = 0; i < area1.Length; i++)
+            {
+                area1[i].Content = areaName[i];
+            }
+
+            var list3 = new List<RadioButton>();
+            var area2 = new RadioButton[] {  rb9, rb10, rb11, rb12, rb13, rb14, rb15, rb16, rb17, rb18, rb19, rb20,
+                                             rb21,rb22,rb23,rb24,rb25,rb26,rb27,rb28,rb29,rb30,rb31,rb32,rb33,rb34,rb35,rb36,
+                                         };
+            list3.AddRange(area2);
+
+            for (int i = 0; i < area2.Length; i++)
+            {
+                area2[i].IsEnabled = false;
+            }
 
             decide.Content = "群馬県";
         }
@@ -1574,55 +1500,30 @@ namespace HotpepperGourmetSystem {
 
             allClear();
 
-            rb1.Content = "青森市";
-            rb2.Content = "弘前";
-            rb3.Content = "八戸";
-            rb4.Content = "五所川原・青森西部";
-            rb5.Content = "十和田・三沢・おいらせ町";
-            rb6.Content = "むつ市・青森東部";
+            var list1 = new List<RadioButton>();
+            var area1 = new RadioButton[] { rb1, rb2, rb3, rb4, rb5, rb6, };
+            list1.AddRange(area1);
 
-            rb7.IsEnabled = false;
-            rb8.IsEnabled = false;
-            rb9.IsEnabled = false;
-            rb10.IsEnabled = false;
-            rb11.IsEnabled = false;
-            rb12.IsEnabled = false;
-            rb13.IsEnabled = false;
-            rb14.IsEnabled = false;
-            rb15.IsEnabled = false;
-            rb16.IsEnabled = false;
-            rb17.IsEnabled = false;
-            rb18.IsEnabled = false;
-            rb19.IsEnabled = false;
-            rb20.IsEnabled = false;
-            rb21.IsEnabled = false;
-            rb22.IsEnabled = false;
-            rb23.IsEnabled = false;
-            rb24.IsEnabled = false;
-            rb25.IsEnabled = false;
-            rb26.IsEnabled = false;
-            rb27.IsEnabled = false;
-            rb28.IsEnabled = false;
-            rb29.IsEnabled = false;
-            rb30.IsEnabled = false;
-            rb31.IsEnabled = false;
-            rb32.IsEnabled = false;
-            rb33.IsEnabled = false;
-            rb34.IsEnabled = false;
-            rb35.IsEnabled = false;
-            rb36.IsEnabled = false;
-            rb37.IsEnabled = false;
-            rb38.IsEnabled = false;
-            rb39.IsEnabled = false;
-            rb40.IsEnabled = false;
-            rb41.IsEnabled = false;
-            rb42.IsEnabled = false;
-            rb43.IsEnabled = false;
-            rb44.IsEnabled = false;
-            rb45.IsEnabled = false;
-            rb46.IsEnabled = false;
-            rb47.IsEnabled = false;
-            rb48.IsEnabled = false;
+            var list2 = new List<string>();
+            var areaName = new string[] { "青森市", "弘前", "八戸", "五所川原・青森西部", "十和田・三沢・おいらせ町", "むつ市・青森東部", };
+
+            list2.AddRange(areaName);
+
+            for (int i = 0; i < area1.Length; i++)
+            {
+                area1[i].Content = areaName[i];
+            }
+
+            var list3 = new List<RadioButton>();
+            var area2 = new RadioButton[] {  rb7, rb8, rb9, rb10, rb11, rb12, rb13, rb14, rb15, rb16, rb17, rb18, rb19, rb20,
+                                             rb21,rb22,rb23,rb24,rb25,rb26,rb27,rb28,rb29,rb30,rb31,rb32,rb33,rb34,rb35,rb36,
+                                         };
+            list3.AddRange(area2);
+
+            for (int i = 0; i < area2.Length; i++)
+            {
+                area2[i].IsEnabled = false;
+            }
 
             decide.Content = "青森県";
         }
@@ -1633,55 +1534,30 @@ namespace HotpepperGourmetSystem {
 
             allClear();
 
-            rb1.Content = "秋田市";
-            rb2.Content = "仙北市・秋田県北部";
-            rb3.Content = "横手・秋田県南部";
+            var list1 = new List<RadioButton>();
+            var area1 = new RadioButton[] { rb1, rb2, rb3, };
+            list1.AddRange(area1);
 
-            rb4.IsEnabled = false;
-            rb5.IsEnabled = false;
-            rb6.IsEnabled = false;
-            rb7.IsEnabled = false;
-            rb8.IsEnabled = false;
-            rb9.IsEnabled = false;
-            rb10.IsEnabled = false;
-            rb11.IsEnabled = false;
-            rb12.IsEnabled = false;
-            rb13.IsEnabled = false;
-            rb14.IsEnabled = false;
-            rb15.IsEnabled = false;
-            rb16.IsEnabled = false;
-            rb17.IsEnabled = false;
-            rb18.IsEnabled = false;
-            rb19.IsEnabled = false;
-            rb20.IsEnabled = false;
-            rb21.IsEnabled = false;
-            rb22.IsEnabled = false;
-            rb23.IsEnabled = false;
-            rb24.IsEnabled = false;
-            rb25.IsEnabled = false;
-            rb26.IsEnabled = false;
-            rb27.IsEnabled = false;
-            rb28.IsEnabled = false;
-            rb29.IsEnabled = false;
-            rb30.IsEnabled = false;
-            rb31.IsEnabled = false;
-            rb32.IsEnabled = false;
-            rb33.IsEnabled = false;
-            rb34.IsEnabled = false;
-            rb35.IsEnabled = false;
-            rb36.IsEnabled = false;
-            rb37.IsEnabled = false;
-            rb38.IsEnabled = false;
-            rb39.IsEnabled = false;
-            rb40.IsEnabled = false;
-            rb41.IsEnabled = false;
-            rb42.IsEnabled = false;
-            rb43.IsEnabled = false;
-            rb44.IsEnabled = false;
-            rb45.IsEnabled = false;
-            rb46.IsEnabled = false;
-            rb47.IsEnabled = false;
-            rb48.IsEnabled = false;
+            var list2 = new List<string>();
+            var areaName = new string[] { "秋田市", "仙北市・秋田県北部", "横手・秋田県南部", };
+
+            list2.AddRange(areaName);
+
+            for (int i = 0; i < area1.Length; i++)
+            {
+                area1[i].Content = areaName[i];
+            }
+
+            var list3 = new List<RadioButton>();
+            var area2 = new RadioButton[] {  rb4, rb5, rb6, rb7, rb8, rb9, rb10, rb11, rb12, rb13, rb14, rb15, rb16, rb17, rb18, rb19, rb20,
+                                             rb21,rb22,rb23,rb24,rb25,rb26,rb27,rb28,rb29,rb30,rb31,rb32,rb33,rb34,rb35,rb36,
+                                         };
+            list3.AddRange(area2);
+
+            for (int i = 0; i < area2.Length; i++)
+            {
+                area2[i].IsEnabled = false;
+            }
 
             decide.Content = "秋田県";
         }
@@ -1692,55 +1568,30 @@ namespace HotpepperGourmetSystem {
 
             allClear();
 
-            rb1.Content = "山形市";
-            rb2.Content = "米沢";
-            rb3.Content = "酒田・鶴岡";
-            rb4.Content = "山形県その他";
+            var list1 = new List<RadioButton>();
+            var area1 = new RadioButton[] { rb1, rb2, rb3, rb4, };
+            list1.AddRange(area1);
 
-            rb5.IsEnabled = false;
-            rb6.IsEnabled = false;
-            rb7.IsEnabled = false;
-            rb8.IsEnabled = false;
-            rb9.IsEnabled = false;
-            rb10.IsEnabled = false;
-            rb11.IsEnabled = false;
-            rb12.IsEnabled = false;
-            rb13.IsEnabled = false;
-            rb14.IsEnabled = false;
-            rb15.IsEnabled = false;
-            rb16.IsEnabled = false;
-            rb17.IsEnabled = false;
-            rb18.IsEnabled = false;
-            rb19.IsEnabled = false;
-            rb20.IsEnabled = false;
-            rb21.IsEnabled = false;
-            rb22.IsEnabled = false;
-            rb23.IsEnabled = false;
-            rb24.IsEnabled = false;
-            rb25.IsEnabled = false;
-            rb26.IsEnabled = false;
-            rb27.IsEnabled = false;
-            rb28.IsEnabled = false;
-            rb29.IsEnabled = false;
-            rb30.IsEnabled = false;
-            rb31.IsEnabled = false;
-            rb32.IsEnabled = false;
-            rb33.IsEnabled = false;
-            rb34.IsEnabled = false;
-            rb35.IsEnabled = false;
-            rb36.IsEnabled = false;
-            rb37.IsEnabled = false;
-            rb38.IsEnabled = false;
-            rb39.IsEnabled = false;
-            rb40.IsEnabled = false;
-            rb41.IsEnabled = false;
-            rb42.IsEnabled = false;
-            rb43.IsEnabled = false;
-            rb44.IsEnabled = false;
-            rb45.IsEnabled = false;
-            rb46.IsEnabled = false;
-            rb47.IsEnabled = false;
-            rb48.IsEnabled = false;
+            var list2 = new List<string>();
+            var areaName = new string[] { "山形市", "山形市", "酒田・鶴岡", "山形県その他" ,};
+
+            list2.AddRange(areaName);
+
+            for (int i = 0; i < area1.Length; i++)
+            {
+                area1[i].Content = areaName[i];
+            }
+
+            var list3 = new List<RadioButton>();
+            var area2 = new RadioButton[] {  rb5, rb6, rb7, rb8, rb9, rb10, rb11, rb12, rb13, rb14, rb15, rb16, rb17, rb18, rb19, rb20,
+                                             rb21,rb22,rb23,rb24,rb25,rb26,rb27,rb28,rb29,rb30,rb31,rb32,rb33,rb34,rb35,rb36,
+                                         };
+            list3.AddRange(area2);
+
+            for (int i = 0; i < area2.Length; i++)
+            {
+                area2[i].IsEnabled = false;
+            }
 
             decide.Content = "山形県";
         }
@@ -1751,55 +1602,30 @@ namespace HotpepperGourmetSystem {
 
             allClear();
 
-            rb1.Content = "佐賀市";
-            rb2.Content = "佐賀県その他";
-            rb3.Content = "唐津";
+            var list1 = new List<RadioButton>();
+            var area1 = new RadioButton[] { rb1, rb2, rb3, };
+            list1.AddRange(area1);
 
-            rb4.IsEnabled = false;
-            rb5.IsEnabled = false;
-            rb6.IsEnabled = false;
-            rb7.IsEnabled = false;
-            rb8.IsEnabled = false;
-            rb9.IsEnabled = false;
-            rb10.IsEnabled = false;
-            rb11.IsEnabled = false;
-            rb12.IsEnabled = false;
-            rb13.IsEnabled = false;
-            rb14.IsEnabled = false;
-            rb15.IsEnabled = false;
-            rb16.IsEnabled = false;
-            rb17.IsEnabled = false;
-            rb18.IsEnabled = false;
-            rb19.IsEnabled = false;
-            rb20.IsEnabled = false;
-            rb21.IsEnabled = false;
-            rb22.IsEnabled = false;
-            rb23.IsEnabled = false;
-            rb24.IsEnabled = false;
-            rb25.IsEnabled = false;
-            rb26.IsEnabled = false;
-            rb27.IsEnabled = false;
-            rb28.IsEnabled = false;
-            rb29.IsEnabled = false;
-            rb30.IsEnabled = false;
-            rb31.IsEnabled = false;
-            rb32.IsEnabled = false;
-            rb33.IsEnabled = false;
-            rb34.IsEnabled = false;
-            rb35.IsEnabled = false;
-            rb36.IsEnabled = false;
-            rb37.IsEnabled = false;
-            rb38.IsEnabled = false;
-            rb39.IsEnabled = false;
-            rb40.IsEnabled = false;
-            rb41.IsEnabled = false;
-            rb42.IsEnabled = false;
-            rb43.IsEnabled = false;
-            rb44.IsEnabled = false;
-            rb45.IsEnabled = false;
-            rb46.IsEnabled = false;
-            rb47.IsEnabled = false;
-            rb48.IsEnabled = false;
+            var list2 = new List<string>();
+            var areaName = new string[] { "佐賀市", "佐賀県その他", "唐津", };
+
+            list2.AddRange(areaName);
+
+            for (int i = 0; i < area1.Length; i++)
+            {
+                area1[i].Content = areaName[i];
+            }
+
+            var list3 = new List<RadioButton>();
+            var area2 = new RadioButton[] {  rb4, rb5, rb6, rb7, rb8, rb9, rb10, rb11, rb12, rb13, rb14, rb15, rb16, rb17, rb18, rb19, rb20,
+                                             rb21,rb22,rb23,rb24,rb25,rb26,rb27,rb28,rb29,rb30,rb31,rb32,rb33,rb34,rb35,rb36,
+                                         };
+            list3.AddRange(area2);
+
+            for (int i = 0; i < area2.Length; i++)
+            {
+                area2[i].IsEnabled = false;
+            }
 
             decide.Content = "佐賀県";
         }
@@ -1810,55 +1636,31 @@ namespace HotpepperGourmetSystem {
 
             allClear();
 
-            rb1.Content = "那覇";
-            rb2.Content = "糸満・豊見城・南風原・南城";
-            rb3.Content = "石垣島・宮古島・沖縄離島";
-            rb4.Content = "名護・恩納村・本部町";
-            rb5.Content = "読谷･北谷･宜野湾･浦添･嘉手納";
-            rb6.Content = "沖縄市・うるま・西原・北中城";
+            var list1 = new List<RadioButton>();
+            var area1 = new RadioButton[] { rb1, rb2, rb3, };
+            list1.AddRange(area1);
 
-            rb7.IsEnabled = false;
-            rb8.IsEnabled = false;
-            rb9.IsEnabled = false;
-            rb10.IsEnabled = false;
-            rb11.IsEnabled = false;
-            rb12.IsEnabled = false;
-            rb13.IsEnabled = false;
-            rb14.IsEnabled = false;
-            rb15.IsEnabled = false;
-            rb16.IsEnabled = false;
-            rb17.IsEnabled = false;
-            rb18.IsEnabled = false;
-            rb19.IsEnabled = false;
-            rb20.IsEnabled = false;
-            rb21.IsEnabled = false;
-            rb22.IsEnabled = false;
-            rb23.IsEnabled = false;
-            rb24.IsEnabled = false;
-            rb25.IsEnabled = false;
-            rb26.IsEnabled = false;
-            rb27.IsEnabled = false;
-            rb28.IsEnabled = false;
-            rb29.IsEnabled = false;
-            rb30.IsEnabled = false;
-            rb31.IsEnabled = false;
-            rb32.IsEnabled = false;
-            rb33.IsEnabled = false;
-            rb34.IsEnabled = false;
-            rb35.IsEnabled = false;
-            rb36.IsEnabled = false;
-            rb37.IsEnabled = false;
-            rb38.IsEnabled = false;
-            rb39.IsEnabled = false;
-            rb40.IsEnabled = false;
-            rb41.IsEnabled = false;
-            rb42.IsEnabled = false;
-            rb43.IsEnabled = false;
-            rb44.IsEnabled = false;
-            rb45.IsEnabled = false;
-            rb46.IsEnabled = false;
-            rb47.IsEnabled = false;
-            rb48.IsEnabled = false;
+            var list2 = new List<string>();
+            var areaName = new string[] { "那覇", "糸満・豊見城・南風原・南城", "石垣島・宮古島・沖縄離島", "名護・恩納村・本部町",
+                                        "読谷･北谷･宜野湾･浦添･嘉手納", "沖縄市・うるま・西原・北中城", };
+
+            list2.AddRange(areaName);
+
+            for (int i = 0; i < area1.Length; i++)
+            {
+                area1[i].Content = areaName[i];
+            }
+
+            var list3 = new List<RadioButton>();
+            var area2 = new RadioButton[] {  rb7, rb8, rb9, rb10, rb11, rb12, rb13, rb14, rb15, rb16, rb17, rb18, rb19, rb20,
+                                             rb21,rb22,rb23,rb24,rb25,rb26,rb27,rb28,rb29,rb30,rb31,rb32,rb33,rb34,rb35,rb36,
+                                         };
+            list3.AddRange(area2);
+
+            for (int i = 0; i < area2.Length; i++)
+            {
+                area2[i].IsEnabled = false;
+            }
 
             decide.Content = "沖縄県";
         }
