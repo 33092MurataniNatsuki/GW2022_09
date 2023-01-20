@@ -15,6 +15,7 @@
         <Image HorizontalAlignment="Left" Height="50" Margin="31,32,0,0" VerticalAlignment="Top" Width="132" Source="Images/Hotpepper.jpg"/>
         <Image HorizontalAlignment="Left" Height="424" Margin="282,92,0,0" VerticalAlignment="Top" Width="409" Source="Images/日本地図1.png" Grid.RowSpan="7"/>
         <TextBlock HorizontalAlignment="Left" Margin="45,208,0,0" TextWrapping="Wrap" Text="── 地域 ──" VerticalAlignment="Top" Height="22" Width="108" FontSize="16" Foreground="Black" FontWeight="Bold"/>
+        <Label x:Name="lbColor" Content="" HorizontalAlignment="Left" Margin="777,320,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.972,-0.5" Height="174" Width="191"/>
         <Button x:Name="goHome" Content="HOME" HorizontalAlignment="Left" Margin="31,292,0,0" VerticalAlignment="Top" Width="138" Background="#FF252525" BorderBrush="{x:Null}" Click="goHome_Click"/>
         <Button x:Name="goGenre" Content="ジャンル" HorizontalAlignment="Left" Margin="31,385,0,0" VerticalAlignment="Top" Width="138" Background="#FF252525" BorderBrush="{x:Null}" Click="goGenre_Click"/>
         <Button x:Name="btHokkaido" Content="北海道" HorizontalAlignment="Left" Margin="637,98,0,0" VerticalAlignment="Top" Width="80" Height="28" Foreground="#DD000000" BorderBrush="#FFB381B2" Background="{x:Null}" Click="btHokkaido_Click"/>
@@ -65,47 +66,49 @@
         <Button x:Name="btTottori" Content="鳥取" HorizontalAlignment="Left" Margin="233,197,0,0" VerticalAlignment="Top" Width="66" Height="28" Grid.RowSpan="2" Background="{x:Null}" BorderBrush="#FFEAA9C7" Foreground="#DD000000" Click="btTottori_Click"/>
         <Button x:Name="btYamaguti" Content="山口" HorizontalAlignment="Left" Margin="233,230,0,0" VerticalAlignment="Top" Width="66" Height="28" Background="{x:Null}" BorderBrush="#FFEAA9C7" Foreground="#DD000000" Click="btYamaguti_Click"/>
         <TextBlock HorizontalAlignment="Left" Margin="246,50,0,0" TextWrapping="Wrap" Text="県から探す" VerticalAlignment="Top" FontSize="24" FontWeight="Bold"/>
-        <ScrollViewer Margin="777,74,16,360">
+        <ScrollViewer Margin="774,74,17,360">
             <StackPanel Height="659">
-                <RadioButton x:Name="rb1" Content="" Background="Firebrick" BorderBrush="Firebrick"/>
-                <RadioButton x:Name="rb2" Content="" Background="Firebrick" BorderBrush="Firebrick"/>
-                <RadioButton x:Name="rb3" Content="" Background="Firebrick" BorderBrush="Firebrick"/>
-                <RadioButton x:Name="rb4" Content="" Background="Firebrick" BorderBrush="Firebrick"/>
-                <RadioButton x:Name="rb5" Content="" Background="Firebrick" BorderBrush="Firebrick"/>
-                <RadioButton x:Name="rb6" Content="" Background="Firebrick" BorderBrush="Firebrick"/>
-                <RadioButton x:Name="rb7" Content="" Background="Firebrick" BorderBrush="Firebrick"/>
-                <RadioButton x:Name="rb8" Content="" Background="Firebrick" BorderBrush="Firebrick"/>
-                <RadioButton x:Name="rb9" Content="" Background="Firebrick" BorderBrush="Firebrick"/>
-                <RadioButton x:Name="rb10" Content="" Background="Firebrick" BorderBrush="Firebrick"/>
-                <RadioButton x:Name="rb11" Content="" Background="Firebrick" BorderBrush="Firebrick"/>
-                <RadioButton x:Name="rb12" Content="" Background="Firebrick" BorderBrush="Firebrick"/>
-                <RadioButton x:Name="rb13" Content="" Background="Firebrick" BorderBrush="Firebrick"/>
-                <RadioButton x:Name="rb14" Content="" Background="Firebrick" BorderBrush="Firebrick"/>
-                <RadioButton x:Name="rb15" Content="" Background="Firebrick" BorderBrush="Firebrick"/>
-                <RadioButton x:Name="rb16" Content="" Background="Firebrick" BorderBrush="Firebrick"/>
-                <RadioButton x:Name="rb17" Content="" Background="Firebrick" BorderBrush="Firebrick"/>
-                <RadioButton x:Name="rb18" Content="" Background="Firebrick" BorderBrush="Firebrick"/>
-                <RadioButton x:Name="rb19" Content="" Background="Firebrick" BorderBrush="Firebrick"/>
-                <RadioButton x:Name="rb20" Content="" Background="Firebrick" BorderBrush="Firebrick"/>
-                <RadioButton x:Name="rb21" Content="" Background="Firebrick" BorderBrush="Firebrick"/>
-                <RadioButton x:Name="rb22" Content="" Background="Firebrick" BorderBrush="Firebrick"/>
-                <RadioButton x:Name="rb23" Content="" Background="Firebrick" BorderBrush="Firebrick"/>
-                <RadioButton x:Name="rb24" Content="" Background="Firebrick" BorderBrush="Firebrick"/>
-                <RadioButton x:Name="rb25" Content="" Background="Firebrick" BorderBrush="Firebrick"/>
-                <RadioButton x:Name="rb26" Content="" Background="Firebrick" BorderBrush="Firebrick"/>
-                <RadioButton x:Name="rb27" Content="" Background="Firebrick" BorderBrush="Firebrick"/>
-                <RadioButton x:Name="rb28" Content="" Background="Firebrick" BorderBrush="Firebrick"/>
-                <RadioButton x:Name="rb29" Content="" Background="Firebrick" BorderBrush="Firebrick"/>
-                <RadioButton x:Name="rb30" Content="" Background="Firebrick" BorderBrush="Firebrick"/>
-                <RadioButton x:Name="rb31" Content="" Background="Firebrick" BorderBrush="Firebrick"/>
-                <RadioButton x:Name="rb32" Content="" Background="Firebrick" BorderBrush="Firebrick"/>
-                <RadioButton x:Name="rb33" Content="" Background="Firebrick" BorderBrush="Firebrick"/>
-                <RadioButton x:Name="rb34" Content="" Background="Firebrick" BorderBrush="Firebrick"/>
-                <RadioButton x:Name="rb35" Content="" Background="Firebrick" BorderBrush="Firebrick"/>
-                <RadioButton x:Name="rb36" Content="" Background="Firebrick" BorderBrush="Firebrick"/>
+                <RadioButton x:Name="rb1" Content="" Background="Firebrick" BorderBrush="Firebrick" Checked="rb_Checked"/>
+                <RadioButton x:Name="rb2" Content="" Background="Firebrick" BorderBrush="Firebrick" Checked="rb_Checked"/>
+                <RadioButton x:Name="rb3" Content="" Background="Firebrick" BorderBrush="Firebrick" Checked="rb_Checked"/>
+                <RadioButton x:Name="rb4" Content="" Background="Firebrick" BorderBrush="Firebrick" Checked="rb_Checked"/>
+                <RadioButton x:Name="rb5" Content="" Background="Firebrick" BorderBrush="Firebrick" Checked="rb_Checked"/>
+                <RadioButton x:Name="rb6" Content="" Background="Firebrick" BorderBrush="Firebrick" Checked="rb_Checked"/>
+                <RadioButton x:Name="rb7" Content="" Background="Firebrick" BorderBrush="Firebrick" Checked="rb_Checked"/>
+                <RadioButton x:Name="rb8" Content="" Background="Firebrick" BorderBrush="Firebrick" Checked="rb_Checked"/>
+                <RadioButton x:Name="rb9" Content="" Background="Firebrick" BorderBrush="Firebrick" Checked="rb_Checked"/>
+                <RadioButton x:Name="rb10" Content="" Background="Firebrick" BorderBrush="Firebrick" Checked="rb_Checked"/>
+                <RadioButton x:Name="rb11" Content="" Background="Firebrick" BorderBrush="Firebrick" Checked="rb_Checked"/>
+                <RadioButton x:Name="rb12" Content="" Background="Firebrick" BorderBrush="Firebrick" Checked="rb_Checked"/>
+                <RadioButton x:Name="rb13" Content="" Background="Firebrick" BorderBrush="Firebrick" Checked="rb_Checked"/>
+                <RadioButton x:Name="rb14" Content="" Background="Firebrick" BorderBrush="Firebrick" Checked="rb_Checked"/>
+                <RadioButton x:Name="rb15" Content="" Background="Firebrick" BorderBrush="Firebrick" Checked="rb_Checked"/>
+                <RadioButton x:Name="rb16" Content="" Background="Firebrick" BorderBrush="Firebrick" Checked="rb_Checked"/>
+                <RadioButton x:Name="rb17" Content="" Background="Firebrick" BorderBrush="Firebrick" Checked="rb_Checked"/>
+                <RadioButton x:Name="rb18" Content="" Background="Firebrick" BorderBrush="Firebrick" Checked="rb_Checked"/>
+                <RadioButton x:Name="rb19" Content="" Background="Firebrick" BorderBrush="Firebrick" Checked="rb_Checked"/>
+                <RadioButton x:Name="rb20" Content="" Background="Firebrick" BorderBrush="Firebrick" Checked="rb_Checked"/>
+                <RadioButton x:Name="rb21" Content="" Background="Firebrick" BorderBrush="Firebrick" Checked="rb_Checked"/>
+                <RadioButton x:Name="rb22" Content="" Background="Firebrick" BorderBrush="Firebrick" Checked="rb_Checked"/>
+                <RadioButton x:Name="rb23" Content="" Background="Firebrick" BorderBrush="Firebrick" Checked="rb_Checked"/>
+                <RadioButton x:Name="rb24" Content="" Background="Firebrick" BorderBrush="Firebrick" Checked="rb_Checked"/>
+                <RadioButton x:Name="rb25" Content="" Background="Firebrick" BorderBrush="Firebrick" Checked="rb_Checked"/>
+                <RadioButton x:Name="rb26" Content="" Background="Firebrick" BorderBrush="Firebrick" Checked="rb_Checked"/>
+                <RadioButton x:Name="rb27" Content="" Background="Firebrick" BorderBrush="Firebrick" Checked="rb_Checked"/>
+                <RadioButton x:Name="rb28" Content="" Background="Firebrick" BorderBrush="Firebrick" Checked="rb_Checked"/>
+                <RadioButton x:Name="rb29" Content="" Background="Firebrick" BorderBrush="Firebrick" Checked="rb_Checked"/>
+                <RadioButton x:Name="rb30" Content="" Background="Firebrick" BorderBrush="Firebrick" Checked="rb_Checked"/>
+                <RadioButton x:Name="rb31" Content="" Background="Firebrick" BorderBrush="Firebrick" Checked="rb_Checked"/>
+                <RadioButton x:Name="rb32" Content="" Background="Firebrick" BorderBrush="Firebrick" Checked="rb_Checked"/>
+                <RadioButton x:Name="rb33" Content="" Background="Firebrick" BorderBrush="Firebrick" Checked="rb_Checked"/>
+                <RadioButton x:Name="rb34" Content="" Background="Firebrick" BorderBrush="Firebrick" Checked="rb_Checked"/>
+                <RadioButton x:Name="rb35" Content="" Background="Firebrick" BorderBrush="Firebrick" Checked="rb_Checked"/>
+                <RadioButton x:Name="rb36" Content="" Background="Firebrick" BorderBrush="Firebrick" Checked="rb_Checked"/>
             </StackPanel>
         </ScrollViewer>
-        <Label x:Name="decide" Content="Label" HorizontalAlignment="Left" Margin="822,364,0,0" VerticalAlignment="Top" Height="47" Width="97"/>
+        <Label x:Name="lbDecide" Content="a" HorizontalAlignment="Left" Margin="786,337,0,0" VerticalAlignment="Top" Height="39" Width="126" FontSize="24"/>
+        <Label x:Name="lbDecideCb" Content="b" HorizontalAlignment="Left" Margin="774,389,0,0" VerticalAlignment="Top" Width="194"/>
+        <Button x:Name="btSearch" Content="選択する" HorizontalAlignment="Left" Margin="827,435,0,0" VerticalAlignment="Top" Width="94" Click="btSearch_Click" Height="37" Background="{x:Null}" BorderBrush="Firebrick" Foreground="Black"/>
     </Grid>
 
 
