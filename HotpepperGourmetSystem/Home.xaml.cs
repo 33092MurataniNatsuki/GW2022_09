@@ -20,6 +20,10 @@ namespace HotpepperGourmetSystem {
     /// Home.xaml の相互作用ロジック
     /// </summary>
     public partial class Home : Page {
+
+        //親ウィンドウのインスタンスを取得
+        Window1 parent = (Window1)Application.Current.MainWindow;
+
         public Home() {
 
             InitializeComponent();
@@ -27,6 +31,10 @@ namespace HotpepperGourmetSystem {
             var wc = new WebClient() {
                 Encoding = Encoding.UTF8
             };
+
+            lbPref.Content = parent.selectedPref;
+            lbCity.Content = parent.selectedArea;
+            lbGenre.Content = parent.selectedGenre;
 
             string id = "J001239297";
 

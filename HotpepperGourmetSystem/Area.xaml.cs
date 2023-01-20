@@ -22,12 +22,14 @@ namespace HotpepperGourmetSystem {
     public partial class Area : Page
     {
         NavigationService _navigation;
+
+        //親ウィンドウのインスタンスを取得
+        Window1 parent = (Window1)Application.Current.MainWindow;
+
         public Area() {
             InitializeComponent();
 
             rbCheckOff();
-
-            
 
             var wc = new WebClient()
             {
@@ -114,6 +116,8 @@ namespace HotpepperGourmetSystem {
 
         private void btHokkaido_Click(object sender, RoutedEventArgs e)
         {
+
+
             lbWhite();
 
             rbCheckOn();
@@ -1777,8 +1781,20 @@ namespace HotpepperGourmetSystem {
         {
             if (lbDecideCb.Content != rb1.Content)
             {
-                lbColor.Background = Brushes.WhiteSmoke;
+                lbColor.Background = Brushes.GhostWhite;
+                //lbColor.Background = Brushes.AliceBlue;
             }
+            if (lbDecideCb.Content != rb2.Content)
+            {
+                lbColor.Background = Brushes.GhostWhite;
+                //lbColor.Background = Brushes.AliceBlue;
+            }
+
+            parent.selectedPref = (string)lbDecide.Content;
+            parent.selectedArea = (string)lbDecideCb.Content;
+
+            var home = new Home();
+            NavigationService.Navigate(home);
         }
 
         private void lbWhite()

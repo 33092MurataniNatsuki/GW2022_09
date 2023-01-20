@@ -19,6 +19,11 @@ namespace HotpepperGourmetSystem {
     /// </summary>
     public partial class Window1 : Window {
         private NavigationService navi;
+
+        public string selectedPref = "";
+        public string selectedArea = "";
+        public string selectedGenre = "";
+
         public Window1() {
             InitializeComponent();
 
@@ -26,6 +31,7 @@ namespace HotpepperGourmetSystem {
             frame.Source = uri;
 
             navi = this.frame.NavigationService;
+
         }
 
         private List<Uri> uriList = new List<Uri>() {

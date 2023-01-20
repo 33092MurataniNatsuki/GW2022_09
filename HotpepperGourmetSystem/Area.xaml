@@ -15,7 +15,7 @@
         <Image HorizontalAlignment="Left" Height="50" Margin="31,32,0,0" VerticalAlignment="Top" Width="132" Source="Images/Hotpepper.jpg"/>
         <Image HorizontalAlignment="Left" Height="424" Margin="282,92,0,0" VerticalAlignment="Top" Width="409" Source="Images/日本地図1.png" Grid.RowSpan="7"/>
         <TextBlock HorizontalAlignment="Left" Margin="45,208,0,0" TextWrapping="Wrap" Text="── 地域 ──" VerticalAlignment="Top" Height="22" Width="108" FontSize="16" Foreground="Black" FontWeight="Bold"/>
-        <Label x:Name="lbColor" Content="" HorizontalAlignment="Left" Margin="777,320,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.972,-0.5" Height="174" Width="191"/>
+        <Label x:Name="lbColor" Content="" HorizontalAlignment="Left" Margin="777,320,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.972,-0.5" Height="174" Width="189"/>
         <Button x:Name="goHome" Content="HOME" HorizontalAlignment="Left" Margin="31,292,0,0" VerticalAlignment="Top" Width="138" Background="#FF252525" BorderBrush="{x:Null}" Click="goHome_Click"/>
         <Button x:Name="goGenre" Content="ジャンル" HorizontalAlignment="Left" Margin="31,385,0,0" VerticalAlignment="Top" Width="138" Background="#FF252525" BorderBrush="{x:Null}" Click="goGenre_Click"/>
         <Button x:Name="btHokkaido" Content="北海道" HorizontalAlignment="Left" Margin="637,98,0,0" VerticalAlignment="Top" Width="80" Height="28" Foreground="#DD000000" BorderBrush="#FFB381B2" Background="{x:Null}" Click="btHokkaido_Click"/>
@@ -106,8 +106,8 @@
                 <RadioButton x:Name="rb36" Content="" Background="Firebrick" BorderBrush="Firebrick" Checked="rb_Checked"/>
             </StackPanel>
         </ScrollViewer>
-        <Label x:Name="lbDecide" Content="a" HorizontalAlignment="Left" Margin="786,337,0,0" VerticalAlignment="Top" Height="39" Width="126" FontSize="24"/>
-        <Label x:Name="lbDecideCb" Content="b" HorizontalAlignment="Left" Margin="774,389,0,0" VerticalAlignment="Top" Width="194"/>
+        <Label x:Name="lbDecide" Content="" HorizontalAlignment="Left" Margin="786,337,0,0" VerticalAlignment="Top" Height="39" Width="126" FontSize="24"/>
+        <Label x:Name="lbDecideCb" Content="" HorizontalAlignment="Left" Margin="774,389,0,0" VerticalAlignment="Top" Width="192"/>
         <Button x:Name="btSearch" Content="選択する" HorizontalAlignment="Left" Margin="827,435,0,0" VerticalAlignment="Top" Width="94" Click="btSearch_Click" Height="37" Background="{x:Null}" BorderBrush="Firebrick" Foreground="Black"/>
     </Grid>
 
