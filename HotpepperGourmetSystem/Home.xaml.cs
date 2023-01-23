@@ -68,6 +68,11 @@ namespace HotpepperGourmetSystem {
                 "30001円",
             };
 
+            //MenuItem mi = new MenuItem();
+            //mi.Header = "500円";
+            //mi.IsEnabled = false;
+            //cbBudgetMax.Items.Add(mi);
+
             cbBudgetMax.ItemsSource = new string[]
             {
                 "指定なし",
@@ -120,6 +125,31 @@ namespace HotpepperGourmetSystem {
             NavigationService.Navigate(genre);
         }
 
-        
+        private void cbBudgetMin_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            var list = new List<ComboBox>();
+            var num = new ComboBox[] { cbBudgetMin };
+            list.AddRange(num);
+
+            var list2 = new List<int>();
+            var index = new int[] { 1,2,3,4,5,6,7,8,9,10,11,12, };
+            list2.AddRange(index);
+
+            for (int i2 = 0; i2 < index.Length; i2++)
+            {
+                if (cbBudgetMin.SelectedIndex == i2)
+                {
+                    for (int i1 = 1; i1 < num.Length; i1++)
+                    {
+                        num[i1].IsEnabled = false;
+                    }
+                }
+            }
+        }
+
+        private void btClose_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

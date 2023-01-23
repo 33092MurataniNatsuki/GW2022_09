@@ -31,6 +31,8 @@ namespace HotpepperGourmetSystem {
 
             rbCheckOff();
 
+            rb1.Content = "指定なし";
+
             var wc = new WebClient()
             {
                 Encoding = Encoding.UTF8
@@ -116,7 +118,7 @@ namespace HotpepperGourmetSystem {
 
         private void btHokkaido_Click(object sender, RoutedEventArgs e)
         {
-
+            rb1.IsChecked = true;
 
             lbWhite();
 
@@ -161,6 +163,8 @@ namespace HotpepperGourmetSystem {
 
         private void btTokyo_Click(object sender, RoutedEventArgs e)
         {
+            rb1.IsChecked = true;
+
             lbWhite();
 
             rbCheckOn();
@@ -197,6 +201,8 @@ namespace HotpepperGourmetSystem {
 
         private void btKanagawa_Click(object sender, RoutedEventArgs e)
         {
+            rb1.IsChecked = true;
+
             lbWhite();
 
             rbCheckOn();
@@ -238,6 +244,8 @@ namespace HotpepperGourmetSystem {
 
         private void btTiba_Click(object sender, RoutedEventArgs e)
         {
+            rb1.IsChecked = true;
+
             lbWhite();
 
             rbCheckOn();
@@ -276,6 +284,8 @@ namespace HotpepperGourmetSystem {
 
         private void btSaitama_Click(object sender, RoutedEventArgs e)
         {
+            rb1.IsChecked = true;
+
             lbWhite();
 
             rbCheckOn();
@@ -314,6 +324,8 @@ namespace HotpepperGourmetSystem {
 
         private void btAiti_Click(object sender, RoutedEventArgs e)
         {
+            rb1.IsChecked = true;
+
             lbWhite();
 
             rbCheckOn();
@@ -353,6 +365,8 @@ namespace HotpepperGourmetSystem {
 
         private void btShizuoka_Click(object sender, RoutedEventArgs e)
         {
+            rb1.IsChecked = true;
+
             lbWhite();
 
             rbCheckOn();
@@ -390,6 +404,8 @@ namespace HotpepperGourmetSystem {
 
         private void btTottori_Click(object sender, RoutedEventArgs e)
         {
+            rb1.IsChecked = true;
+
             lbWhite();
 
             rbCheckOff();
@@ -401,6 +417,8 @@ namespace HotpepperGourmetSystem {
 
         private void btShimane_Click(object sender, RoutedEventArgs e)
         {
+            rb1.IsChecked = true;
+
             lbWhite();
 
             rbCheckOff();
@@ -412,6 +430,8 @@ namespace HotpepperGourmetSystem {
 
         private void btShiga_Click(object sender, RoutedEventArgs e)
         {
+            rb1.IsChecked = true;
+
             lbWhite();
 
             rbCheckOn();
@@ -448,6 +468,8 @@ namespace HotpepperGourmetSystem {
 
         private void btMie_Click(object sender, RoutedEventArgs e)
         {
+            rb1.IsChecked = true;
+
             lbWhite();
 
             rbCheckOn();
@@ -455,7 +477,7 @@ namespace HotpepperGourmetSystem {
             allClear();
 
             var list1 = new List<RadioButton>();
-            var area1 = new RadioButton[] { rb1, rb2, rb3, rb4, rb5, rb6, rb7, rb8,};
+            var area1 = new RadioButton[] { rb1, rb2, rb3, rb4, rb5, rb6, rb7,};
             list1.AddRange(area1);
 
             var list2 = new List<string>();
@@ -469,7 +491,7 @@ namespace HotpepperGourmetSystem {
             }
 
             var list3 = new List<RadioButton>();
-            var area2 = new RadioButton[] { rb9, rb10, rb11, rb12, rb13, rb14, rb15, rb16, rb17, rb18,rb19,rb20,rb21,rb22,rb23,rb24,rb25,rb26,rb27,rb28,rb29,rb30,
+            var area2 = new RadioButton[] { rb8, rb9, rb10, rb11, rb12, rb13, rb14, rb15, rb16, rb17, rb18,rb19,rb20,rb21,rb22,rb23,rb24,rb25,rb26,rb27,rb28,rb29,rb30,
                                            rb31,rb32,rb33,rb34,rb35,rb36,
                                          };
             list3.AddRange(area2);
@@ -484,6 +506,8 @@ namespace HotpepperGourmetSystem {
 
         private void btNara_Click(object sender, RoutedEventArgs e)
         {
+            rb1.IsChecked = true;
+
             lbWhite();
 
             rbCheckOn();
@@ -520,6 +544,8 @@ namespace HotpepperGourmetSystem {
 
         private void btOsaka_Click(object sender, RoutedEventArgs e)
         {
+            rb1.IsChecked = true;
+
             lbWhite();
 
             rbCheckOn();
@@ -527,7 +553,7 @@ namespace HotpepperGourmetSystem {
             allClear();
 
             var list1 = new List<RadioButton>();
-            var area1 = new RadioButton[] { rb1, rb2, rb3, rb4, rb5, rb6, rb7, rb7, rb8, rb9, rb10, rb11, rb12, rb13, rb14, rb15, rb16, rb17, rb18, rb19, rb20, rb21,};
+            var area1 = new RadioButton[] { rb1, rb2, rb3, rb4, rb5, rb6, rb7, rb8, rb9, rb10, rb11, rb12, rb13, rb14, rb15, rb16, rb17, rb18, rb19, rb20, rb21,};
             list1.AddRange(area1);
 
             var list2 = new List<string>();
@@ -560,6 +586,8 @@ namespace HotpepperGourmetSystem {
 
         private void btKyoto_Click(object sender, RoutedEventArgs e)
         {
+            rb1.IsChecked = true;
+
             lbWhite();
 
             rbCheckOn();
@@ -597,6 +625,8 @@ namespace HotpepperGourmetSystem {
 
         private void btHyogo_Click(object sender, RoutedEventArgs e)
         {
+            rb1.IsChecked = true;
+
             lbWhite();
 
             rbCheckOn();
@@ -634,6 +664,8 @@ namespace HotpepperGourmetSystem {
 
         private void btWakayama_Click(object sender, RoutedEventArgs e)
         {
+            rb1.IsChecked = true;
+
             lbWhite();
 
             rbCheckOn();
@@ -670,6 +702,8 @@ namespace HotpepperGourmetSystem {
 
         private void btIwate_Click(object sender, RoutedEventArgs e)
         {
+            rb1.IsChecked = true;
+
             lbWhite();
 
             rbCheckOn();
@@ -706,6 +740,8 @@ namespace HotpepperGourmetSystem {
 
         private void btMiyagi_Click(object sender, RoutedEventArgs e)
         {
+            rb1.IsChecked = true;
+
             lbWhite();
 
             rbCheckOn();
@@ -743,6 +779,8 @@ namespace HotpepperGourmetSystem {
 
         private void btHukushima_Click(object sender, RoutedEventArgs e)
         {
+            rb1.IsChecked = true;
+
             lbWhite();
 
             rbCheckOn();
@@ -779,6 +817,8 @@ namespace HotpepperGourmetSystem {
 
         private void btTotigi_Click(object sender, RoutedEventArgs e)
         {
+            rb1.IsChecked = true;
+
             lbWhite();
 
             rbCheckOn();
@@ -815,6 +855,8 @@ namespace HotpepperGourmetSystem {
 
         private void btHiroshima_Click(object sender, RoutedEventArgs e)
         {
+            rb1.IsChecked = true;
+
             lbWhite();
 
             rbCheckOn();
@@ -852,6 +894,8 @@ namespace HotpepperGourmetSystem {
 
         private void btOkayama_Click(object sender, RoutedEventArgs e)
         {
+            rb1.IsChecked = true;
+
             lbWhite();
 
             rbCheckOn();
@@ -888,6 +932,8 @@ namespace HotpepperGourmetSystem {
 
         private void btYamaguti_Click(object sender, RoutedEventArgs e)
         {
+            rb1.IsChecked = true;
+
             lbWhite();
 
             rbCheckOn();
@@ -925,6 +971,8 @@ namespace HotpepperGourmetSystem {
 
         private void btKagawa_Click(object sender, RoutedEventArgs e)
         {
+            rb1.IsChecked = true;
+
             lbWhite();
 
             rbCheckOn();
@@ -961,6 +1009,8 @@ namespace HotpepperGourmetSystem {
 
         private void btTokushima_Click(object sender, RoutedEventArgs e)
         {
+            rb1.IsChecked = true;
+
             lbWhite();
 
             rbCheckOn();
@@ -997,6 +1047,8 @@ namespace HotpepperGourmetSystem {
 
         private void btEhime_Click(object sender, RoutedEventArgs e)
         {
+            rb1.IsChecked = true;
+
             lbWhite();
 
             rbCheckOn();
@@ -1033,6 +1085,8 @@ namespace HotpepperGourmetSystem {
 
         private void btKouti_Click(object sender, RoutedEventArgs e)
         {
+            rb1.IsChecked = true;
+
             lbWhite();
 
             rbCheckOff();
@@ -1044,6 +1098,8 @@ namespace HotpepperGourmetSystem {
 
         private void btHukuoka_Click(object sender, RoutedEventArgs e)
         {
+            rb1.IsChecked = true;
+
             lbWhite();
 
             rbCheckOn();
@@ -1082,6 +1138,8 @@ namespace HotpepperGourmetSystem {
 
         private void btNagasaki_Click(object sender, RoutedEventArgs e)
         {
+            rb1.IsChecked = true;
+
             lbWhite();
 
             rbCheckOn();
@@ -1118,6 +1176,8 @@ namespace HotpepperGourmetSystem {
 
         private void btOita_Click(object sender, RoutedEventArgs e)
         {
+            rb1.IsChecked = true;
+
             lbWhite();
 
             rbCheckOn();
@@ -1154,6 +1214,8 @@ namespace HotpepperGourmetSystem {
 
         private void btKumamoto_Click(object sender, RoutedEventArgs e)
         {
+            rb1.IsChecked = true;
+
             lbWhite();
 
             rbCheckOn();
@@ -1190,6 +1252,8 @@ namespace HotpepperGourmetSystem {
 
         private void btMiyazaki_Click(object sender, RoutedEventArgs e)
         {
+            rb1.IsChecked = true;
+
             lbWhite();
 
             rbCheckOn();
@@ -1226,6 +1290,8 @@ namespace HotpepperGourmetSystem {
 
         private void btKagoshima_Click(object sender, RoutedEventArgs e)
         {
+            rb1.IsChecked = true;
+
             lbWhite();
 
             rbCheckOn();
@@ -1263,6 +1329,8 @@ namespace HotpepperGourmetSystem {
 
         private void btYamanashi_Click(object sender, RoutedEventArgs e)
         {
+            rb1.IsChecked = true;
+
             lbWhite();
 
             rbCheckOn();
@@ -1299,6 +1367,8 @@ namespace HotpepperGourmetSystem {
 
         private void btNagano_Click(object sender, RoutedEventArgs e)
         {
+            rb1.IsChecked = true;
+
             lbWhite();
 
             rbCheckOn();
@@ -1335,6 +1405,8 @@ namespace HotpepperGourmetSystem {
 
         private void btGihu_Click(object sender, RoutedEventArgs e)
         {
+            rb1.IsChecked = true;
+
             lbWhite();
 
             rbCheckOn();
@@ -1372,6 +1444,8 @@ namespace HotpepperGourmetSystem {
 
         private void btHukui_Click(object sender, RoutedEventArgs e)
         {
+            rb1.IsChecked = true;
+
             lbWhite();
 
             rbCheckOn();
@@ -1408,6 +1482,8 @@ namespace HotpepperGourmetSystem {
 
         private void btNigata_Click(object sender, RoutedEventArgs e)
         {
+            rb1.IsChecked = true;
+
             lbWhite();
 
             rbCheckOn();
@@ -1446,6 +1522,8 @@ namespace HotpepperGourmetSystem {
 
         private void btToyama_Click(object sender, RoutedEventArgs e)
         {
+            rb1.IsChecked = true;
+
             lbWhite();
 
             rbCheckOn();
@@ -1482,6 +1560,8 @@ namespace HotpepperGourmetSystem {
 
         private void btIbaragi_Click(object sender, RoutedEventArgs e)
         {
+            rb1.IsChecked = true;
+
             lbWhite();
 
             rbCheckOn();
@@ -1519,6 +1599,8 @@ namespace HotpepperGourmetSystem {
 
         private void btIshikawa_Click(object sender, RoutedEventArgs e)
         {
+            rb1.IsChecked = true;
+
             lbWhite();
 
             rbCheckOn();
@@ -1555,6 +1637,8 @@ namespace HotpepperGourmetSystem {
 
         private void btGunma_Click(object sender, RoutedEventArgs e)
         {
+            rb1.IsChecked = true;
+
             lbWhite();
 
             rbCheckOn();
@@ -1592,6 +1676,8 @@ namespace HotpepperGourmetSystem {
 
         private void btAomori_Click(object sender, RoutedEventArgs e)
         {
+            rb1.IsChecked = true;
+
             lbWhite();
 
             rbCheckOn();
@@ -1628,6 +1714,8 @@ namespace HotpepperGourmetSystem {
 
         private void btAkita_Click(object sender, RoutedEventArgs e)
         {
+            rb1.IsChecked = true;
+
             lbWhite();
 
             rbCheckOn();
@@ -1664,6 +1752,8 @@ namespace HotpepperGourmetSystem {
 
         private void btYamagata_Click(object sender, RoutedEventArgs e)
         {
+            rb1.IsChecked = true;
+
             lbWhite();
 
             rbCheckOn();
@@ -1700,6 +1790,8 @@ namespace HotpepperGourmetSystem {
 
         private void btSaga_Click(object sender, RoutedEventArgs e)
         {
+            rb1.IsChecked = true;
+
             lbWhite();
 
             rbCheckOn();
@@ -1736,6 +1828,8 @@ namespace HotpepperGourmetSystem {
 
         private void btOkinawa_Click(object sender, RoutedEventArgs e)
         {
+            rb1.IsChecked = true;
+
             lbWhite();
 
             rbCheckOn();
