@@ -42,7 +42,7 @@ namespace HotpepperGourmetSystem {
             var json = JsonConvert.DeserializeObject<Rootobject>(dString);
             //lbMaxTempToday.Text = json2[1].timeSeries[1].areas[0].tempsMax[1];
 
-            lb1.Content = json.results.shop[0].access;
+            //lb1.Content = json.results.shop[0].access;
         }
 
         private void Page_Loaded(object sender, RoutedEventArgs e)

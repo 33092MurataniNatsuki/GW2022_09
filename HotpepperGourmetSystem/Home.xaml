@@ -30,7 +30,7 @@
                  ToolTip="MaterialDesignFloatingActionLightButton" Grid.Column="1" Height="157" Grid.RowSpan="4" Width="157" Grid.Row="3" Background="Firebrick" BorderBrush="Firebrick"/>-->
 
             <!--<Image HorizontalAlignment="Left" Height="624" Margin="166,0,-161,-235.2" VerticalAlignment="Top" Width="995" Source="Images/白黒画像.png" Grid.RowSpan="8" Grid.ColumnSpan="2"/>-->
-            <Label x:Name="lb1" Content="Label" Margin="498,11,246,-126" Grid.Column="1" Grid.Row="7"/>
+            <!--<Label x:Name="lb1" Content="Label" Margin="498,11,246,-126" Grid.Column="1" Grid.Row="7"/>-->
             <Image HorizontalAlignment="Left" Height="46" Margin="21,27,0,0" VerticalAlignment="Top" Width="124" Source="Images/Hotpepper.jpg"/>
             <!--<Image HorizontalAlignment="Left" Height="31" Margin="71,11,0,0" VerticalAlignment="Top" Width="31" Source="Images/太陽.jpg" Grid.Row="5"/>
             <Image HorizontalAlignment="Left" Height="20" Margin="112,16,0,0" VerticalAlignment="Top" Width="21" Source="Images/月.png" Grid.Row="5"/>-->
@@ -51,15 +51,144 @@
             <Label Content="Label" HorizontalAlignment="Left" Height="2" Margin="10,14,0,-15" Grid.Row="7" VerticalAlignment="Top" Width="146" Background="#FFC5C5C5"/>
             <Label Content="Label" HorizontalAlignment="Left" Height="2" Margin="10,125,0,-126" Grid.Row="7" VerticalAlignment="Top" Width="146" Background="#FFC5C5C5"/>
             <Button x:Name="btSearch" Content="検索する" HorizontalAlignment="Left" Margin="50,146,0,-178" Grid.Row="7" VerticalAlignment="Top" Width="106" FontSize="14" Height="33" BorderBrush="{x:Null}" Background="#FFFBFBFB" Foreground="Firebrick"/>
-            <Label x:Name="lbPref" Content="県" Grid.Column="1" HorizontalAlignment="Left" Height="87" Margin="46,34,0,0" VerticalAlignment="Top" Width="266" FontSize="48" Background="{x:Null}" Foreground="#DDFF0000"/>
-            <Label x:Name="lbCity" Content="市区町村" Grid.Column="1" HorizontalAlignment="Left" Height="67" Margin="379,47,0,0" VerticalAlignment="Top" Width="424" FontSize="36" Foreground="#DDFF0000"/>
-            <Label x:Name="lbGenre" Content="ジャンル" Grid.Column="1" HorizontalAlignment="Left" Height="51" Margin="76,0,0,0" Grid.Row="1" VerticalAlignment="Top" Width="394" FontSize="36" Foreground="#DDFF0000" Grid.RowSpan="2"/>
-            <Label x:Name="lbBudget" Content="予算○○～○○円" Grid.Column="1" HorizontalAlignment="Left" Margin="208,4,0,0" Grid.Row="3" VerticalAlignment="Top" Foreground="#DDFF0000" FontSize="48" Height="78" Grid.RowSpan="2" Width="526"/>
-            <Label x:Name="lbShopName" Content="店名" Grid.Column="1" HorizontalAlignment="Left" Margin="64,24,0,0" Grid.Row="4" VerticalAlignment="Top" Foreground="#DDFF0000" Height="80" Grid.RowSpan="3" Width="172" FontSize="48"/>
-            <Label x:Name="lbAccess" Content="アクセス" Grid.Column="1" HorizontalAlignment="Left" Margin="518,35,0,0" Grid.Row="5" VerticalAlignment="Top" Foreground="#DDFF0000" FontSize="36" Height="57" Grid.RowSpan="2" Width="150"/>
-            <Label x:Name="lnGenreCatchPhrase" Content="ジャンルキャッチフレーズ" Grid.Column="1" HorizontalAlignment="Left" Height="59" Margin="236,6,0,0" Grid.Row="1" VerticalAlignment="Top" Width="498" Grid.RowSpan="2" Foreground="#DDFF0000" FontSize="36"/>
-            <Label x:Name="lbCatchPhrase" Content="キャッチフレーズ" Grid.Column="1" HorizontalAlignment="Left" Height="57" Margin="379,40,0,-96" Grid.Row="7" VerticalAlignment="Top" Width="253" FontSize="36" Background="{x:Null}" Foreground="#DDFF0000"/>
+            <Label x:Name="lbPref" Content="県" Grid.Column="1" HorizontalAlignment="Left" Height="38" Margin="29,17,0,0" VerticalAlignment="Top" Width="258" FontSize="24" Background="{x:Null}" Foreground="#DD000000"/>
+            <Label x:Name="lbCity" Content="市区町村" Grid.Column="1" HorizontalAlignment="Left" Height="38" Margin="161,17,0,0" VerticalAlignment="Top" Width="360" FontSize="24" Foreground="#DD000000"/>
+            <Label x:Name="lbGenre" Content="ジャンル" Grid.Column="1" HorizontalAlignment="Left" Height="38" Margin="587,17,0,0" VerticalAlignment="Top" Width="237" FontSize="24" Foreground="#DD000000"/>
+            <ScrollViewer Grid.Column="1" Margin="0,0,16,-2331" Grid.RowSpan="8" HorizontalAlignment="Right" Width="800" Height="2654" VerticalAlignment="Bottom">
+                <Grid Height="3284">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="52"/>
+                        <RowDefinition Height="221"/>
+                        <RowDefinition Height="192*"/>
+                        <RowDefinition Height="52*"/>
+                        <RowDefinition Height="219*"/>
+                        <RowDefinition Height="188*"/>
+                        <RowDefinition Height="55*"/>
+                        <RowDefinition Height="222*"/>
+                        <RowDefinition Height="796*"/>
+                        <RowDefinition Height="1287*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Label" HorizontalAlignment="Left" Margin="52,9,0,0" VerticalAlignment="Top" Height="202" Width="204" Background="#DDF7F7F7" Grid.Row="1" Foreground="{x:Null}"/>
+                    <Label Content="Label" HorizontalAlignment="Left" Margin="261,9,0,0" VerticalAlignment="Top" Height="64" Width="64" Background="#DDF7F7F7" Grid.Row="1" Foreground="{x:Null}"/>
+                    <Label Content="Label" HorizontalAlignment="Left" Margin="261,78,0,0" VerticalAlignment="Top" Height="64" Width="64" Background="#DDF7F7F7" Grid.Row="1" Foreground="{x:Null}"/>
+                    <Label Content="Label" HorizontalAlignment="Left" Margin="261,147,0,0" VerticalAlignment="Top" Height="64" Width="64" Background="#DDF7F7F7" Grid.Row="1" Foreground="{x:Null}"/>
+                    <Label x:Name="lbShopName1" Content="店名" HorizontalAlignment="Left" Margin="25,0,0,0" VerticalAlignment="Top" Foreground="#DD000000" FontSize="36" Height="52" Width="348"/>
+                    <Label Content="所在地" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="2" VerticalAlignment="Top" Background="#FFFBFBFB" Height="24" Width="44"/>
+                    <Label x:Name="lbAddress1" Content="あ" HorizontalAlignment="Left" Margin="54,10,0,0" Grid.Row="2" VerticalAlignment="Top" Width="338" Foreground="#DD000000" Height="24"/>
+                    <Label Content="アクセス" HorizontalAlignment="Left" Margin="10,39,0,0" Grid.Row="2" VerticalAlignment="Top" Width="44" Background="#FFFBFBFB" Height="24"/>
+                    <Label x:Name="lbAccess1" Content="あ" HorizontalAlignment="Left" Margin="54,39,0,0" Grid.Row="2" VerticalAlignment="Top" Width="338" Foreground="#DD000000" Height="24"/>
+                    <Label Content="営業時間" HorizontalAlignment="Left" Margin="10,68,0,0" Grid.Row="2" VerticalAlignment="Top" Foreground="#DD000000" Background="#FFFBFBFB" Height="24" Width="56"/>
+                    <Label x:Name="lbOpen1" Content="あ" HorizontalAlignment="Left" Margin="66,68,0,0" Grid.Row="2" VerticalAlignment="Top" Width="326" Foreground="#DD000000" Height="24"/>
+                    <Label Content="予算" HorizontalAlignment="Left" Margin="10,97,0,0" Grid.Row="2" VerticalAlignment="Top" Background="#FFFBFBFB" Height="24" Width="32"/>
+                    <Label x:Name="lbBudget1" Content="○○～○○円" HorizontalAlignment="Left" Margin="42,97,0,0" Grid.Row="2" VerticalAlignment="Top" Width="350" Foreground="#DD000000" Height="24"/>
+                    <Label x:Name="lbCatchPhrase1" Content="キャッチフレーズ" HorizontalAlignment="Left" Margin="10,126,0,0" Grid.Row="2" VerticalAlignment="Top" Width="382" Foreground="#DD000000" FontSize="14" Height="27"/>
+
+
+
+                    <Label Content="Label" HorizontalAlignment="Left" Margin="52,9,0,0" VerticalAlignment="Top" Height="202" Width="204" Background="#DDF7F7F7" Grid.Column="1" Grid.Row="1" Foreground="{x:Null}"/>
+                    <Label Content="Label" HorizontalAlignment="Left" Margin="261,9,0,0" VerticalAlignment="Top" Height="64" Width="64" Background="#DDF7F7F7" Grid.Column="1" Grid.Row="1" Foreground="{x:Null}"/>
+                    <Label Content="Label" HorizontalAlignment="Left" Margin="261,78,0,0" VerticalAlignment="Top" Height="64" Width="64" Background="#DDF7F7F7" Grid.Column="1" Grid.Row="1" Foreground="{x:Null}"/>
+                    <Label Content="Label" HorizontalAlignment="Left" Margin="261,147,0,0" VerticalAlignment="Top" Height="64" Width="64" Background="#DDF7F7F7" Grid.Column="1" Grid.Row="1" Foreground="{x:Null}"/>
+                    <Label x:Name="lbShopName2" Content="店名" HorizontalAlignment="Left" Margin="24,0,0,0" VerticalAlignment="Top" Foreground="#DD000000" FontSize="36" Height="52" Width="348" Grid.Column="1"/>
+                    <Label Content="所在地" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="2" VerticalAlignment="Top" Background="#FFFBFBFB" Grid.Column="1" Height="24" Width="44"/>
+                    <Label x:Name="lbAddress2" Content="あ" HorizontalAlignment="Left" Margin="54,10,-1,0" Grid.Row="2" VerticalAlignment="Top" Width="338" Foreground="#DD000000" Grid.Column="1" Height="24"/>
+                    <Label Content="アクセス" HorizontalAlignment="Left" Margin="10,39,0,0" Grid.Row="2" VerticalAlignment="Top" Width="44" Background="#FFFBFBFB" Grid.Column="1" Height="24"/>
+                    <Label x:Name="lbAccess2" Content="あ" HorizontalAlignment="Left" Margin="54,39,-1,0" Grid.Row="2" VerticalAlignment="Top" Width="338" Foreground="#DD000000" Grid.Column="1" Height="24"/>
+                    <Label Content="営業時間" HorizontalAlignment="Left" Margin="10,68,0,0" Grid.Row="2" VerticalAlignment="Top" Foreground="#DD000000" Background="#FFFBFBFB" Grid.Column="1" Height="24" Width="56"/>
+                    <Label x:Name="lbOpen2" Content="あ" HorizontalAlignment="Left" Margin="66,68,-1,0" Grid.Row="2" VerticalAlignment="Top" Width="326" Foreground="#DD000000" Grid.Column="1" Height="24"/>
+                    <Label Content="予算" HorizontalAlignment="Left" Margin="10,97,0,0" Grid.Row="2" VerticalAlignment="Top" Background="#FFFBFBFB" Grid.Column="1" Height="24" Width="32"/>
+                    <Label x:Name="lbBudget2" Content="○○～○○円" HorizontalAlignment="Left" Margin="42,97,-1,0" Grid.Row="2" VerticalAlignment="Top" Width="350" Foreground="#DD000000" Grid.Column="1" Height="24"/>
+                    <Label x:Name="lbCatchPhrase2" Content="キャッチフレーズ" HorizontalAlignment="Left" Margin="10,126,-1,0" Grid.Row="2" VerticalAlignment="Top" Width="382" Grid.Column="1" Foreground="#DD000000" FontSize="14" Height="27"/>
+
+
+                    <Label Content="Label" HorizontalAlignment="Left" Margin="52,10,0,0" VerticalAlignment="Top" Height="202" Width="204" Background="#DDF7F7F7" Grid.Row="4" Foreground="{x:Null}"/>
+                    <Label Content="Label" HorizontalAlignment="Left" Margin="261,10,0,0" VerticalAlignment="Top" Height="64" Width="64" Background="#DDF7F7F7" Grid.Row="4" Foreground="{x:Null}"/>
+                    <Label Content="Label" HorizontalAlignment="Left" Margin="261,79,0,0" VerticalAlignment="Top" Height="64" Width="64" Background="#DDF7F7F7" Grid.Row="4" Foreground="{x:Null}"/>
+                    <Label Content="Label" HorizontalAlignment="Left" Margin="261,148,0,0" VerticalAlignment="Top" Height="64" Width="64" Background="#DDF7F7F7" Grid.Row="4" Foreground="{x:Null}"/>
+                    <Label x:Name="lbShopName3" Content="店名" HorizontalAlignment="Left" Margin="25,0,0,0" VerticalAlignment="Top" Foreground="#DD000000" FontSize="36" Height="52" Width="348" Grid.Row="3"/>
+                    <Label Content="所在地" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="5" VerticalAlignment="Top" Background="#FFFBFBFB" Height="24" Width="44"/>
+                    <Label x:Name="lbAddress3" Content="あ" HorizontalAlignment="Left" Margin="54,10,0,0" Grid.Row="5" VerticalAlignment="Top" Width="338" Foreground="#DD000000" Height="24"/>
+                    <Label Content="アクセス" HorizontalAlignment="Left" Margin="10,39,0,0" Grid.Row="5" VerticalAlignment="Top" Width="44" Background="#FFFBFBFB" Height="24"/>
+                    <Label x:Name="lbAccess3" Content="あ" HorizontalAlignment="Left" Margin="54,39,0,0" Grid.Row="5" VerticalAlignment="Top" Width="338" Foreground="#DD000000" Height="24"/>
+                    <Label Content="営業時間" HorizontalAlignment="Left" Margin="10,68,0,0" Grid.Row="5" VerticalAlignment="Top" Foreground="#DD000000" Background="#FFFBFBFB" Height="24" Width="56"/>
+                    <Label x:Name="lbOpen3" Content="あ" HorizontalAlignment="Left" Margin="66,68,0,0" Grid.Row="5" VerticalAlignment="Top" Width="326" Foreground="#DD000000" Height="24"/>
+                    <Label Content="予算" HorizontalAlignment="Left" Margin="10,97,0,0" Grid.Row="5" VerticalAlignment="Top" Background="#FFFBFBFB" Height="24" Width="32"/>
+                    <Label x:Name="lbBudget3" Content="○○～○○円" HorizontalAlignment="Left" Margin="42,97,0,0" Grid.Row="5" VerticalAlignment="Top" Width="350" Foreground="#DD000000" Height="24"/>
+                    <Label x:Name="lbCatchPhrase3" Content="キャッチフレーズ" HorizontalAlignment="Left" Margin="10,126,0,0" Grid.Row="5" VerticalAlignment="Top" Width="382" Foreground="#DD000000" FontSize="14" Height="27"/>
+
+
+
+                    <Label Content="Label" HorizontalAlignment="Left" Margin="52,10,0,0" VerticalAlignment="Top" Height="202" Width="204" Background="#DDF7F7F7" Grid.Column="1" Grid.Row="4" Foreground="{x:Null}"/>
+                    <Label Content="Label" HorizontalAlignment="Left" Margin="261,10,0,0" VerticalAlignment="Top" Height="64" Width="64" Background="#DDF7F7F7" Grid.Column="1" Grid.Row="4" Foreground="{x:Null}"/>
+                    <Label Content="Label" HorizontalAlignment="Left" Margin="261,79,0,0" VerticalAlignment="Top" Height="64" Width="64" Background="#DDF7F7F7" Grid.Column="1" Grid.Row="4" Foreground="{x:Null}"/>
+                    <Label Content="Label" HorizontalAlignment="Left" Margin="261,148,0,0" VerticalAlignment="Top" Height="64" Width="64" Background="#DDF7F7F7" Grid.Column="1" Grid.Row="4" Foreground="{x:Null}"/>
+                    <Label x:Name="lbShopName4" Content="店名" HorizontalAlignment="Left" Margin="24,0,0,0" VerticalAlignment="Top" Foreground="#DD000000" FontSize="36" Height="52" Width="348" Grid.Column="1"/>
+                    <Label Content="所在地" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="5" VerticalAlignment="Top" Background="#FFFBFBFB" Grid.Column="1" Height="24" Width="44"/>
+                    <Label x:Name="lbAddress4" Content="あ" HorizontalAlignment="Left" Margin="54,10,-1,0" Grid.Row="5" VerticalAlignment="Top" Width="338" Foreground="#DD000000" Grid.Column="1" Height="24"/>
+                    <Label Content="アクセス" HorizontalAlignment="Left" Margin="10,39,0,0" Grid.Row="5" VerticalAlignment="Top" Width="44" Background="#FFFBFBFB" Grid.Column="1" Height="24"/>
+                    <Label x:Name="lbAccess4" Content="あ" HorizontalAlignment="Left" Margin="54,39,-1,0" Grid.Row="5" VerticalAlignment="Top" Width="338" Foreground="#DD000000" Grid.Column="1" Height="24"/>
+                    <Label Content="営業時間" HorizontalAlignment="Left" Margin="10,68,0,0" Grid.Row="5" VerticalAlignment="Top" Foreground="#DD000000" Background="#FFFBFBFB" Grid.Column="1" Height="24" Width="56"/>
+                    <Label x:Name="lbOpen4" Content="あ" HorizontalAlignment="Left" Margin="66,68,-1,0" Grid.Row="5" VerticalAlignment="Top" Width="326" Foreground="#DD000000" Grid.Column="1" Height="24"/>
+                    <Label Content="予算" HorizontalAlignment="Left" Margin="10,97,0,0" Grid.Row="5" VerticalAlignment="Top" Background="#FFFBFBFB" Grid.Column="1" Height="24" Width="32"/>
+                    <Label x:Name="lbBudget4" Content="○○～○○円" HorizontalAlignment="Left" Margin="42,97,-1,0" Grid.Row="5" VerticalAlignment="Top" Width="350" Foreground="#DD000000" Grid.Column="1" Height="24"/>
+                    <Label x:Name="lbCatchPhrase4" Content="キャッチフレーズ" HorizontalAlignment="Left" Margin="10,126,-1,0" Grid.Row="5" VerticalAlignment="Top" Width="382" Grid.Column="1" Foreground="#DD000000" FontSize="14" Height="27"/>
+
+
+
+                    <Label Content="Label" HorizontalAlignment="Left" Margin="52,10,0,0" VerticalAlignment="Top" Height="202" Width="204" Background="#DDF7F7F7" Grid.Row="7" Foreground="{x:Null}"/>
+                    <Label Content="Label" HorizontalAlignment="Left" Margin="261,10,0,0" VerticalAlignment="Top" Height="64" Width="64" Background="#DDF7F7F7" Grid.Row="7" Foreground="{x:Null}"/>
+                    <Label Content="Label" HorizontalAlignment="Left" Margin="261,79,0,0" VerticalAlignment="Top" Height="64" Width="64" Background="#DDF7F7F7" Grid.Row="7" Foreground="{x:Null}"/>
+                    <Label Content="Label" HorizontalAlignment="Left" Margin="261,148,0,0" VerticalAlignment="Top" Height="64" Width="64" Background="#DDF7F7F7" Grid.Row="7" Foreground="{x:Null}"/>
+                    <Label x:Name="lbShopName5" Content="店名" HorizontalAlignment="Left" Margin="25,0,0,0" VerticalAlignment="Top" Foreground="#DD000000" FontSize="36" Height="52" Width="348" Grid.Row="6"/>
+                    <Label Content="所在地" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="8" VerticalAlignment="Top" Background="#FFFBFBFB" Height="24" Width="44"/>
+                    <Label x:Name="lbAddress5" Content="あ" HorizontalAlignment="Left" Margin="59,10,0,0" Grid.Row="8" VerticalAlignment="Top" Width="338" Foreground="#DD000000" Height="24" Grid.ColumnSpan="2"/>
+                    <Label Content="アクセス" HorizontalAlignment="Left" Margin="10,39,0,0" Grid.Row="8" VerticalAlignment="Top" Width="44" Background="#FFFBFBFB" Height="24"/>
+                    <Label x:Name="lbAccess5" Content="あ" HorizontalAlignment="Left" Margin="54,39,0,0" Grid.Row="8" VerticalAlignment="Top" Width="338" Foreground="#DD000000" Height="24"/>
+                    <Label Content="営業時間" HorizontalAlignment="Left" Margin="10,68,0,0" Grid.Row="8" VerticalAlignment="Top" Foreground="#DD000000" Background="#FFFBFBFB" Height="24" Width="56"/>
+                    <Label x:Name="lbOpen5" Content="あ" HorizontalAlignment="Left" Margin="66,68,0,0" Grid.Row="8" VerticalAlignment="Top" Width="326" Foreground="#DD000000" Height="24"/>
+                    <Label Content="予算" HorizontalAlignment="Left" Margin="10,97,0,0" Grid.Row="8" VerticalAlignment="Top" Background="#FFFBFBFB" Height="24" Width="32"/>
+                    <Label x:Name="lbBudget5" Content="○○～○○円" HorizontalAlignment="Left" Margin="42,97,0,0" Grid.Row="8" VerticalAlignment="Top" Width="350" Foreground="#DD000000" Height="24"/>
+                    <Label x:Name="lbCatchPhrase5" Content="キャッチフレーズ" HorizontalAlignment="Left" Margin="10,126,0,0" Grid.Row="8" VerticalAlignment="Top" Width="382" Foreground="#DD000000" FontSize="14" Height="27"/>
+
+
+
+                    <Label Content="Label" HorizontalAlignment="Left" Margin="52,10,0,0" VerticalAlignment="Top" Height="202" Width="204" Background="#DDF7F7F7" Grid.Column="1" Grid.Row="4" Foreground="{x:Null}"/>
+                    <Label Content="Label" HorizontalAlignment="Left" Margin="261,10,0,0" VerticalAlignment="Top" Height="64" Width="64" Background="#DDF7F7F7" Grid.Column="1" Grid.Row="4" Foreground="{x:Null}"/>
+                    <Label Content="Label" HorizontalAlignment="Left" Margin="261,79,0,0" VerticalAlignment="Top" Height="64" Width="64" Background="#DDF7F7F7" Grid.Column="1" Grid.Row="4" Foreground="{x:Null}"/>
+                    <Label Content="Label" HorizontalAlignment="Left" Margin="261,148,0,0" VerticalAlignment="Top" Height="64" Width="64" Background="#DDF7F7F7" Grid.Column="1" Grid.Row="4" Foreground="{x:Null}"/>
+                    <Label x:Name="lbShopName6" Content="店名" HorizontalAlignment="Left" Margin="24,0,0,0" VerticalAlignment="Top" Foreground="#DD000000" FontSize="36" Height="52" Width="348" Grid.Column="1"/>
+                    <Label Content="所在地" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="5" VerticalAlignment="Top" Background="#FFFBFBFB" Grid.Column="1" Height="24" Width="44"/>
+                    <Label x:Name="lbAddress6" Content="あ" HorizontalAlignment="Left" Margin="54,10,-1,0" Grid.Row="5" VerticalAlignment="Top" Width="338" Foreground="#DD000000" Grid.Column="1" Height="24"/>
+                    <Label Content="アクセス" HorizontalAlignment="Left" Margin="10,39,0,0" Grid.Row="5" VerticalAlignment="Top" Width="44" Background="#FFFBFBFB" Grid.Column="1" Height="24"/>
+                    <Label x:Name="lbAccess6" Content="あ" HorizontalAlignment="Left" Margin="54,39,-1,0" Grid.Row="5" VerticalAlignment="Top" Width="338" Foreground="#DD000000" Grid.Column="1" Height="24"/>
+                    <Label Content="営業時間" HorizontalAlignment="Left" Margin="10,68,0,0" Grid.Row="5" VerticalAlignment="Top" Foreground="#DD000000" Background="#FFFBFBFB" Grid.Column="1" Height="24" Width="56"/>
+                    <Label x:Name="lbOpen6" Content="あ" HorizontalAlignment="Left" Margin="66,68,-1,0" Grid.Row="5" VerticalAlignment="Top" Width="326" Foreground="#DD000000" Grid.Column="1" Height="24"/>
+                    <Label Content="予算" HorizontalAlignment="Left" Margin="10,97,0,0" Grid.Row="5" VerticalAlignment="Top" Background="#FFFBFBFB" Grid.Column="1" Height="24" Width="32"/>
+                    <Label x:Name="lbBudget6" Content="○○～○○円" HorizontalAlignment="Left" Margin="42,97,-1,0" Grid.Row="5" VerticalAlignment="Top" Width="350" Foreground="#DD000000" Grid.Column="1" Height="24"/>
+                    <Label x:Name="lbCatchPhrase6" Content="キャッチフレーズ" HorizontalAlignment="Left" Margin="10,126,-1,0" Grid.Row="5" VerticalAlignment="Top" Width="382" Grid.Column="1" Foreground="#DD000000" FontSize="14" Height="27"/>
+
+                </Grid>
+            </ScrollViewer>
+            <!--<Label x:Name="lbBudget" Content="予算○○～○○円" Grid.Column="1" HorizontalAlignment="Left" Margin="290,12,0,0" Grid.Row="3" VerticalAlignment="Top" Foreground="#DDFF0000" FontSize="14" Height="26" Width="526"/>
+            <Label x:Name="lbShopName" Content="店名" Grid.Column="1" HorizontalAlignment="Left" Margin="303,89,0,0" VerticalAlignment="Top" Foreground="#DDFF0000" Height="63" Grid.RowSpan="2" Width="174" FontSize="40"/>
+            <Label Content="アクセス" Grid.Column="1" HorizontalAlignment="Left" Margin="290,27,0,0" Grid.Row="2" VerticalAlignment="Top" Foreground="#DD000000" FontSize="14" Height="26" Width="51" Background="#FFFBFBFB" Grid.RowSpan="2"/>
+            <Label x:Name="lbCatchPhrase" Content="キャッチフレーズ" Grid.Column="1" HorizontalAlignment="Left" Height="36" Margin="290,0,0,0" Grid.Row="5" VerticalAlignment="Top" Width="526" FontSize="20" Background="{x:Null}" Foreground="#DDFF0000"/>
             <Button x:Name="btClose" Content="閉じる" Grid.Column="1" HorizontalAlignment="Left" Margin="540,146,0,-177" Grid.Row="7" VerticalAlignment="Top" Width="76" Click="btClose_Click"/>
+            <Label Content="Label" Grid.Column="1" HorizontalAlignment="Left" Margin="580,18,0,0" VerticalAlignment="Top" Height="37" Width="2" Foreground="#DDFF0000" Background="Red"/>
+            <Label Content="写真" Grid.Column="1" HorizontalAlignment="Left" Margin="72,92,0,0" VerticalAlignment="Top" Height="188" Grid.RowSpan="5" Width="188" Background="Red"/>
+            <Label Content="Label" Grid.Column="1" HorizontalAlignment="Left" Margin="290,99,0,0" VerticalAlignment="Top" Height="48" Grid.RowSpan="2" Width="4" Background="Red"/>
+            <Label Content="所在地" Grid.Column="1" HorizontalAlignment="Left" Margin="290,28,0,0" Grid.Row="1" VerticalAlignment="Top" Height="26" Width="51" Grid.RowSpan="2" Background="#FFFBFBFB" Foreground="#DD000000" FontSize="14"/>
+            <Label x:Name="lbAddress" Content="あ" Grid.Column="1" HorizontalAlignment="Left" Margin="346,0,0,0" Grid.Row="2" VerticalAlignment="Top" Width="478" Height="25" Foreground="#DDFF0000" FontSize="14"/>
+            <Label x:Name="lbAccess" Content="あ" Grid.Column="1" HorizontalAlignment="Left" Margin="346,27,0,0" Grid.Row="2" VerticalAlignment="Top" Height="26" Grid.RowSpan="2" Width="478" Foreground="#DDFF0000" FontSize="14"/>
+            <Label Content="営業時間" Grid.Column="1" HorizontalAlignment="Left" Margin="290,0,0,0" Grid.Row="4" VerticalAlignment="Top" Height="26" Width="66" Background="#FFFBFBFB" Foreground="#DD000000" FontSize="14"/>
+            <Label x:Name="lbOpen" Content="あ" Grid.Column="1" HorizontalAlignment="Left" Margin="361,0,0,0" Grid.Row="4" VerticalAlignment="Top" Height="26" Width="463" FontSize="14" Foreground="#DDFF0000"/>
+            <Label Content="Label" Grid.Column="1" HorizontalAlignment="Left" Margin="72,38,0,0" Grid.Row="4" VerticalAlignment="Top" Grid.RowSpan="3" Height="59" Width="59" Background="Red"/>
+            <Label Content="Label" Grid.Column="1" HorizontalAlignment="Left" Margin="136,38,0,0" Grid.Row="4" VerticalAlignment="Top" Grid.RowSpan="3" Height="59" Width="59" Background="Red"/>
+            <Label Content="Label" Grid.Column="1" HorizontalAlignment="Left" Margin="200,38,0,0" Grid.Row="4" VerticalAlignment="Top" Height="59" Grid.RowSpan="3" Width="59" Background="Red"/>-->
 
         </Grid>
     </StackPanel>
