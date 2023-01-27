@@ -25,7 +25,6 @@ namespace HotpepperGourmetSystem {
         Window1 parent = (Window1)Application.Current.MainWindow;
 
         public Home() {
-
             InitializeComponent();
 
             var wc = new WebClient() {
@@ -37,13 +36,18 @@ namespace HotpepperGourmetSystem {
             lbGenre.Content = parent.selectedGenre;
 
             string id = "J001239297";
-
             var dString = wc.DownloadString("http://webservice.recruit.co.jp/hotpepper/gourmet/v1/?key=0e8af5f2f79eb4f4&id=" + id + "&format=json");
             var json = JsonConvert.DeserializeObject<Rootobject>(dString);
-            //lbMaxTempToday.Text = json2[1].timeSeries[1].areas[0].tempsMax[1];
+            lb1.Content = json.results.shop[0].access;
 
-            //lb1.Content = json.results.shop[0].access;
+            string id2 = "Z011";
+            var dString2 = wc.DownloadString(" http://webservice.recruit.co.jp/hotpepper/gourmet/v1/?key=0e8af5f2f79eb4f4&large_area=" + id2);
+            var json2 = JsonConvert.DeserializeObject<Rootobject>(dString);
+            //lbAccess1.Content = json2.results.shop[0].access;
+            //tb1.Text = json2.results.shop[0].access;
         }
+
+
 
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
@@ -147,8 +151,43 @@ namespace HotpepperGourmetSystem {
             }
         }
 
-        private void btClose_Click(object sender, RoutedEventArgs e)
+        private void btClose_Click_1(object sender, RoutedEventArgs e)
         {
+            
+        }
+
+        private void btSearch_Click(object sender, RoutedEventArgs e)
+        {
+            lbPref.Content = parent.selectedPref;
+            lbCity.Content = parent.selectedArea;
+            lbGenre.Content = parent.selectedGenre;
+
+            var wc = new WebClient()
+            {
+                Encoding = Encoding.UTF8
+            };
+
+
+
+            //var list1 = new List<string>();
+            //var largeAreaCode = new string[] { "Z011","Z012","Z013","Z014","Z015","Z016","Z017","Z021",
+            //                              "Z022","Z023","Z024","Z025","Z026","Z031","Z032","Z033",
+            //                              "Z034","Z041","Z051","Z052","Z053","Z054","Z055","Z056",
+            //                              "Z061","Z062","Z063","Z064","Z065","Z066","Z071","Z072",
+            //                              "Z073","Z074","Z075","Z081","Z082","Z083","Z084","Z091",
+            //                              "Z092","Z093","Z094","Z095","Z096","Z097","Z098",
+            //};
+            //list1.AddRange(largeAreaCode);
+
+            //var dString = wc.DownloadString("http://webservice.recruit.co.jp/hotpepper/gourmet/v1/?key=0e8af5f2f79eb4f4&large_area={0}",largeAreaCode[]);
+            //var json = JsonConvert.DeserializeObject<Rootobject>(dString);
+
+            //lbAccess1.Content = json.results.shop[0].access;
+
+            //string id2 = "Z011";
+            //var dString2 = wc.DownloadString(" http://webservice.recruit.co.jp/hotpepper/gourmet/v1/?key=0e8af5f2f79eb4f4&large_area=" + id2);
+            //var json2 = JsonConvert.DeserializeObject<Rootobject>(dString2);
+            //lbAccess1.Content = json2.results.shop[0].access;
 
         }
     }
