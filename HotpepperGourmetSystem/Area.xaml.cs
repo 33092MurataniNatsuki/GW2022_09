@@ -114,8 +114,6 @@ namespace HotpepperGourmetSystem {
             list.AddRange(area);
         }
 
-        
-
         private void btHokkaido_Click(object sender, RoutedEventArgs e)
         {
             rb1.IsChecked = true;

@@ -21,10 +21,13 @@ namespace HotpepperGourmetSystem {
     /// </summary>
     public partial class Home : Page {
 
+        string largeAreaCode;
+
         //親ウィンドウのインスタンスを取得
         Window1 parent = (Window1)Application.Current.MainWindow;
 
         public Home() {
+
             InitializeComponent();
 
             var wc = new WebClient() {
@@ -36,18 +39,50 @@ namespace HotpepperGourmetSystem {
             lbGenre.Content = parent.selectedGenre;
 
             string id = "J001239297";
+
             var dString = wc.DownloadString("http://webservice.recruit.co.jp/hotpepper/gourmet/v1/?key=0e8af5f2f79eb4f4&id=" + id + "&format=json");
             var json = JsonConvert.DeserializeObject<Rootobject>(dString);
-            lb1.Content = json.results.shop[0].access;
+            //lbMaxTempToday.Text = json2[1].timeSeries[1].areas[0].tempsMax[1];
 
-            string id2 = "Z011";
-            var dString2 = wc.DownloadString(" http://webservice.recruit.co.jp/hotpepper/gourmet/v1/?key=0e8af5f2f79eb4f4&large_area=" + id2);
-            var json2 = JsonConvert.DeserializeObject<Rootobject>(dString);
-            //lbAccess1.Content = json2.results.shop[0].access;
-            //tb1.Text = json2.results.shop[0].access;
+            //lb1.Content = json.results.shop[0].access;
+
+
         }
 
 
+        private void LargeArea()
+        {
+            switch (lbPref.Content)
+            {
+                case "東京都":
+                    largeAreaCode = "Z011";
+                    break;
+                case "神奈川県":
+                    largeAreaCode = "Z012";
+                    break;
+                case "埼玉県":
+                    largeAreaCode = "Z013";
+                    break;
+                case "千葉県":
+                    largeAreaCode = "Z014";
+                    break;
+                case "茨城県":
+                    largeAreaCode = "Z015";
+                    break;
+                case "北海道":
+                    largeAreaCode = "Z016";
+                    break;
+                case "栃木県":
+                    largeAreaCode = "Z017";
+                    break;
+                case "群馬県":
+                    largeAreaCode = "Z021";
+                    break;
+                case "滋賀県":
+                    largeAreaCode = "Z011";
+                    break;
+            }
+        }
 
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
@@ -158,36 +193,31 @@ namespace HotpepperGourmetSystem {
 
         private void btSearch_Click(object sender, RoutedEventArgs e)
         {
-            lbPref.Content = parent.selectedPref;
-            lbCity.Content = parent.selectedArea;
-            lbGenre.Content = parent.selectedGenre;
-
             var wc = new WebClient()
             {
                 Encoding = Encoding.UTF8
             };
 
-
-
-            //var list1 = new List<string>();
-            //var largeAreaCode = new string[] { "Z011","Z012","Z013","Z014","Z015","Z016","Z017","Z021",
-            //                              "Z022","Z023","Z024","Z025","Z026","Z031","Z032","Z033",
-            //                              "Z034","Z041","Z051","Z052","Z053","Z054","Z055","Z056",
-            //                              "Z061","Z062","Z063","Z064","Z065","Z066","Z071","Z072",
-            //                              "Z073","Z074","Z075","Z081","Z082","Z083","Z084","Z091",
-            //                              "Z092","Z093","Z094","Z095","Z096","Z097","Z098",
+            //var list = new List<string>();
+            //var largeAreaCode = new string[] { "011000","012000","013000","014100","015000","016000","017000","020000",
+            //                              "030000","040000","050000","060000","070000","080000","090000","100000",
+            //                              "110000","120000","130000","140000","190000","200000","210000","220000",
+            //                              "230000","240000","150000","160000","170000","180000","250000","260000",
+            //                              "270000","280000","290000","300000","310000","320000","330000","340000",
+            //                              "360000","370000","380000","390000","350000","400000","410000","420000",
+            //                              "430000","440000","450000","460040","460100","471000","472000","473000","474000",
             //};
-            //list1.AddRange(largeAreaCode);
+            //list.AddRange(largeAreaCode);
 
-            //var dString = wc.DownloadString("http://webservice.recruit.co.jp/hotpepper/gourmet/v1/?key=0e8af5f2f79eb4f4&large_area={0}",largeAreaCode[]);
-            //var json = JsonConvert.DeserializeObject<Rootobject>(dString);
 
-            //lbAccess1.Content = json.results.shop[0].access;
+            LargeArea();
+            var dString = wc.DownloadString("http://webservice.recruit.co.jp/hotpepper/gourmet/v1/?key=0e8af5f2f79eb4f4&large_area=" + largeAreaCode  +"&format=json");
+            //dString = dString.Replace("\"name\":\"ダイニングバー・バル\"", "\"name\":\"ダイニングバーバル\"");
+            //dString = dString.Replace("\"name\":\"イタリアン・フレンチ\"", "\"name\":\"イタリアンフレンチ\"");
+            var json = JsonConvert.DeserializeObject<Rootobject>(dString);
 
-            //string id2 = "Z011";
-            //var dString2 = wc.DownloadString(" http://webservice.recruit.co.jp/hotpepper/gourmet/v1/?key=0e8af5f2f79eb4f4&large_area=" + id2);
-            //var json2 = JsonConvert.DeserializeObject<Rootobject>(dString2);
-            //lbAccess1.Content = json2.results.shop[0].access;
+            tbAddress1.Text = json.results.shop[0].address;
+
 
         }
     }
