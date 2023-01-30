@@ -22,6 +22,8 @@ namespace HotpepperGourmetSystem {
     public partial class Home : Page {
 
         string largeAreaCode;
+        string midleAreaCode;
+        string genreCode;
 
         //親ウィンドウのインスタンスを取得
         Window1 parent = (Window1)Application.Current.MainWindow;
@@ -37,16 +39,6 @@ namespace HotpepperGourmetSystem {
             lbPref.Content = parent.selectedPref;
             lbCity.Content = parent.selectedArea;
             lbGenre.Content = parent.selectedGenre;
-
-            string id = "J001239297";
-
-            var dString = wc.DownloadString("http://webservice.recruit.co.jp/hotpepper/gourmet/v1/?key=0e8af5f2f79eb4f4&id=" + id + "&format=json");
-            var json = JsonConvert.DeserializeObject<Rootobject>(dString);
-            //lbMaxTempToday.Text = json2[1].timeSeries[1].areas[0].tempsMax[1];
-
-            //lb1.Content = json.results.shop[0].access;
-
-
         }
 
 
@@ -69,9 +61,6 @@ namespace HotpepperGourmetSystem {
                 case "茨城県":
                     largeAreaCode = "Z015";
                     break;
-                case "北海道":
-                    largeAreaCode = "Z016";
-                    break;
                 case "栃木県":
                     largeAreaCode = "Z017";
                     break;
@@ -80,6 +69,194 @@ namespace HotpepperGourmetSystem {
                     break;
                 case "滋賀県":
                     largeAreaCode = "Z011";
+                    break;
+                case "京都府":
+                    largeAreaCode = "Z022";
+                    break;
+                case "大阪府":
+                    largeAreaCode = "Z023";
+                    break;
+                case "兵庫県":
+                    largeAreaCode = "Z024";
+                    break;
+                case "奈良県":
+                    largeAreaCode = "Z025";
+                    break;
+                case "和歌山県":
+                    largeAreaCode = "Z026";
+                    break;
+                case "岐阜県":
+                    largeAreaCode = "Z031";
+                    break;
+                case "静岡県":
+                    largeAreaCode = "Z032";
+                    break;
+                case "愛知県":
+                    largeAreaCode = "Z034";
+                    break;
+                case "三重県":
+                    largeAreaCode = "Z035";
+                    break;
+                case "北海道":
+                    largeAreaCode = "Z041";
+                    break;
+                case "青森県":
+                    largeAreaCode = "Z051";
+                    break;
+                case "岩手県":
+                    largeAreaCode = "Z052";
+                    break;
+                case "宮城県":
+                    largeAreaCode = "Z053";
+                    break;
+                case "秋田県":
+                    largeAreaCode = "Z054";
+                    break;
+                case "山形県":
+                    largeAreaCode = "Z055";
+                    break;
+                case "福島県":
+                    largeAreaCode = "Z056";
+                    break;
+                case "新潟県":
+                    largeAreaCode = "Z061";
+                    break;
+                case "富山県":
+                    largeAreaCode = "Z062";
+                    break;
+                case "石川県":
+                    largeAreaCode = "Z063";
+                    break;
+                case "福井県":
+                    largeAreaCode = "Z064";
+                    break;
+                case "山梨県":
+                    largeAreaCode = "Z065";
+                    break;
+                case "長野県":
+                    largeAreaCode = "Z066";
+                    break;
+                case "鳥取県":
+                    largeAreaCode = "Z071";
+                    break;
+                case "島根県":
+                    largeAreaCode = "Z072";
+                    break;
+                case "岡山県":
+                    largeAreaCode = "Z073";
+                    break;
+                case "広島県":
+                    largeAreaCode = "Z074";
+                    break;
+                case "山口県":
+                    largeAreaCode = "Z075";
+                    break;
+                case "徳島県":
+                    largeAreaCode = "Z081";
+                    break;
+                case "香川県":
+                    largeAreaCode = "Z082";
+                    break;
+                case "愛媛県":
+                    largeAreaCode = "Z083";
+                    break;
+                case "高知県":
+                    largeAreaCode = "Z084";
+                    break;
+                case "福岡県":
+                    largeAreaCode = "Z091";
+                    break;
+                case "佐賀県":
+                    largeAreaCode = "Z092";
+                    break;
+                case "長崎県":
+                    largeAreaCode = "Z093";
+                    break;
+                case "熊本県":
+                    largeAreaCode = "Z094";
+                    break;
+                case "大分県":
+                    largeAreaCode = "Z095";
+                    break;
+                case "宮崎県":
+                    largeAreaCode = "Z096";
+                    break;
+                case "鹿児島県":
+                    largeAreaCode = "Z097";
+                    break;
+                case "沖縄県":
+                    largeAreaCode = "Z098";
+                    break;
+            }
+        }
+
+        private void MidleArea()
+        {
+            switch (lbCity.Content)
+            {
+                case "銀座・有楽町・新橋・築地・月島":
+                    midleAreaCode = "Y005";
+                    break;
+                case "水道橋・飯田橋・神楽坂":
+                    midleAreaCode = "Y006";
+                    break;
+                case "お台場":
+                    midleAreaCode = "Y007";
+                    break;
+            }
+        }
+
+        private void Genre()
+        {
+            switch (lbGenre.Content)
+            {
+                case "居酒屋":
+                    genreCode = "G001";
+                    break;
+                case "ダイニングバー・バル":
+                    genreCode = "G002";
+                    break;
+                case "創作料理":
+                    genreCode = "G003";
+                    break;
+                case "和食":
+                    genreCode = "G004";
+                    break;
+                case "洋食":
+                    genreCode = "G005";
+                    break;
+                case "イタリアン・フレンチ":
+                    genreCode = "G006";
+                    break;
+                case "中華":
+                    genreCode = "G007";
+                    break;
+                case "焼肉・ホルモン":
+                    genreCode = "G008";
+                    break;
+                case "韓国料理":
+                    genreCode = "G017";
+                    break;
+                case "アジア・エスニック料理":
+                    genreCode = "G009";
+                    break;
+                case "各国料理":
+                    genreCode = "G010";
+                    break;
+                case "カラオケ・パーティ":
+                    genreCode = "G011";
+                    break;
+                case "バー・カクテル":
+                    genreCode = "G012";
+                    break;
+                case "ラーメン":
+                    genreCode = "G013";
+                    break;
+                case "お好み焼き・もんじゃ":
+                    genreCode = "G016";
+                    break;
+                case "カフェ・スイーツ":
+                    genreCode = "G014";
                     break;
             }
         }
@@ -152,6 +329,8 @@ namespace HotpepperGourmetSystem {
                 "90名",
                 "100名",
             };
+
+            //btSearch.IsEnabled = false;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e) {
@@ -166,24 +345,24 @@ namespace HotpepperGourmetSystem {
 
         private void cbBudgetMin_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            var list = new List<ComboBox>();
-            var num = new ComboBox[] { cbBudgetMin };
-            list.AddRange(num);
+            //var list = new List<ComboBox>();
+            //var num = new ComboBox[] { cbBudgetMin };
+            //list.AddRange(num);
 
-            var list2 = new List<int>();
-            var index = new int[] { 1,2,3,4,5,6,7,8,9,10,11,12, };
-            list2.AddRange(index);
+            //var list2 = new List<int>();
+            //var index = new int[] { 1,2,3,4,5,6,7,8,9,10,11,12, };
+            //list2.AddRange(index);
 
-            for (int i2 = 0; i2 < index.Length; i2++)
-            {
-                if (cbBudgetMin.SelectedIndex == i2)
-                {
-                    for (int i1 = 1; i1 < num.Length; i1++)
-                    {
-                        num[i1].IsEnabled = false;
-                    }
-                }
-            }
+            //for (int i2 = 0; i2 < index.Length; i2++)
+            //{
+            //    if (cbBudgetMin.SelectedIndex == i2)
+            //    {
+            //        for (int i1 = 1; i1 < num.Length; i1++)
+            //        {
+            //            num[i1].IsEnabled = false;
+            //        }
+            //    }
+            //}
         }
 
         private void btClose_Click_1(object sender, RoutedEventArgs e)
@@ -198,27 +377,48 @@ namespace HotpepperGourmetSystem {
                 Encoding = Encoding.UTF8
             };
 
-            //var list = new List<string>();
-            //var largeAreaCode = new string[] { "011000","012000","013000","014100","015000","016000","017000","020000",
-            //                              "030000","040000","050000","060000","070000","080000","090000","100000",
-            //                              "110000","120000","130000","140000","190000","200000","210000","220000",
-            //                              "230000","240000","150000","160000","170000","180000","250000","260000",
-            //                              "270000","280000","290000","300000","310000","320000","330000","340000",
-            //                              "360000","370000","380000","390000","350000","400000","410000","420000",
-            //                              "430000","440000","450000","460040","460100","471000","472000","473000","474000",
-            //};
-            //list.AddRange(largeAreaCode);
+            if (lbPref.Content != "" && lbCity.Content == "指定なし" && lbGenre.Content != "")
+            {
+                Genre();
+                LargeArea();
+                var dString1 = wc.DownloadString("http://webservice.recruit.co.jp/hotpepper/gourmet/v1/?key=0e8af5f2f79eb4f4&large_area=" + largeAreaCode + "&genre=" + genreCode + "&format=json");
+                //dString = dString.Replace("\"name\":\"ダイニングバー・バル\"", "\"name\":\"ダイニングバーバル\"");
+                //dString = dString.Replace("\"name\":\"イタリアン・フレンチ\"", "\"name\":\"イタリアンフレンチ\"");
+                var json1 = JsonConvert.DeserializeObject<Rootobject>(dString1);
+                tbShopName1.Text = json1.results.shop[0].name;
+                tbAddress1.Text = json1.results.shop[0].address;
+                tbOpen1.Text = json1.results.shop[0].open;
+                lbBudget1.Content = json1.results.shop[0].budget.name;
+                tbCatchPhrase1.Text = json1.results.shop[0].other_memo;
+                var imageUrl = json1.results.shop[0].logo_image;
+                BitmapImage imagesorse = new BitmapImage(new Uri(imageUrl));
+                im11.Source = imagesorse;
+            }
+            if (lbPref.Content != "" && lbCity.Content == "指定なし" && lbGenre.Content == "")
+            {
+                Genre();
+                LargeArea();
+                var dString1 = wc.DownloadString("http://webservice.recruit.co.jp/hotpepper/gourmet/v1/?key=0e8af5f2f79eb4f4&large_area=" + largeAreaCode + "&format=json");
+                var json1 = JsonConvert.DeserializeObject<Rootobject>(dString1);
+                tbShopName1.Text = json1.results.shop[0].name;
+                tbAddress1.Text = json1.results.shop[0].address;
+                tbOpen1.Text = json1.results.shop[0].open;
+                lbBudget1.Content = json1.results.shop[0].budget.name;
+                tbCatchPhrase1.Text = json1.results.shop[0].other_memo;
+                var imageUrl = json1.results.shop[0].logo_image;
+                BitmapImage imagesorse = new BitmapImage(new Uri(imageUrl));
+                im11.Source = imagesorse;
+            }
 
 
-            LargeArea();
-            var dString = wc.DownloadString("http://webservice.recruit.co.jp/hotpepper/gourmet/v1/?key=0e8af5f2f79eb4f4&large_area=" + largeAreaCode  +"&format=json");
-            //dString = dString.Replace("\"name\":\"ダイニングバー・バル\"", "\"name\":\"ダイニングバーバル\"");
-            //dString = dString.Replace("\"name\":\"イタリアン・フレンチ\"", "\"name\":\"イタリアンフレンチ\"");
-            var json = JsonConvert.DeserializeObject<Rootobject>(dString);
+            //MidleArea();
+            //var dString2 = wc.DownloadString("http://webservice.recruit.co.jp/hotpepper/gourmet/v1/?key=0e8af5f2f79eb4f4&large_area=" + largeAreaCode + "&format=json");
+            //var json2 = JsonConvert.DeserializeObject<Rootobject>(dString2);
+            ////tbAddress1.Text = json2.results.shop[0].address;
 
-            tbAddress1.Text = json.results.shop[0].address;
-
-
+            //Genre();
+            //var dString3 = wc.DownloadString("http://webservice.recruit.co.jp/hotpepper/gourmet/v1/?key=0e8af5f2f79eb4f4&genre=" + genreCode + "&format=json");
+            //var json3 = JsonConvert.DeserializeObject<Rootobject>(dString3);
         }
     }
 }
