@@ -108,7 +108,7 @@
         </ScrollViewer>
         <Label x:Name="lbDecide" Content="" HorizontalAlignment="Left" Margin="786,337,0,0" VerticalAlignment="Top" Height="39" Width="126" FontSize="24"/>
         <Label x:Name="lbDecideCb" Content="" HorizontalAlignment="Left" Margin="774,389,0,0" VerticalAlignment="Top" Width="192"/>
-        <Button x:Name="btSearch" Content="選択する" HorizontalAlignment="Left" Margin="827,435,0,0" VerticalAlignment="Top" Width="94" Click="btSearch_Click" Height="37" Background="{x:Null}" BorderBrush="Firebrick" Foreground="Black"/>
+        <Button x:Name="btSearch" Content="確定" HorizontalAlignment="Left" Margin="821,442,0,0" VerticalAlignment="Top" Width="106" Click="btSearch_Click" Height="30" Background="{x:Null}" BorderBrush="Firebrick" Foreground="Black"/>
     </Grid>
 
 

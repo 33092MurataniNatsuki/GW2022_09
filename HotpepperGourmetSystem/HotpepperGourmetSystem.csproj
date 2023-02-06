@@ -75,6 +75,8 @@
     <Compile Include="Home.xaml.cs">
       <DependentUpon>Home.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MideleAreaCodeCounter.cs" />
+    <Compile Include="MidleArea.cs" />
     <Compile Include="Window1.xaml.cs">
       <DependentUpon>Window1.xaml</DependentUpon>
     </Compile>
@@ -133,6 +135,9 @@
     </Resource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="MidleAreaCode.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <Resource Include="Images\月.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>

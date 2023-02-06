@@ -125,11 +125,11 @@ namespace HotpepperGourmetSystem {
             allClear();
 
             var list1 = new List<RadioButton>();
-            var area1 = new RadioButton[] { rb1,rb2,rb3,rb4,rb5,rb6,rb7,rb8,rb9,rb10, rb11,rb12, rb13, };
+            var area1 = new RadioButton[] { rb1,rb2,rb3,rb4,rb5,rb6,rb7,rb8,rb9,rb10, rb11,rb12, };
             list1.AddRange(area1);
 
             var list2 = new List<string>();
-            var areaName = new string[] { "指定なし","すすきの","室蘭・登別・白老","富良野・その他北海道","札幌（札幌駅・大通）","札幌（札幌駅・大通）","麻生・北24条（北区・東区）",
+            var areaName = new string[] { "指定なし","すすきの","室蘭・登別・白老","富良野・その他北海道","札幌（札幌駅・大通）","麻生・北24条（北区・東区）",
                                           "南郷・新札幌　白石・厚別・清田","琴似・円山公園　中央・西・手稲","平岸・澄川（豊平区・南区）","旭川", "函館",
                                           "小樽・千歳・苫小牧・札幌近郊","帯広・釧路・北見・河東郡",
                                          };
@@ -141,7 +141,7 @@ namespace HotpepperGourmetSystem {
             }
 
             var list3 = new List<RadioButton>();
-            var area2 = new RadioButton[] { rb14,rb15,rb16,rb17,rb18,rb19,rb20,rb21,rb22,rb23,rb24,rb25,rb26,rb27,rb28,rb29,rb30,
+            var area2 = new RadioButton[] { rb13, rb14,rb15,rb16,rb17,rb18,rb19,rb20,rb21,rb22,rb23,rb24,rb25,rb26,rb27,rb28,rb29,rb30,
                                            rb31,rb32,rb33,rb34,rb35,rb36,
                                          };
             list3.AddRange(area2);
@@ -475,11 +475,11 @@ namespace HotpepperGourmetSystem {
             allClear();
 
             var list1 = new List<RadioButton>();
-            var area1 = new RadioButton[] { rb1, rb2, rb3, rb4, rb5, rb6, rb7,};
+            var area1 = new RadioButton[] { rb1, rb2, rb3, rb4, rb5, rb6, rb7, rb8, };
             list1.AddRange(area1);
 
             var list2 = new List<string>();
-            var areaName = new string[] { "指定なし", "伊勢", "松阪", "四日市", "津", "鈴鹿", "鳥羽・志摩",};
+            var areaName = new string[] { "指定なし", "伊勢", "桑名", "松阪", "四日市", "津", "鈴鹿", "鳥羽・志摩","三重県その他"};
 
             list2.AddRange(areaName);
 
@@ -489,7 +489,7 @@ namespace HotpepperGourmetSystem {
             }
 
             var list3 = new List<RadioButton>();
-            var area2 = new RadioButton[] { rb8, rb9, rb10, rb11, rb12, rb13, rb14, rb15, rb16, rb17, rb18,rb19,rb20,rb21,rb22,rb23,rb24,rb25,rb26,rb27,rb28,rb29,rb30,
+            var area2 = new RadioButton[] { rb9, rb10, rb11, rb12, rb13, rb14, rb15, rb16, rb17, rb18,rb19,rb20,rb21,rb22,rb23,rb24,rb25,rb26,rb27,rb28,rb29,rb30,
                                            rb31,rb32,rb33,rb34,rb35,rb36,
                                          };
             list3.AddRange(area2);
@@ -508,34 +508,9 @@ namespace HotpepperGourmetSystem {
 
             lbWhite();
 
-            rbCheckOn();
+            rbCheckOff();
 
             allClear();
-
-            var list1 = new List<RadioButton>();
-            var area1 = new RadioButton[] { rb1, rb2, rb3, rb4,};
-            list1.AddRange(area1);
-
-            var list2 = new List<string>();
-            var areaName = new string[] { "指定なし", "奈良市", "天理市・橿原市", "大和郡山市・生駒市", };
-
-            list2.AddRange(areaName);
-
-            for (int i = 0; i < area1.Length; i++)
-            {
-                area1[i].Content = areaName[i];
-            }
-
-            var list3 = new List<RadioButton>();
-            var area2 = new RadioButton[] { rb5, rb6, rb7, rb7, rb8, rb9, rb10, rb11, rb12, rb13, rb14, rb15, rb16, rb17, rb18,rb19,rb20,rb21,rb22,rb23,rb24,rb25,rb26,rb27,rb28,rb29,rb30,
-                                           rb31,rb32,rb33,rb34,rb35,rb36,
-                                         };
-            list3.AddRange(area2);
-
-            for (int i = 0; i < area2.Length; i++)
-            {
-                area2[i].IsEnabled = false;
-            }
 
             lbDecide.Content = "奈良県";
         }
@@ -551,12 +526,12 @@ namespace HotpepperGourmetSystem {
             allClear();
 
             var list1 = new List<RadioButton>();
-            var area1 = new RadioButton[] { rb1, rb2, rb3, rb4, rb5, rb6, rb7, rb8, rb9, rb10, rb11, rb12, rb13, rb14, rb15, rb16, rb17, rb18, rb19, rb20, rb21,};
+            var area1 = new RadioButton[] { rb1, rb2, rb3, rb4, rb5, rb6, rb7, rb8, rb9, rb10, rb11, rb12, rb13, rb14, rb15, rb16, rb17, rb18, rb19, rb20, rb21, rb22, };
             list1.AddRange(area1);
 
             var list2 = new List<string>();
             var areaName = new string[] { "指定なし","梅田", "福島・野田", "淀屋橋・本町・北浜・天満橋", "京橋・天満・天六・南森町",
-                                        "心斎橋・なんば・南船場・堀江", "天王寺", "上本町・鶴橋", "針中野･長居･西田辺･西成区･住吉",
+                                        "心斎橋・なんば・南船場・堀江", "天王寺", "上本町・鶴橋", "針中野･長居･西田辺･西成区･住吉","大阪市その他",
                                         "関目・千林・緑橋・深江橋", "堺・高石市・和泉市", "高槻", "茨木", "泉大津･岸和田･泉佐野･りんくう",
                                         "松原市･藤井寺市･富田林･南河内", "江坂・西中島・新大阪・十三", "東大阪市・八尾市・平野・大東市",
                                         "九条･西九条･弁天町･大正･住之江", "枚方・寝屋川・守口・門真", "箕面・池田", "大阪府その他", };
@@ -569,7 +544,7 @@ namespace HotpepperGourmetSystem {
             }
 
             var list3 = new List<RadioButton>();
-            var area2 = new RadioButton[] { rb22,rb23,rb24,rb25,rb26,rb27,rb28,rb29,rb30,
+            var area2 = new RadioButton[] { rb23,rb24,rb25,rb26,rb27,rb28,rb29,rb30,
                                            rb31,rb32,rb33,rb34,rb35,rb36,
                                          };
             list3.AddRange(area2);
@@ -675,7 +650,7 @@ namespace HotpepperGourmetSystem {
             list1.AddRange(area1);
 
             var list2 = new List<string>();
-            var areaName = new string[] { "指定なし", "白浜・和歌山県その他", "和歌山市", "田辺市", };
+            var areaName = new string[] { "指定なし",  "和歌山市", "田辺市", "白浜・和歌山県その他", };
 
             list2.AddRange(areaName);
 
@@ -713,7 +688,7 @@ namespace HotpepperGourmetSystem {
             list1.AddRange(area1);
 
             var list2 = new List<string>();
-            var areaName = new string[] { "指定なし", "宮古・岩手県その他", "盛岡", "花巻・北上・奥州・一関", };
+            var areaName = new string[] { "指定なし", "盛岡", "花巻・北上・奥州・一関", "宮古・岩手県その他", };
 
             list2.AddRange(areaName);
 
@@ -751,8 +726,8 @@ namespace HotpepperGourmetSystem {
             list1.AddRange(area1);
 
             var list2 = new List<string>();
-            var areaName = new string[] { "指定なし","仙台（仙台駅周辺）", "宮城県その他", "青葉・宮城野・若林", "仙台（国分町・一番町周辺）",
-                                        "泉中央", "長町", "大崎市", };
+            var areaName = new string[] { "指定なし","仙台（仙台駅周辺）", "青葉・宮城野・若林", "仙台（国分町・一番町周辺）",
+                                        "泉中央", "長町", "大崎市", "宮城県その他", };
 
             list2.AddRange(areaName);
 
@@ -824,11 +799,11 @@ namespace HotpepperGourmetSystem {
             allClear();
 
             var list1 = new List<RadioButton>();
-            var area1 = new RadioButton[] { rb1, rb2, rb3, rb4, rb5, rb6,};
+            var area1 = new RadioButton[] { rb1, rb2, rb3, rb4, rb5, rb6, rb7, rb8, };
             list1.AddRange(area1);
 
             var list2 = new List<string>();
-            var areaName = new string[] { "指定なし", "宇都宮", "小山市・栃木市", "日光・鹿沼", "足利市・佐野市", "栃木県その他", };
+            var areaName = new string[] { "指定なし", "宇都宮", "小山市・栃木市", "小山市・栃木市", "日光・鹿沼"," 那須・塩原,","足利市・佐野市", "栃木県その他", };
 
             list2.AddRange(areaName);
 
@@ -838,7 +813,7 @@ namespace HotpepperGourmetSystem {
             }
 
             var list3 = new List<RadioButton>();
-            var area2 = new RadioButton[] {  rb7, rb8, rb9, rb10, rb11, rb12, rb13, rb14, rb15, rb16, rb17, rb18, rb19, rb20,rb21,rb22,rb23,rb24,rb25,
+            var area2 = new RadioButton[] {  rb9, rb10, rb11, rb12, rb13, rb14, rb15, rb16, rb17, rb18, rb19, rb20,rb21,rb22,rb23,rb24,rb25,
                                              rb26,rb27,rb28,rb29,rb30,rb31,rb32,rb33,rb34,rb35,rb36,
                                          };
             list3.AddRange(area2);
@@ -943,7 +918,7 @@ namespace HotpepperGourmetSystem {
             list1.AddRange(area1);
 
             var list2 = new List<string>();
-            var areaName = new string[] { "指定なし", "萩・山口県その他", "下関", "山口市", "宇部市", "周南市・下松市", "岩国", "防府", };
+            var areaName = new string[] { "指定なし", "下関", "山口市", "宇部市", "周南市・下松市", "岩国", "防府", "萩・山口県その他", };
 
             list2.AddRange(areaName);
 
@@ -982,7 +957,7 @@ namespace HotpepperGourmetSystem {
             list1.AddRange(area1);
 
             var list2 = new List<string>();
-            var areaName = new string[] { "指定なし", "高松市中心部", "高松市郊外", "坂出・香川県その他", };
+            var areaName = new string[] { "指定なし", "丸亀･坂出･宇多津･善通寺･多度津", "高松市中心部", "高松市郊外", "坂出・香川県その他", };
 
             list2.AddRange(areaName);
 
@@ -1058,7 +1033,7 @@ namespace HotpepperGourmetSystem {
             list1.AddRange(area1);
 
             var list2 = new List<string>();
-            var areaName = new string[] { "指定なし", "松山", "今治", "宇和島･東予･南予･愛媛県その他", "新居浜・西条", };
+            var areaName = new string[] { "指定なし", "松山", "今治", "新居浜・西条", "宇和島･東予･南予･愛媛県その他", };
 
             list2.AddRange(areaName);
 
@@ -1378,7 +1353,7 @@ namespace HotpepperGourmetSystem {
             list1.AddRange(area1);
 
             var list2 = new List<string>();
-            var areaName = new string[] { "指定なし", "安曇野", "諏訪・茅野諏訪・茅野", "長野市","松本市", "軽井沢", "上田・佐久", "長野県その他", };
+            var areaName = new string[] { "指定なし", "安曇野", "諏訪・茅野", "長野市","松本市", "軽井沢", "上田・佐久", "長野県その他", };
 
             list2.AddRange(areaName);
 
@@ -1455,7 +1430,7 @@ namespace HotpepperGourmetSystem {
             list1.AddRange(area1);
 
             var list2 = new List<string>();
-            var areaName = new string[] { "指定なし", "小浜・福井県その他", "福井市", "敦賀", "井", };
+            var areaName = new string[] { "指定なし", "福井市", "坂井市", "敦賀", "小浜・福井県その他", };
 
             list2.AddRange(areaName);
 
@@ -1610,7 +1585,7 @@ namespace HotpepperGourmetSystem {
             list1.AddRange(area1);
 
             var list2 = new List<string>();
-            var areaName = new string[] { "指定なし", "金沢(片町･香林坊･にし茶屋周辺)", "金沢(金沢駅･近江町･ひがし茶屋)", "金沢市他・野々市・白山・内灘", };
+            var areaName = new string[] { "指定なし", "金沢(片町･香林坊･にし茶屋周辺)", "金沢(金沢駅･近江町･ひがし茶屋)", "金沢市他・野々市・白山・内灘", "輪島・七尾・加賀・石川県その他", };
 
             list2.AddRange(areaName);
 
@@ -1678,34 +1653,9 @@ namespace HotpepperGourmetSystem {
 
             lbWhite();
 
-            rbCheckOn();
+            rbCheckOff();
 
             allClear();
-
-            var list1 = new List<RadioButton>();
-            var area1 = new RadioButton[] { rb1, rb2, rb3, rb4, rb5, rb6, rb7,};
-            list1.AddRange(area1);
-
-            var list2 = new List<string>();
-            var areaName = new string[] { "指定なし", "青森市", "弘前", "八戸", "五所川原・青森西部", "十和田・三沢・おいらせ町", "むつ市・青森東部", };
-
-            list2.AddRange(areaName);
-
-            for (int i = 0; i < area1.Length; i++)
-            {
-                area1[i].Content = areaName[i];
-            }
-
-            var list3 = new List<RadioButton>();
-            var area2 = new RadioButton[] {  rb8, rb9, rb10, rb11, rb12, rb13, rb14, rb15, rb16, rb17, rb18, rb19, rb20,
-                                             rb21,rb22,rb23,rb24,rb25,rb26,rb27,rb28,rb29,rb30,rb31,rb32,rb33,rb34,rb35,rb36,
-                                         };
-            list3.AddRange(area2);
-
-            for (int i = 0; i < area2.Length; i++)
-            {
-                area2[i].IsEnabled = false;
-            }
 
             lbDecide.Content = "青森県";
         }
@@ -1759,11 +1709,11 @@ namespace HotpepperGourmetSystem {
             allClear();
 
             var list1 = new List<RadioButton>();
-            var area1 = new RadioButton[] { rb1, rb2, rb3, rb4, rb5,};
+            var area1 = new RadioButton[] { rb1, rb2, rb3, rb4, };
             list1.AddRange(area1);
 
             var list2 = new List<string>();
-            var areaName = new string[] { "指定なし", "山形市", "山形市", "酒田・鶴岡", "山形県その他" ,};
+            var areaName = new string[] { "指定なし", "山形市", "米沢", "酒田・鶴岡", "山形県その他",};
 
             list2.AddRange(areaName);
 
@@ -1773,7 +1723,7 @@ namespace HotpepperGourmetSystem {
             }
 
             var list3 = new List<RadioButton>();
-            var area2 = new RadioButton[] {  rb6, rb7, rb8, rb9, rb10, rb11, rb12, rb13, rb14, rb15, rb16, rb17, rb18, rb19, rb20,
+            var area2 = new RadioButton[] {  rb5, rb6, rb7, rb8, rb9, rb10, rb11, rb12, rb13, rb14, rb15, rb16, rb17, rb18, rb19, rb20,
                                              rb21,rb22,rb23,rb24,rb25,rb26,rb27,rb28,rb29,rb30,rb31,rb32,rb33,rb34,rb35,rb36,
                                          };
             list3.AddRange(area2);
@@ -1859,6 +1809,8 @@ namespace HotpepperGourmetSystem {
             {
                 area2[i].IsEnabled = false;
             }
+
+            lbDecide.Content = "沖縄県";
         }
 
         private void rb_Checked(object sender, RoutedEventArgs e)
