@@ -106,9 +106,10 @@
                 <RadioButton x:Name="rb36" Content="" Background="Firebrick" BorderBrush="Firebrick" Checked="rb_Checked"/>
             </StackPanel>
         </ScrollViewer>
-        <Label x:Name="lbDecide" Content="" HorizontalAlignment="Left" Margin="786,337,0,0" VerticalAlignment="Top" Height="39" Width="126" FontSize="24"/>
-        <Label x:Name="lbDecideCb" Content="" HorizontalAlignment="Left" Margin="774,389,0,0" VerticalAlignment="Top" Width="192"/>
+        <Label x:Name="lbDecide" Content="" HorizontalAlignment="Left" Margin="786,362,0,0" VerticalAlignment="Top" Height="39" Width="170" FontSize="24" FontWeight="Bold"/>
+        <Label x:Name="lbDecideCb" Content="" HorizontalAlignment="Left" Margin="774,406,0,0" VerticalAlignment="Top" Width="192" FontWeight="Bold"/>
         <Button x:Name="btSearch" Content="確定" HorizontalAlignment="Left" Margin="821,442,0,0" VerticalAlignment="Top" Width="106" Click="btSearch_Click" Height="30" Background="{x:Null}" BorderBrush="Firebrick" Foreground="Black"/>
+        <Label Content="※確定ボタンを押してください" HorizontalAlignment="Left" Margin="797,333,0,0" VerticalAlignment="Top" Height="24" Width="144"/>
     </Grid>
 
 

@@ -18,6 +18,14 @@
         <Image HorizontalAlignment="Left" Height="50" Margin="76,81,0,0" VerticalAlignment="Top" Width="132" Source="Images/Hotpepper.jpg" Grid.ColumnSpan="2"/>
         <!--<Image HorizontalAlignment="Left" Height="575" Margin="0.2,10,-185,-135.4" VerticalAlignment="Top" Width="808" Source="Images/ジャンル料理.png" Grid.Column="1"/>-->
         <!--<Image HorizontalAlignment="Left" Height="575" Margin="0.2,10,-185,-135.4" VerticalAlignment="Top" Width="808" Source="Images/waku.png" Grid.Column="1"/>-->
+        <!--<GroupBox Header="MaterialDesignFlatButton" Margin="5">
+            <StackPanel Orientation="Horizontal">
+                <Button Content="FlatButton" Width="200" Style="{StaticResource MaterialDesignFlatButton}"/>
+                <Button Content="FlatAccentButton" Width="200" Style="{StaticResource MaterialDesignFlatAccentButton}"/>
+            </StackPanel>
+        </GroupBox>
+        <Button Content="FlatButton" Width="200" Style="{StaticResource MaterialDesignFlatButton}" Grid.ColumnSpan="2" Margin="-7,268,607,150"/>
+        <Button Content="FlatAccentButton" Width="200" Style="{StaticResource MaterialDesignFlatAccentButton}" Grid.ColumnSpan="2" Margin="5,174,595,244"/>-->
         <TextBlock HorizontalAlignment="Left" Margin="78,206,0,0" TextWrapping="Wrap" Text="── ジャンル ──" VerticalAlignment="Top" Height="22" Width="130" FontSize="16" Foreground="Black" FontWeight="Bold" Grid.ColumnSpan="2"/>
         <Button x:Name="btTavern" Content="居酒屋" Grid.Column="1" HorizontalAlignment="Left" Margin="66,48,0,0" VerticalAlignment="Top" Width="164" Height="134" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="btTavern_Click" />
         <Button x:Name="btDiningBar" Content="ダイニングバー・バル" Grid.Column="1" HorizontalAlignment="Left" Margin="230,48,0,0" VerticalAlignment="Top" Width="164" Height="134" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}" Click="btDiningBar_Click" />
@@ -38,5 +46,6 @@
         <Button x:Name="goHome" Content="HOME" HorizontalAlignment="Left" Margin="76,305,0,0" VerticalAlignment="Top" Width="132" Grid.ColumnSpan="2" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#DD000000" Click="goHome_Click"/>
         <Button x:Name="goArea" Content="地域" HorizontalAlignment="Left" Margin="76,396,0,0" VerticalAlignment="Top" Width="132" Grid.ColumnSpan="2" Foreground="#DD000000" Background="{x:Null}" BorderBrush="{x:Null}" Click="goArea_Click"/>
         <Label x:Name="lbGenreName" Content="" HorizontalAlignment="Left" Height="48" Margin="58,464,0,-62" VerticalAlignment="Top" Width="128" FontSize="20" Grid.ColumnSpan="2"/>
+        
     </Grid>
 </Page>

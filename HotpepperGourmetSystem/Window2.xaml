@@ -1,0 +1,23 @@
+﻿<Window x:Class="HotpepperGourmetSystem.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HotpepperGourmetSystem"
+        mc:Ignorable="d"
+        Title="Window2" Height="450" Width="800">
+    <Grid>
+        <Button
+                 Margin="294,0,0,62"
+                 HorizontalAlignment="Left"
+                 VerticalAlignment="Bottom"
+                 Style="{StaticResource MaterialDesignFloatingActionLightButton}"
+                 ToolTip="MaterialDesignFloatingActionLightButton" Height="157" Width="157" Background="Firebrick" BorderBrush="Firebrick"/>
+        <GroupBox Header="MaterialDesignFlatButton" Margin="5">
+            <StackPanel Orientation="Horizontal">
+                <Button Content="FlatButton" Width="200" Style="{StaticResource MaterialDesignFlatButton}"/>
+                <Button Content="FlatAccentButton" Width="200" Style="{StaticResource MaterialDesignFlatAccentButton}"/>
+            </StackPanel>
+        </GroupBox>
+    </Grid>
+</Window>

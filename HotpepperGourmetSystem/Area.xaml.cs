@@ -1811,6 +1811,12 @@ namespace HotpepperGourmetSystem {
             }
 
             lbDecide.Content = "沖縄県";
+
+            //parent.selectedPref = (string)lbDecide.Content;
+            //parent.selectedArea = (string)lbDecideCb.Content;
+
+            //var home = new Home();
+            //NavigationService.Navigate(home);
         }
 
         private void rb_Checked(object sender, RoutedEventArgs e)
@@ -1823,16 +1829,16 @@ namespace HotpepperGourmetSystem {
 
         private void btSearch_Click(object sender, RoutedEventArgs e)
         {
-            if (lbDecideCb.Content != rb1.Content)
-            {
-                lbColor.Background = Brushes.GhostWhite;
-                //lbColor.Background = Brushes.AliceBlue;
-            }
-            if (lbDecideCb.Content != rb2.Content)
-            {
-                lbColor.Background = Brushes.GhostWhite;
-                //lbColor.Background = Brushes.AliceBlue;
-            }
+            //if (lbDecideCb.Content != rb1.Content)
+            //{
+            //    lbColor.Background = Brushes.GhostWhite;
+            //    //lbColor.Background = Brushes.AliceBlue;
+            //}
+            //if (lbDecideCb.Content != rb2.Content)
+            //{
+            //    lbColor.Background = Brushes.GhostWhite;
+            //    //lbColor.Background = Brushes.AliceBlue;
+            //}
 
             parent.selectedPref = (string)lbDecide.Content;
             parent.selectedArea = (string)lbDecideCb.Content;

@@ -23,6 +23,7 @@ namespace HotpepperGourmetSystem {
         public string selectedPref = "";
         public string selectedArea = "";
         public string selectedGenre = "";
+        public string selectedBudget = "";
 
         public Window1() {
             InitializeComponent();

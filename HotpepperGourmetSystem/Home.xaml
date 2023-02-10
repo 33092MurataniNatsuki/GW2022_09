@@ -30,26 +30,23 @@
                  ToolTip="MaterialDesignFloatingActionLightButton" Grid.Column="1" Height="157" Grid.RowSpan="4" Width="157" Grid.Row="3" Background="Firebrick" BorderBrush="Firebrick"/>-->
 
             <!--<Image HorizontalAlignment="Left" Height="624" Margin="166,0,-161,-235.2" VerticalAlignment="Top" Width="995" Source="Images/白黒画像.png" Grid.RowSpan="8" Grid.ColumnSpan="2"/>-->
-            <Image HorizontalAlignment="Left" Height="46" Margin="21,27,0,0" VerticalAlignment="Top" Width="124" Source="Images/Hotpepper.jpg"/>
+            <Image HorizontalAlignment="Left" Height="46" Margin="21,56,0,0" VerticalAlignment="Top" Width="124" Source="Images/Hotpepper.jpg"/>
             <!--<Image HorizontalAlignment="Left" Height="31" Margin="71,11,0,0" VerticalAlignment="Top" Width="31" Source="Images/太陽.jpg" Grid.Row="5"/>
             <Image HorizontalAlignment="Left" Height="20" Margin="112,16,0,0" VerticalAlignment="Top" Width="21" Source="Images/月.png" Grid.Row="5"/>-->
             <!--<Image HorizontalAlignment="Left" Height="29" Margin="66,10,0,0" VerticalAlignment="Top" Width="28" Source="Images/お金.png" Grid.Row="5"/>-->
-            <Button x:Name="goArea" Margin="10,4,10,10" Click="Button_Click" Grid.Row="2" Content="地域" Background="#FFFBFBFB" BorderBrush="{x:Null}" Foreground="Black"/>
-            <Button x:Name="goGenre" Margin="10,4,10,10" Click="goGenre_Click_1" Grid.Row="3" Content="ジャンル" Background="#FFFBFBFB"  BorderBrush="{x:Null}" Foreground="Black"/>
-            <TextBlock HorizontalAlignment="Left" Margin="24,109,0,0" TextWrapping="Wrap" Text="── HOME ──" VerticalAlignment="Top" Height="22" Width="121" FontSize="16"/>
+            <Button x:Name="goArea" Margin="10,14,10,0" Click="Button_Click" Grid.Row="2" Content="地域" Background="#FFFBFBFB" BorderBrush="{x:Null}" Foreground="Black"/>
+            <Button x:Name="goGenre" Margin="10,14,10,0" Click="goGenre_Click_1" Grid.Row="3" Content="ジャンル" Background="#FFFBFBFB"  BorderBrush="{x:Null}" Foreground="Black"/>
+            <TextBlock HorizontalAlignment="Left" Margin="24,128,0,0" TextWrapping="Wrap" Text="── HOME ──" VerticalAlignment="Top" Height="22" Width="121" FontSize="16" Grid.RowSpan="2"/>
             <Label Content="Label" HorizontalAlignment="Left" Margin="10,10,0,-190" VerticalAlignment="Top" Height="571" Grid.RowSpan="8" Width="3" Background="#FFC5C5C5" Grid.Column="1"/>
-            <Label Content="予算" HorizontalAlignment="Left" Margin="21,13,0,0" Grid.Row="5" VerticalAlignment="Top" FontSize="16" Foreground="#FF383838"/>
+            <!--<Label Content="予算" HorizontalAlignment="Left" Margin="21,13,0,0" Grid.Row="5" VerticalAlignment="Top" FontSize="16" Foreground="#FF383838"/>-->
             <!--<Button Content="Button" HorizontalAlignment="Left" Margin="71,11,0,0" Grid.Row="5" VerticalAlignment="Top" Width="31" Height="31" Background="{x:Null}" Foreground="{x:Null}" BorderBrush="#FFCBCBCB"/>
             <Button Content="Button" HorizontalAlignment="Left" Margin="107,11,0,0" Grid.Row="5" VerticalAlignment="Top" Width="31" Height="31" Background="{x:Null}" Foreground="{x:Null}" BorderBrush="#FFCBCBCB"/>-->
-            <ComboBox x:Name="cbBudgetMin" HorizontalAlignment="Left" Height="24" Margin="16,5,0,0" Grid.Row="6" VerticalAlignment="Top" Width="64" SelectionChanged="cbBudgetMin_SelectionChanged"/>
-            <Label Content="～" HorizontalAlignment="Left" Height="23" Margin="80,6,0,0" Grid.Row="6" VerticalAlignment="Top"/>
-            <ComboBox x:Name="cbBudgetMax" HorizontalAlignment="Left" Height="25" Margin="100,4,0,0" Grid.Row="6" VerticalAlignment="Top" Width="64"/>
-            <Label Content="人数" HorizontalAlignment="Left" Height="28" Margin="21,40,0,-67" Grid.Row="7" VerticalAlignment="Top" FontSize="16" Foreground="#FF383838"/>
+            <!--<Label Content="人数" HorizontalAlignment="Left" Height="28" Margin="21,40,0,-67" Grid.Row="7" VerticalAlignment="Top" FontSize="16" Foreground="#FF383838"/>
             <ComboBox x:Name="cbNumber" HorizontalAlignment="Left" Height="24" Margin="38,73,0,-96" Grid.Row="7" VerticalAlignment="Top" Width="80"/>
-            <Label Content="Label" HorizontalAlignment="Left" Margin="21,35,0,0" Grid.Row="4" VerticalAlignment="Top" Height="1" Width="135" Background="#FFC5C5C5"/>
-            <Label Content="Label" HorizontalAlignment="Left" Height="2" Margin="10,14,0,-15" Grid.Row="7" VerticalAlignment="Top" Width="146" Background="#FFC5C5C5"/>
-            <Label Content="Label" HorizontalAlignment="Left" Height="2" Margin="10,125,0,-126" Grid.Row="7" VerticalAlignment="Top" Width="146" Background="#FFC5C5C5"/>
-            <Button x:Name="btSearch" Content="検索する" HorizontalAlignment="Left" Margin="50,146,0,-178" Grid.Row="7" VerticalAlignment="Top" Width="106" FontSize="14" Height="33" BorderBrush="{x:Null}" Background="#FFFBFBFB" Foreground="Firebrick" Click="btSearch_Click"/>
+            <Label Content="Label" HorizontalAlignment="Left" Margin="21,35,0,0" Grid.Row="4" VerticalAlignment="Top" Height="1" Width="135" Background="#FFC5C5C5"/>-->
+            <!--<Label Content="Label" HorizontalAlignment="Left" Height="2" Margin="10,14,0,-15" Grid.Row="7" VerticalAlignment="Top" Width="146" Background="#FFC5C5C5"/>-->
+            <!--<Label Content="Label" HorizontalAlignment="Left" Height="2" Margin="10,125,0,-126" Grid.Row="7" VerticalAlignment="Top" Width="146" Background="#FFC5C5C5"/>-->
+            <!--<Button x:Name="btSearch" Content="検索する" HorizontalAlignment="Left" Margin="50,146,0,-178" Grid.Row="7" VerticalAlignment="Top" Width="106" FontSize="14" Height="33" BorderBrush="{x:Null}" Background="#FFFBFBFB" Foreground="Firebrick" Click="btSearch_Click"/>-->
             <Label x:Name="lbPref" Content="県" Grid.Column="1" HorizontalAlignment="Left" Height="48" Margin="24,8,0,0" VerticalAlignment="Top" Width="132" FontSize="32" Background="{x:Null}" Foreground="#DD000000"/>
             <Label x:Name="lbCity" Content="市区町村" Grid.Column="1" HorizontalAlignment="Left" Height="38" Margin="161,17,0,0" VerticalAlignment="Top" Width="360" FontSize="24" Foreground="#DD000000"/>
             <Label x:Name="lbGenre" Content="ジャンル" Grid.Column="1" HorizontalAlignment="Left" Height="38" Margin="587,17,0,0" VerticalAlignment="Top" Width="237" FontSize="24" Foreground="#DD000000"/>
@@ -78,13 +75,32 @@
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
 
+                    <Label Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Height="408" Grid.RowSpan="3" Width="343" Background="#DDF5F5F5" Margin="26,28,0,0"/>
+                    <Label Content="" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="3" VerticalAlignment="Top" Height="406" Grid.RowSpan="3" Width="343" Background="#DDF5F5F5" Margin="26,30,0,0"/>
+                    <Label Content="" HorizontalAlignment="Left" Margin="26,30,0,0" Grid.Row="6" VerticalAlignment="Top" Height="406" Width="343" Background="#DDF5F5F5" Grid.RowSpan="3"/>
+                    <Label Content="" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="9" VerticalAlignment="Top" Background="#DDF5F5F5" Height="408" Grid.RowSpan="3" Width="339" Margin="30,30,0,0"/>
+                    <Label Content="" HorizontalAlignment="Left" Margin="30,30,0,0" Grid.Row="12" VerticalAlignment="Top" Background="#DDF5F5F5" Height="403" Grid.RowSpan="3" Width="339"/>
+
+                    <Label Content="" Grid.Column="1" HorizontalAlignment="Left" Margin="1,-10,0,0" VerticalAlignment="Top" Background="#DDF5F5F5" Height="472" Grid.RowSpan="3" Width="390"/>
+                    <Label Content="" HorizontalAlignment="Left" Margin="26,28,0,0" VerticalAlignment="Top" Grid.Column="1" Height="408" Grid.RowSpan="3" Width="343" Background="White"/>
+                    <Label Content="" HorizontalAlignment="Left" Grid.Row="3" VerticalAlignment="Top" Background="#DDF5F5F5" Height="465" Grid.RowSpan="3" Width="391"/>
+                    <Label Content="" HorizontalAlignment="Left" Margin="26,30,0,0" Grid.Row="3" VerticalAlignment="Top" Background="White" Height="406" Grid.RowSpan="3" Width="343"/>
+                    <Label Content="" Grid.Column="1" HorizontalAlignment="Left" Margin="1,0,0,0" Grid.Row="6" VerticalAlignment="Top" Background="#DDF5F5F5" Height="465" Grid.RowSpan="3" Width="390"/>
+                    <Label Content="" HorizontalAlignment="Left" Margin="30,30,0,0" Grid.Row="6" VerticalAlignment="Top" Grid.Column="1" Grid.RowSpan="3" Height="406" Width="339" Background="White"/>
+                    <Label Content="" HorizontalAlignment="Left" Grid.Row="9" VerticalAlignment="Top" Background="#DDF5F5F5" Height="465" Grid.RowSpan="3" Width="391"/>
+                    <Label Content="" HorizontalAlignment="Left" Margin="30,30,0,0" Grid.Row="9" VerticalAlignment="Top" Height="408" Grid.RowSpan="3" Width="339" Background="White"/>
+                    <Label Content="" Grid.Column="1" HorizontalAlignment="Left" Margin="1,0,0,0" Grid.Row="12" VerticalAlignment="Top" Background="#DDF5F5F5" Height="475" Grid.RowSpan="3" Width="390"/>
+                    <Label Content="Label" HorizontalAlignment="Left" Margin="30,35,0,0" Grid.Row="12" VerticalAlignment="Top" Grid.Column="1" Grid.RowSpan="3" Background="White" Height="398" Width="339"/>
+
+
+
                     <Label Content="所在地" HorizontalAlignment="Left" Margin="10,8,0,0" Grid.Row="2" VerticalAlignment="Top" Background="#FFFBFBFB" Height="24" Width="44"/>
                     <Label Content="営業時間" HorizontalAlignment="Left" Margin="10,51,0,0" Grid.Row="2" VerticalAlignment="Top" Foreground="#DD000000" Background="#FFFBFBFB" Height="24" Width="56"/>
                     <Label Content="予算" HorizontalAlignment="Left" Margin="10,103,0,0" Grid.Row="2" VerticalAlignment="Top" Background="#FFFBFBFB" Height="24" Width="32"/>
                     <Label x:Name="lbBudget1" Content="" HorizontalAlignment="Left" Margin="42,103,0,0" Grid.Row="2" VerticalAlignment="Top" Width="350" Foreground="#DD000000" Height="24"/>
                     <TextBlock x:Name="tbCatchPhrase1" HorizontalAlignment="Left" Margin="10,132,0,0" Grid.Row="2" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="51" Width="372" FontSize="14"/>
                     <TextBlock x:Name="tbAddress1" HorizontalAlignment="Left" Margin="54,10,0,0" Grid.Row="2" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="36" Width="338" RenderTransformOrigin="0.312,1.51" FontSize="14"/>
-                    <TextBlock x:Name="tbShopName1" HorizontalAlignment="Left" Margin="26,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="52" Width="343" FontSize="20" Grid.RowSpan="2" TextDecorations="Underline"/>
+                    <TextBlock x:Name="tbShopName1" HorizontalAlignment="Left" Margin="26,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="52" Width="343" FontSize="20" Grid.RowSpan="2" TextDecorations="Underline" Foreground="#FF1D3994"/>
                     <TextBlock x:Name="tbOpen1" HorizontalAlignment="Left" Margin="66,56,0,0" Grid.Row="2" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="42" Width="316" FontSize="11"/>
                     <Image x:Name="im11" HorizontalAlignment="Left" Height="201" Margin="74,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="201"/>
                     <Image x:Name="im12" HorizontalAlignment="Left" Height="64" Margin="280,147,0,0" Grid.Row="1" VerticalAlignment="Top" Width="64"/>
@@ -96,7 +112,7 @@
                     <Label Content="予算" HorizontalAlignment="Left" Margin="10,103,0,0" Grid.Row="2" VerticalAlignment="Top" Background="#FFFBFBFB" Grid.Column="1" Height="24" Width="32"/>
                     <Label x:Name="lbBudget2" Content="" HorizontalAlignment="Left" Margin="47,103,0,0" Grid.Row="2" VerticalAlignment="Top" Width="344" Foreground="#DD000000" Grid.Column="1" Height="24"/>
                     <TextBlock x:Name="tbAddress2" HorizontalAlignment="Left" Margin="55,10,0,0" Grid.Row="2" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="36" Width="333" RenderTransformOrigin="0.312,1.51" Grid.Column="1" FontSize="14"/>
-                    <TextBlock x:Name="tbShopName2" HorizontalAlignment="Left" Margin="26,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="52" Width="343" FontSize="20" Grid.Column="1" Grid.RowSpan="2" TextDecorations="Underline"/>
+                    <TextBlock x:Name="tbShopName2" HorizontalAlignment="Left" Margin="26,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="52" Width="343" FontSize="20" Grid.Column="1" Grid.RowSpan="2" TextDecorations="Underline" Foreground="#FF1D3994"/>
                     <TextBlock x:Name="tbOpen2" HorizontalAlignment="Left" Margin="66,56,0,0" Grid.Row="2" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="42" Width="316" FontSize="11" Grid.Column="1"/>
                     <TextBlock x:Name="tbCatchPhrase2" HorizontalAlignment="Left" Margin="10,132,0,0" Grid.Row="2" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="51" Width="372" FontSize="14" Grid.Column="1"/>
                     <Image x:Name="im21" HorizontalAlignment="Left" Height="201" Margin="74,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="200" Grid.Column="1"/>
@@ -108,7 +124,7 @@
                     <Label Content="予算" HorizontalAlignment="Left" Margin="10,102,0,0" Grid.Row="5" VerticalAlignment="Top" Background="#FFFBFBFB" Height="24" Width="32"/>
                     <Label x:Name="lbBudget3" Content="" HorizontalAlignment="Left" Margin="42,102,0,0" Grid.Row="5" VerticalAlignment="Top" Width="345" Foreground="#DD000000" Height="24"/>
                     <TextBlock x:Name="tbAddress3" HorizontalAlignment="Left" Margin="54,10,0,0" Grid.Row="5" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="36" Width="333" RenderTransformOrigin="0.312,1.51" FontSize="14"/>
-                    <TextBlock x:Name="tbShopName3" HorizontalAlignment="Left" Margin="26,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="52" Width="343" FontSize="20" Grid.RowSpan="2" Grid.Row="3" TextDecorations="Underline"/>
+                    <TextBlock x:Name="tbShopName3" HorizontalAlignment="Left" Margin="26,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="52" Width="343" FontSize="20" Grid.RowSpan="2" Grid.Row="3" TextDecorations="Underline" Foreground="#FF1D3994"/>
                     <TextBlock x:Name="tbOpen3" HorizontalAlignment="Left" Margin="66,56,0,0" Grid.Row="5" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="42" Width="316" FontSize="11"/>
                     <TextBlock x:Name="tbCatchPhrase3" HorizontalAlignment="Left" Margin="10,131,0,0" Grid.Row="5" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="51" Width="372" FontSize="14"/>
                     <Image x:Name="im31" HorizontalAlignment="Left" Height="201" Margin="74,10,0,0" Grid.Row="4" VerticalAlignment="Top" Width="201"/>
@@ -119,9 +135,9 @@
                     <Label Content="所在地" HorizontalAlignment="Left" Margin="10,8,0,0" Grid.Row="5" VerticalAlignment="Top" Background="#FFFBFBFB" Grid.Column="1" Height="24" Width="44"/>
                     <Label Content="営業時間" HorizontalAlignment="Left" Margin="10,51,0,0" Grid.Row="5" VerticalAlignment="Top" Foreground="#DD000000" Background="#FFFBFBFB" Grid.Column="1" Height="24" Width="56"/>
                     <Label Content="予算" HorizontalAlignment="Left" Margin="10,102,0,0" Grid.Row="5" VerticalAlignment="Top" Background="#FFFBFBFB" Grid.Column="1" Height="24" Width="32"/>
-                    <Label x:Name="lbBudget4" Content="" HorizontalAlignment="Left" Margin="47,80,0,0" Grid.Row="5" VerticalAlignment="Top" Width="344" Foreground="#DD000000" Grid.Column="1" Height="24"/>
+                    <Label x:Name="lbBudget4" Content="" HorizontalAlignment="Left" Margin="42,102,0,0" Grid.Row="5" VerticalAlignment="Top" Width="344" Foreground="#DD000000" Grid.Column="1" Height="24"/>
                     <TextBlock x:Name="tbAddress4" HorizontalAlignment="Left" Margin="55,10,0,0" Grid.Row="5" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="36" Width="333" RenderTransformOrigin="0.312,1.51" Grid.Column="1" FontSize="14"/>
-                    <TextBlock x:Name="tbShopName4" HorizontalAlignment="Left" Margin="26,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="52" Width="343" FontSize="20" Grid.Column="1" Grid.RowSpan="2" Grid.Row="3" TextDecorations="Underline"/>
+                    <TextBlock x:Name="tbShopName4" HorizontalAlignment="Left" Margin="26,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="52" Width="343" FontSize="20" Grid.Column="1" Grid.RowSpan="2" Grid.Row="3" TextDecorations="Underline" Foreground="#FF1D3994"/>
                     <TextBlock x:Name="tbOpen4" HorizontalAlignment="Left" Margin="66,56,0,0" Grid.Row="5" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="42" Width="316" FontSize="11" Grid.Column="1"/>
                     <TextBlock x:Name="tbCatchPhrase4" HorizontalAlignment="Left" Margin="10,131,0,0" Grid.Row="5" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="51" Width="372" FontSize="14" Grid.Column="1"/>
                     <Image x:Name="im41" HorizontalAlignment="Left" Height="201" Margin="73,10,0,0" Grid.Row="4" VerticalAlignment="Top" Width="201" Grid.Column="1"/>
@@ -134,7 +150,7 @@
                     <Label Content="予算" HorizontalAlignment="Left" Margin="10,102,0,0" Grid.Row="8" VerticalAlignment="Top" Background="#FFFBFBFB" Height="24" Width="32"/>
                     <Label x:Name="lbBudget5" Content="" HorizontalAlignment="Left" Margin="42,102,0,0" Grid.Row="8" VerticalAlignment="Top" Width="350" Foreground="#DD000000" Height="24"/>
                     <TextBlock x:Name="tbAddress5" HorizontalAlignment="Left" Margin="54,9,0,0" Grid.Row="8" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="36" Width="333" RenderTransformOrigin="0.312,1.51" FontSize="14"/>
-                    <TextBlock x:Name="tbShopName5" HorizontalAlignment="Left" Margin="26,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="52" Width="343" FontSize="20" Grid.RowSpan="2" Grid.Row="6" TextDecorations="Underline"/>
+                    <TextBlock x:Name="tbShopName5" HorizontalAlignment="Left" Margin="26,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="52" Width="343" FontSize="20" Grid.RowSpan="2" Grid.Row="6" TextDecorations="Underline" Foreground="#FF1D3994"/>
                     <TextBlock x:Name="tbOpen5" HorizontalAlignment="Left" Margin="66,56,0,0" Grid.Row="8" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="42" Width="316" FontSize="11"/>
                     <TextBlock x:Name="tbCatchPhrase5" HorizontalAlignment="Left" Margin="10,131,0,0" Grid.Row="8" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="51" Width="372" FontSize="14"/>
                     <Image x:Name="im51" HorizontalAlignment="Left" Height="201" Margin="74,10,0,0" Grid.Row="7" VerticalAlignment="Top" Width="201"/>
@@ -147,7 +163,7 @@
                     <Label Content="予算" HorizontalAlignment="Left" Margin="10,102,0,0" Grid.Row="8" VerticalAlignment="Top" Background="#FFFBFBFB" Grid.Column="1" Height="24" Width="32"/>
                     <Label x:Name="lbBudget6" Content="" HorizontalAlignment="Left" Margin="42,102,0,0" Grid.Row="8" VerticalAlignment="Top" Width="344" Foreground="#DD000000" Grid.Column="1" Height="24"/>
                     <TextBlock x:Name="tbAddress6" HorizontalAlignment="Left" Margin="55,9,0,0" Grid.Row="8" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="36" Width="333" RenderTransformOrigin="0.312,1.51" Grid.Column="1" FontSize="14"/>
-                    <TextBlock x:Name="tbShopName6" HorizontalAlignment="Left" Margin="26,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="52" Width="343" FontSize="20" Grid.Column="1" Grid.RowSpan="2" Grid.Row="6" TextDecorations="Underline"/>
+                    <TextBlock x:Name="tbShopName6" HorizontalAlignment="Left" Margin="26,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="52" Width="343" FontSize="20" Grid.Column="1" Grid.RowSpan="2" Grid.Row="6" TextDecorations="Underline" Foreground="#FF1D3994"/>
                     <TextBlock x:Name="tbOpen6" HorizontalAlignment="Left" Margin="66,55,0,0" Grid.Row="8" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="42" Width="316" FontSize="11" Grid.Column="1"/>
                     <TextBlock x:Name="tbCatchPhrase6" HorizontalAlignment="Left" Margin="10,131,0,0" Grid.Row="8" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="51" Width="372" FontSize="14" Grid.Column="1"/>
                     <Image x:Name="im61" HorizontalAlignment="Left" Height="201" Margin="74,10,0,0" Grid.Row="7" VerticalAlignment="Top" Width="201" Grid.Column="1"/>
@@ -160,7 +176,7 @@
                     <Label Content="予算" HorizontalAlignment="Left" Margin="10,102,0,0" Grid.Row="11" VerticalAlignment="Top" Background="#FFFBFBFB" Height="24" Width="32"/>
                     <Label x:Name="lbBudget7" Content="" HorizontalAlignment="Left" Margin="42,102,0,0" Grid.Row="11" VerticalAlignment="Top" Width="350" Foreground="#DD000000" Height="24"/>
                     <TextBlock x:Name="tbAddress7" HorizontalAlignment="Left" Margin="54,10,0,0" Grid.Row="11" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="36" Width="333" RenderTransformOrigin="0.312,1.51" FontSize="14"/>
-                    <TextBlock x:Name="tbShopName7" HorizontalAlignment="Left" Margin="26,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="52" Width="343" FontSize="20" Grid.RowSpan="2" Grid.Row="9" TextDecorations="Underline"/>
+                    <TextBlock x:Name="tbShopName7" HorizontalAlignment="Left" Margin="26,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="52" Width="343" FontSize="20" Grid.RowSpan="2" Grid.Row="9" TextDecorations="Underline" Foreground="#FF1D3994"/>
                     <TextBlock x:Name="tbOpen7" HorizontalAlignment="Left" Margin="66,56,0,0" Grid.Row="11" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="42" Width="316" FontSize="11"/>
                     <TextBlock x:Name="tbCatchPhrase7" HorizontalAlignment="Left" Margin="10,131,0,0" Grid.Row="11" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="51" Width="372" FontSize="14"/>
                     <Image x:Name="im71" HorizontalAlignment="Left" Height="201" Margin="74,10,0,0" Grid.Row="10" VerticalAlignment="Top" Width="201"/>
@@ -173,7 +189,7 @@
                     <Label Content="予算" HorizontalAlignment="Left" Margin="10,102,0,0" Grid.Row="11" VerticalAlignment="Top" Background="#FFFBFBFB" Grid.Column="1" Height="24" Width="32"/>
                     <Label x:Name="lbBudget8" Content="" HorizontalAlignment="Left" Margin="42,102,0,0" Grid.Row="11" VerticalAlignment="Top" Width="344" Foreground="#DD000000" Grid.Column="1" Height="24"/>
                     <TextBlock x:Name="tbAddress8" HorizontalAlignment="Left" Margin="55,10,0,0" Grid.Row="11" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="36" Width="333" RenderTransformOrigin="0.312,1.51" Grid.Column="1" FontSize="14"/>
-                    <TextBlock x:Name="tbShopName8" HorizontalAlignment="Left" Margin="26,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="52" Width="343" FontSize="20" Grid.Column="1" Grid.RowSpan="2" Grid.Row="9" TextDecorations="Underline"/>
+                    <TextBlock x:Name="tbShopName8" HorizontalAlignment="Left" Margin="26,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="52" Width="343" FontSize="20" Grid.Column="1" Grid.RowSpan="2" Grid.Row="9" TextDecorations="Underline" Foreground="#FF1D3994"/>
                     <TextBlock x:Name="tbOpen8" HorizontalAlignment="Left" Margin="66,56,0,0" Grid.Row="11" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="42" Width="316" FontSize="11" Grid.Column="1"/>
                     <TextBlock x:Name="tbCatchPhrase8" HorizontalAlignment="Left" Margin="10,131,0,0" Grid.Row="11" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="51" Width="372" FontSize="14" Grid.Column="1"/>
                     <Image x:Name="im81" HorizontalAlignment="Left" Height="201" Margin="74,10,0,0" Grid.Row="10" VerticalAlignment="Top" Width="201" Grid.Column="1"/>
@@ -187,7 +203,7 @@
                     <Label Content="予算" HorizontalAlignment="Left" Margin="10,103,0,0" Grid.Row="14" VerticalAlignment="Top" Background="#FFFBFBFB" Height="24" Width="32"/>
                     <Label x:Name="lbBudget9" Content="" HorizontalAlignment="Left" Margin="42,103,0,0" Grid.Row="14" VerticalAlignment="Top" Width="345" Foreground="#DD000000" Height="24"/>
                     <TextBlock x:Name="tbAddress9" HorizontalAlignment="Left" Margin="54,10,0,0" Grid.Row="14" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="36" Width="333" RenderTransformOrigin="0.312,1.51" FontSize="14"/>
-                    <TextBlock x:Name="tbShopName9" HorizontalAlignment="Left" Margin="26,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="52" Width="343" FontSize="20" Grid.RowSpan="2" Grid.Row="12" TextDecorations="Underline"/>
+                    <TextBlock x:Name="tbShopName9" HorizontalAlignment="Left" Margin="26,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="52" Width="343" FontSize="20" Grid.RowSpan="2" Grid.Row="12" TextDecorations="Underline" Foreground="#FF1D3994"/>
                     <TextBlock x:Name="tbOpen9" HorizontalAlignment="Left" Margin="66,56,0,0" Grid.Row="14" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="42" Width="316" FontSize="11"/>
                     <TextBlock x:Name="tbCatchPhrase9" HorizontalAlignment="Left" Margin="10,132,0,0" Grid.Row="14" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="51" Width="372" FontSize="14"/>
                     <Image x:Name="im91" HorizontalAlignment="Left" Height="201" Margin="74,10,0,0" Grid.Row="13" VerticalAlignment="Top" Width="201"/>
@@ -200,18 +216,36 @@
                     <Label Content="予算" HorizontalAlignment="Left" Margin="10,103,0,0" Grid.Row="14" VerticalAlignment="Top" Background="#FFFBFBFB" Grid.Column="1" Height="24" Width="32"/>
                     <Label x:Name="lbBudget10" Content="" HorizontalAlignment="Left" Margin="42,103,0,0" Grid.Row="14" VerticalAlignment="Top" Width="344" Foreground="#DD000000" Grid.Column="1" Height="24"/>
                     <TextBlock x:Name="tbAddress10" HorizontalAlignment="Left" Margin="55,10,0,0" Grid.Row="14" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="36" Width="333" RenderTransformOrigin="0.312,1.51" Grid.Column="1" FontSize="14"/>
-                    <TextBlock x:Name="tbShopName10" HorizontalAlignment="Left" Margin="26,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="52" Width="343" FontSize="20" Grid.Column="1" Grid.RowSpan="2" Grid.Row="12" TextDecorations="Underline"/>
+                    <TextBlock x:Name="tbShopName10" HorizontalAlignment="Left" Margin="26,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="52" Width="343" FontSize="20" Grid.Column="1" Grid.RowSpan="2" Grid.Row="12" TextDecorations="Underline" Foreground="#FF1D3994"/>
                     <TextBlock x:Name="tbOpen10" HorizontalAlignment="Left" Margin="66,56,0,0" Grid.Row="14" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="42" Width="316" FontSize="11" Grid.Column="1"/>
                     <TextBlock x:Name="tbCatchPhrase10" HorizontalAlignment="Left" Margin="9,132,0,0" Grid.Row="14" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="51" Width="372" FontSize="14" Grid.Column="1"/>
                     <Image x:Name="im101" HorizontalAlignment="Left" Height="201" Margin="74,10,0,0" Grid.Row="13" VerticalAlignment="Top" Width="201" Grid.Column="1"/>
                     <Image x:Name="im102" HorizontalAlignment="Left" Height="64" Margin="280,147,0,0" Grid.Row="13" VerticalAlignment="Top" Width="64" Grid.Column="1"/>
 
+                    <Label x:Name="lbCover" Content="" HorizontalAlignment="Left" Height="534" Margin="420,-10,-811,0" VerticalAlignment="Top" Grid.RowSpan="5" Width="782" Grid.Column="1"/>
 
                     <Label Content="Label" HorizontalAlignment="Left" Margin="391,12,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="2" Height="2310" Grid.RowSpan="15" Background="#DDDCDCDC"/>
+
+                    <Button x:Name="btUrl1" Content="" HorizontalAlignment="Left" Margin="26,12,0,0" VerticalAlignment="Top" Width="343" Height="50" Grid.RowSpan="2" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="btUrl1_Click"/>
+                    <Button x:Name="btUrl2" Content="Button" Grid.Column="1" HorizontalAlignment="Left" Margin="26,10,0,0" VerticalAlignment="Top" Width="343" Height="52" Grid.RowSpan="2" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="btUrl1_Click"/>
+                    <Button x:Name="btUrl3" Content="Button" HorizontalAlignment="Left" Margin="26,10,0,0" Grid.Row="3" VerticalAlignment="Top" Width="343" Height="52" Grid.RowSpan="2" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="btUrl1_Click" />
+                    <Button x:Name="btUrl4" Content="Button" Grid.Column="1" HorizontalAlignment="Left" Margin="26,10,0,0" Grid.Row="3" VerticalAlignment="Top" Width="343" Height="52" Grid.RowSpan="2" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}" Click="btUrl1_Click"/>
+                    <Button x:Name="btUrl5" Content="Button" HorizontalAlignment="Left" Margin="26,10,0,0" Grid.Row="6" VerticalAlignment="Top" Width="343" Height="52" Grid.RowSpan="2" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="btUrl1_Click"/>
+                    <Button x:Name="btUrl6" Content="Button" Grid.Column="1" HorizontalAlignment="Left" Margin="26,10,0,0" Grid.Row="6" VerticalAlignment="Top" Width="343" Height="52" Grid.RowSpan="2" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}" Click="btUrl1_Click"/>
+                    <Button x:Name="btUrl7" Content="Button" HorizontalAlignment="Left" Margin="26,10,0,0" Grid.Row="9" VerticalAlignment="Top" Width="343" Height="52" Grid.RowSpan="2" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="btUrl1_Click"/>
+                    <Button x:Name="btUrl8" Content="Button" Grid.Column="1" HorizontalAlignment="Left" Margin="26,10,0,0" Grid.Row="9" VerticalAlignment="Top" Width="343" Height="52" Grid.RowSpan="2" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}" Click="btUrl1_Click"/>
+                    <Button x:Name="btUrl9" Content="Button" HorizontalAlignment="Left" Margin="26,10,0,0" Grid.Row="12" VerticalAlignment="Top" Width="343" Height="52" Grid.RowSpan="2" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="btUrl1_Click"/>
+                    <Button x:Name="btUrl10" Content="Button" Grid.Column="1" HorizontalAlignment="Left" Margin="26,10,0,0" Grid.Row="12" VerticalAlignment="Top" Width="343" Height="52" Grid.RowSpan="2" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}" Click="btUrl1_Click"/>
+                    <!--<Button x:Name="btUrl1" Content="" Style="{StaticResource MaterialDesignRaisedDarkButton}" Margin="10,12,10,10" Height="Auto" Grid.RowSpan="3" Click="btUrl1_Click" Foreground="{x:Null}" Background="{x:Null}" BorderBrush="White"/>
+                    <Button x:Name="btUrl2" Content="" Style="{StaticResource MaterialDesignRaisedDarkButton}" Margin="10,12,9,10" Height="Auto" Grid.RowSpan="3" Click="btUrl1_Click" Foreground="{x:Null}" Background="{x:Null}" BorderBrush="White" Grid.Column="1"/>-->
                 </Grid>
             </ScrollViewer>
             <Label Content="Label" Grid.Column="1" HorizontalAlignment="Left" Margin="18,56,0,0" VerticalAlignment="Top" Width="800" Height="3" Background="#DDDCDCDC"/>
-            <Label Content="/" Grid.Column="1" HorizontalAlignment="Left" Margin="565,6,0,0" VerticalAlignment="Top" FontSize="36" Height="50" FontFamily="Yu Gothic Light"/>
+            <Label x:Name="lbSlash" Content="" Grid.Column="1" HorizontalAlignment="Left" Margin="565,6,0,0" VerticalAlignment="Top" FontSize="36" Height="50" FontFamily="Yu Gothic Light"/>
+            <Label x:Name="errorArea" Content="" HorizontalAlignment="Left" Margin="78,17,0,0" VerticalAlignment="Top" Grid.Column="1" Height="38" Width="526" FontSize="24"/>
+            <Label Content="予算" HorizontalAlignment="Left" Margin="10,24,0,0" Grid.Row="4" VerticalAlignment="Top" Height="22" Width="38"/>
+            <ComboBox x:Name="cbBudgetMinMax" HorizontalAlignment="Left" Margin="53,24,0,0" Grid.Row="4" VerticalAlignment="Top" Width="108" Grid.RowSpan="2" SelectionChanged="cbBudgetMinMax_SelectionChanged"/>
+
             <!--<Button x:Name="btClose" Content="" Grid.Column="1" HorizontalAlignment="Left" Margin="788,0,0,0" VerticalAlignment="Top" Width="30" Height="30" FontSize="48" Click="btClose_Click_1"/>-->
 
         </Grid>
