@@ -20,6 +20,7 @@ namespace HotpepperGourmetSystem {
     public partial class Window1 : Window {
         private NavigationService navi;
 
+
         public string selectedPref = "";
         public string selectedArea = "";
         public string selectedGenre = "";
