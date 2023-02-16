@@ -247,7 +247,7 @@
             <ComboBox x:Name="cbBudgetMinMax" HorizontalAlignment="Left" Margin="53,10,0,0" Grid.Row="6" VerticalAlignment="Top" Width="108" SelectionChanged="cbBudgetMinMax_SelectionChanged"/>
             <Button x:Name="closeButton" Content="閉じる" HorizontalAlignment="Left" VerticalAlignment="Top" Width="121" Margin="24,140,0,-171" Grid.Row="7" Background="White" BorderBrush="{x:Null}" Foreground="Firebrick" Click="closeButton_Click"/>
 
-            <!--<Image x:Name="imHome" Grid.Column="1" HorizontalAlignment="Left" Height="532" Margin="18,66,0,-207" Grid.RowSpan="8" VerticalAlignment="Top" Width="783" Source="Images/Home1.jpg"/>-->
+            <Image x:Name="imHome" Grid.Column="1" HorizontalAlignment="Left" Height="532" Margin="18,66,0,-207" Grid.RowSpan="8" VerticalAlignment="Top" Width="783" Source="Images/Home1.jpg"/>
             <!--<Image x:Name="imHome" Grid.Column="1" HorizontalAlignment="Left" Height="532" Margin="18,66,0,-207" Grid.RowSpan="8" VerticalAlignment="Top" Width="783" Source="Images/Home2.jpg"/>-->
             <!--<Image x:Name="imHome" Grid.Column="1" HorizontalAlignment="Left" Height="532" Margin="18,66,0,-207" Grid.RowSpan="8" VerticalAlignment="Top" Width="783" Source="Images/Home3.jpg"/>-->
             <!--<Image x:Name="imHome" Grid.Column="1" HorizontalAlignment="Left" Height="532" Margin="18,66,0,-207" Grid.RowSpan="8" VerticalAlignment="Top" Width="783" Source="Images/Home5.jpg"/>-->

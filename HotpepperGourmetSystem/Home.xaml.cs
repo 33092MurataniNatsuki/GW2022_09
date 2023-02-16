@@ -1355,25 +1355,25 @@ namespace HotpepperGourmetSystem {
             if ((string)lbPref.Content != "" && (string)lbCity.Content == "指定なし" && (string)lbGenre.Content != "")
             {
                 errorArea.Content = "";
-               // imHome.Source = null;
+                imHome.Source = null;
             }
 
             if ((string)lbPref.Content != "" && (string)lbCity.Content == "指定なし" && (string)lbGenre.Content == "") 
             {
                 errorArea.Content = "";
-                //imHome.Source = null;
+                imHome.Source = null;
             }
 
             if ((string)lbPref.Content != "" && (string)lbCity.Content != "指定なし" && (string)lbGenre.Content != "") 
             {
                 errorArea.Content = "";
-              //  imHome.Source = null;
+                imHome.Source = null;
             }
 
             if ((string)lbPref.Content != "" && (string)lbCity.Content != "指定なし" && (string)lbGenre.Content == "") 
             {
                 errorArea.Content = "";
-                //imHome.Source = null;
+                imHome.Source = null;
             }
 
             #region
