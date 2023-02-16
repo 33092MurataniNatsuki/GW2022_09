@@ -671,6 +671,8 @@ namespace HotpepperGourmetSystem {
             }
 
             lbDecide.Content = "和歌山県";
+            Home home = new Home();
+            home.check = 1;
         }
 
         private void btIwate_Click(object sender, RoutedEventArgs e)

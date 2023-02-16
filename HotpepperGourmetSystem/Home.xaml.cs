@@ -16,6 +16,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Drawing;
+using System.Reflection;
 
 namespace HotpepperGourmetSystem {
     /// <summary>
@@ -23,6 +24,7 @@ namespace HotpepperGourmetSystem {
     /// </summary>
     public partial class Home : Page {
 
+        public int check;
         string largeAreaCode;
         string midleAreaCode;
         string genreCode;
@@ -1300,7 +1302,10 @@ namespace HotpepperGourmetSystem {
 
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
+            
+
             lbCover.Background = Brushes.White;
+            errorArea.Content = "※地域を選択してください。";
 
 
             largeAreaCode = "Z017";
@@ -1340,6 +1345,36 @@ namespace HotpepperGourmetSystem {
                             "&large_area=" + largeAreaCode + "&midle_area=" + midleAreaCode + "&genre=" + genreCode + "&budget=" + budgetCode + "&format=json");
             var json1 = JsonConvert.DeserializeObject<Rootobject>(dString);
             Conditions(json1);
+
+
+            if ((string)lbPref.Content == "" && (string)lbCity.Content == "指定なし" && (string)lbGenre.Content == "")
+            {
+                errorArea.Content = "※地域を選択してください。";
+            }
+
+            if ((string)lbPref.Content != "" && (string)lbCity.Content == "指定なし" && (string)lbGenre.Content != "")
+            {
+                errorArea.Content = "";
+               // imHome.Source = null;
+            }
+
+            if ((string)lbPref.Content != "" && (string)lbCity.Content == "指定なし" && (string)lbGenre.Content == "") 
+            {
+                errorArea.Content = "";
+                //imHome.Source = null;
+            }
+
+            if ((string)lbPref.Content != "" && (string)lbCity.Content != "指定なし" && (string)lbGenre.Content != "") 
+            {
+                errorArea.Content = "";
+              //  imHome.Source = null;
+            }
+
+            if ((string)lbPref.Content != "" && (string)lbCity.Content != "指定なし" && (string)lbGenre.Content == "") 
+            {
+                errorArea.Content = "";
+                //imHome.Source = null;
+            }
 
             #region
 
@@ -1476,8 +1511,11 @@ namespace HotpepperGourmetSystem {
         }
 
         private void Button_Click(object sender, RoutedEventArgs e) {
+            check = 1;
             var area = new Area();
             NavigationService.Navigate(area);
+
+            
         }
 
         private void goGenre_Click_1(object sender, RoutedEventArgs e) {
@@ -1485,11 +1523,6 @@ namespace HotpepperGourmetSystem {
             NavigationService.Navigate(genre);
         }
 
-
-        private void btClose_Click_1(object sender, RoutedEventArgs e)
-        {
-            
-        }
 
         private void Conditions(Rootobject json1)
         {
@@ -1514,25 +1547,56 @@ namespace HotpepperGourmetSystem {
             var tb5 = new TextBlock[] { tbCatchPhrase1, tbCatchPhrase2, tbCatchPhrase3, tbCatchPhrase4, tbCatchPhrase5, tbCatchPhrase6, tbCatchPhrase7, tbCatchPhrase8, tbCatchPhrase9, tbCatchPhrase10 };
             list5.AddRange(tb5);
 
+            var list6 = new List<Label>();
+            var lb6 = new Label[] { lbAddress1, lbAddress2, lbAddress3, lbAddress4, lbAddress5, lbAddress6, lbAddress7, lbAddress8, lbAddress9, lbAddress10 };
+            list6.AddRange(lb6);
+            var list7 = new List<Label>();
+            var lb7 = new Label[] { lbOpen1, lbOpen2, lbOpen3, lbOpen4, lbOpen5, lbOpen6, lbOpen7, lbOpen8, lbOpen9, lbOpen10 };
+            list7.AddRange(lb7);
+            var list8 = new List<Label>();
+            var lb8 = new Label[] { lb1Budget1, lb1Budget2, lb1Budget3, lb1Budget4, lb1Budget5, lb1Budget6, lb1Budget7, lb1Budget8, lb1Budget9, lb1Budget10 };
+            list8.AddRange(lb8);
+
+
             Image[] image1 = { im11, im21, im31, im41, im51, im61, im71, im81, im91, im101, };
             Image[] image2 = { im12, im22, im32, im42, im52, im62, im72, im82, im92, im102, };
 
             //int count = int.Parse(json1.results.results_returned);
             int zero = json1.results.results_start;
-            if (zero == 0)
+            if (zero == 1 && check == 1)
             {
                 tb1 = null;
                 tb2 = null;
                 tb3 = null;
                 lb = null;
                 tb5 = null;
+                //MessageBox.Show("ありません");
+
+
+                //string path1 = "HotpepperGourmetSystem.Images.error.jpg";
+
+                //BitmapImage bmpImg = new BitmapImage();
+                //bmpImg.BeginInit();
+
+                //Assembly assembly = Assembly.GetExecutingAssembly();
+                //Stream stream = assembly.GetManifestResourceStream(path1);
+                //bmpImg.StreamSource = stream;
+                //bmpImg.EndInit();
+
+                //imError.Source = bmpImg;
             }
+
+            //if (zero >= 0)
+            //{
+            //    imError.Source = null;
+            //}
+
             for (int i = 0; i < int.Parse(json1.results.results_returned); i++)
             {
                 tb1[i].Text = json1.results.shop[i].name;
                 tb2[i].Text = json1.results.shop[i].address;
                 tb3[i].Text = json1.results.shop[i].open;
-                lb[i].Content = json1.results.shop[i].budget.name;
+                lb[i].Content = json1.results.shop[i].access;
                 tb5[i].Text = json1.results.shop[i].other_memo;
 
                 var imageUrl1 = json1.results.shop[i].photo.pc.l;
@@ -1541,59 +1605,66 @@ namespace HotpepperGourmetSystem {
                 var imageUrl2 = json1.results.shop[i].logo_image;
                 BitmapImage imagesorse2 = new BitmapImage(new Uri(imageUrl2));
                 image2[i].Source = imagesorse2;
+
+                lb6[i].Content = "所在地";
+                lb7[i].Content = "営業時間";
+                lb8[i].Content = "アクセス";
             }
 
         }
 
         private void btUrl1_Click(object sender, RoutedEventArgs e)
         {
-            var wc = new WebClient()
-            {
-                Encoding = Encoding.UTF8
-            };
+            //var wc = new WebClient()
+            //{
+            //    Encoding = Encoding.UTF8
+            //};
 
 
-            if ((string)lbPref.Content != "" && (string)lbCity.Content == "指定なし" && (string)lbGenre.Content != "")
-            {
-                Genre();
-                LargeArea();
-                var dString1 = wc.DownloadString("http://webservice.recruit.co.jp/hotpepper/gourmet/v1/?key=0e8af5f2f79eb4f4&large_area=" + largeAreaCode + "&genre=" + genreCode + "&format=json");
-                var json1 = JsonConvert.DeserializeObject<Rootobject>(dString1);
+            //    if ((string)lbPref.Content != "" && (string)lbCity.Content == "指定なし" && (string)lbGenre.Content != "")
+            //{
+            //    Genre();
+            //    LargeArea();
+            //    var dString1 = wc.DownloadString("http://webservice.recruit.co.jp/hotpepper/gourmet/v1/?key=0e8af5f2f79eb4f4&large_area=" + largeAreaCode + "&genre=" + genreCode + "&format=json");
+            //    var json1 = JsonConvert.DeserializeObject<Rootobject>(dString1);
 
-                btUrl(json1);
-            }
+            //    btUrl(json1);
+            //}
 
-            if ((string)lbPref.Content != "" && (string)lbCity.Content == "指定なし" && (string)lbGenre.Content == "") //2
-            {
-                Genre();
-                LargeArea();
-                var dString1 = wc.DownloadString("http://webservice.recruit.co.jp/hotpepper/gourmet/v1/?key=0e8af5f2f79eb4f4&large_area=" + largeAreaCode + "&format=json");
-                var json1 = JsonConvert.DeserializeObject<Rootobject>(dString1);
+            //if ((string)lbPref.Content != "" && (string)lbCity.Content == "指定なし" && (string)lbGenre.Content == "") //2
+            //{
+            //    Genre();
+            //    LargeArea();
+            //    var dString1 = wc.DownloadString("http://webservice.recruit.co.jp/hotpepper/gourmet/v1/?key=0e8af5f2f79eb4f4&large_area=" + largeAreaCode + "&format=json");
+            //    var json1 = JsonConvert.DeserializeObject<Rootobject>(dString1);
 
-                btUrl(json1);
-            }
+            //    btUrl(json1);
 
-            if ((string)lbPref.Content != "" && (string)lbCity.Content != "指定なし" && (string)lbGenre.Content != "") //3
-            {
-                Genre();
-                LargeArea();
-                MidleArea();
-                var dString1 = wc.DownloadString("http://webservice.recruit.co.jp/hotpepper/gourmet/v1/?key=0e8af5f2f79eb4f4&middle_area=" + midleAreaCode + "&format=json");
-                var json1 = JsonConvert.DeserializeObject<Rootobject>(dString1);
+            //}
 
-                btUrl(json1);
-            }
+            //if ((string)lbPref.Content != "" && (string)lbCity.Content != "指定なし" && (string)lbGenre.Content != "") //3
+            //{
+            //    Genre();
+            //    LargeArea();
+            //    MidleArea();
+            //    var dString1 = wc.DownloadString("http://webservice.recruit.co.jp/hotpepper/gourmet/v1/?key=0e8af5f2f79eb4f4&middle_area=" + midleAreaCode + "&format=json");
+            //    var json1 = JsonConvert.DeserializeObject<Rootobject>(dString1);
 
-            if ((string)lbPref.Content != "" && (string)lbCity.Content != "指定なし" && (string)lbGenre.Content == "") //4
-            {
-                Genre();
-                LargeArea();
-                MidleArea();
-                var dString1 = wc.DownloadString("http://webservice.recruit.co.jp/hotpepper/gourmet/v1/?key=0e8af5f2f79eb4f4&middle_area=" + midleAreaCode + "&format=json");
-                var json1 = JsonConvert.DeserializeObject<Rootobject>(dString1);
+            //    btUrl(json1);
 
-                btUrl(json1);
-            }
+            //}
+
+            //if ((string)lbPref.Content != "" && (string)lbCity.Content != "指定なし" && (string)lbGenre.Content == "") //4
+            //{
+            //    Genre();
+            //    LargeArea();
+            //    MidleArea();
+            //    var dString1 = wc.DownloadString("http://webservice.recruit.co.jp/hotpepper/gourmet/v1/?key=0e8af5f2f79eb4f4&middle_area=" + midleAreaCode + "&format=json");
+            //    var json1 = JsonConvert.DeserializeObject<Rootobject>(dString1);
+
+            //    btUrl(json1);
+
+            //}
         }
 
         private void btUrl(Rootobject json1)
@@ -1624,6 +1695,11 @@ namespace HotpepperGourmetSystem {
                             "&large_area=" + largeAreaCode + "&midle_area=" + midleAreaCode + "&genre=" + genreCode + "&budget=" + budgetCode + "&format=json");
             var json1 = JsonConvert.DeserializeObject<Rootobject>(dString);
             Conditions(json1);
+        }
+
+        private void closeButton_Click(object sender, RoutedEventArgs e)
+        {
+            parent.Close();
         }
     }
 }
