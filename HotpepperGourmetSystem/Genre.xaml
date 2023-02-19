@@ -13,9 +13,16 @@
             <ColumnDefinition Width="177*"/>
             <ColumnDefinition Width="623*"/>
         </Grid.ColumnDefinitions>
+        
+        <!--<Label Content="Label" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.ColumnSpan="2" Height="820" Margin="0,-34,-262,-336" Width="1062" Background="#F6F6F6F6"/>-->
+
         <!--<Image HorizontalAlignment="Left" Height="575" Margin="0.2,10,-185,-135.4" VerticalAlignment="Top" Width="808" Source="Images/ジャンル料理小.png" Grid.Column="1"/>-->
+
         <Image HorizontalAlignment="Left" Height="575" Margin="168,32,-176,-157" VerticalAlignment="Top" Width="808" Source="Images/ジャンル.png" Grid.ColumnSpan="2"/>
         <Image HorizontalAlignment="Left" Height="50" Margin="76,81,0,0" VerticalAlignment="Top" Width="132" Source="Images/Hotpepper.jpg" Grid.ColumnSpan="2"/>
+
+        <!--<Image HorizontalAlignment="Left" Height="575" Margin="168,32,-176,-157" VerticalAlignment="Top" Width="808" Source="Images/genre1.png" Grid.ColumnSpan="2"/>-->
+
         <!--<Image HorizontalAlignment="Left" Height="575" Margin="0.2,10,-185,-135.4" VerticalAlignment="Top" Width="808" Source="Images/ジャンル料理.png" Grid.Column="1"/>-->
         <!--<Image HorizontalAlignment="Left" Height="575" Margin="0.2,10,-185,-135.4" VerticalAlignment="Top" Width="808" Source="Images/waku.png" Grid.Column="1"/>-->
         <!--<GroupBox Header="MaterialDesignFlatButton" Margin="5">
@@ -46,6 +53,6 @@
         <Button x:Name="goHome" Content="HOME" HorizontalAlignment="Left" Margin="76,305,0,0" VerticalAlignment="Top" Width="132" Grid.ColumnSpan="2" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#DD000000" Click="goHome_Click"/>
         <Button x:Name="goArea" Content="地域" HorizontalAlignment="Left" Margin="76,396,0,0" VerticalAlignment="Top" Width="132" Grid.ColumnSpan="2" Foreground="#DD000000" Background="{x:Null}" BorderBrush="{x:Null}" Click="goArea_Click"/>
         <Label x:Name="lbGenreName" Content="" HorizontalAlignment="Left" Height="48" Margin="58,464,0,-62" VerticalAlignment="Top" Width="128" FontSize="20" Grid.ColumnSpan="2"/>
-        
+
     </Grid>
 </Page>

@@ -7,6 +7,7 @@
       mc:Ignorable="d" 
       Title="Home" Height="600" Width="1000" Loaded="Page_Loaded">
     <StackPanel>
+
         <Grid Height="598" Background="White">
             <Grid.RowDefinitions>
                 <RowDefinition Height="130"/>
@@ -28,6 +29,7 @@
                  VerticalAlignment="Bottom"
                  Style="{StaticResource MaterialDesignFloatingActionLightButton}"
                  ToolTip="MaterialDesignFloatingActionLightButton" Grid.Column="1" Height="157" Grid.RowSpan="4" Width="157" Grid.Row="3" Background="Firebrick" BorderBrush="Firebrick"/>-->
+            <Label Content="Label" HorizontalAlignment="Left" Height="596" Margin="0,2,0,-207" VerticalAlignment="Top" Grid.ColumnSpan="2" Grid.RowSpan="8" Width="1000" Background="#FFF6F6F6"/>
 
             <!--<Image HorizontalAlignment="Left" Height="624" Margin="166,0,-161,-235.2" VerticalAlignment="Top" Width="995" Source="Images/白黒画像.png" Grid.RowSpan="8" Grid.ColumnSpan="2"/>-->
             <Image x:Name="imHot" HorizontalAlignment="Left" Height="46" Margin="21,56,0,0" VerticalAlignment="Top" Width="124" Source="Images/Hotpepper.jpg"/>
@@ -247,11 +249,7 @@
             <ComboBox x:Name="cbBudgetMinMax" HorizontalAlignment="Left" Margin="53,10,0,0" Grid.Row="6" VerticalAlignment="Top" Width="108" SelectionChanged="cbBudgetMinMax_SelectionChanged"/>
             <Button x:Name="closeButton" Content="閉じる" HorizontalAlignment="Left" VerticalAlignment="Top" Width="121" Margin="24,140,0,-171" Grid.Row="7" Background="White" BorderBrush="{x:Null}" Foreground="Firebrick" Click="closeButton_Click"/>
 
-            <Image x:Name="imHome" Grid.Column="1" HorizontalAlignment="Left" Height="532" Margin="18,66,0,-207" Grid.RowSpan="8" VerticalAlignment="Top" Width="783" Source="Images/Home1.jpg"/>
-            <!--<Image x:Name="imHome" Grid.Column="1" HorizontalAlignment="Left" Height="532" Margin="18,66,0,-207" Grid.RowSpan="8" VerticalAlignment="Top" Width="783" Source="Images/Home2.jpg"/>-->
-            <!--<Image x:Name="imHome" Grid.Column="1" HorizontalAlignment="Left" Height="532" Margin="18,66,0,-207" Grid.RowSpan="8" VerticalAlignment="Top" Width="783" Source="Images/Home3.jpg"/>-->
-            <!--<Image x:Name="imHome" Grid.Column="1" HorizontalAlignment="Left" Height="532" Margin="18,66,0,-207" Grid.RowSpan="8" VerticalAlignment="Top" Width="783" Source="Images/Home5.jpg"/>-->
-
+            <Image x:Name="imHome" Grid.Column="1" HorizontalAlignment="Left" Height="543" Margin="18,55,0,-207" Grid.RowSpan="8" VerticalAlignment="Top" Width="783" Source="Images/OIBC2.png"/>
         </Grid>
     </StackPanel>
 </Page>
